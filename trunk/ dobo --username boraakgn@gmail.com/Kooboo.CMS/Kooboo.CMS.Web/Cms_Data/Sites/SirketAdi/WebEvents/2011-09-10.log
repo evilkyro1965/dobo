@@ -1,0 +1,157 @@
+Event code: 100000
+Event message: The item already exists.
+Event time: 9/10/2011 5:23:56 PM
+Event time (UTC): 9/10/2011 2:23:56 PM
+Event ID: 7a98e6c4d67847f082869bd6feda9847
+Event sequence: 249
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129601370281353154
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Exception information:
+    Exception type: Kooboo.CMS.Sites.Services.ItemAlreadyExistsException
+    Exception message: The item already exists.
+
+Request information:
+    Request URL: /Sites/Page/Create?siteName=SirketAdi&FullName=Anasayfa&fromSite=SirketAdi&ReturnUrl=%2FSites%2FHome%2FSiteMap%3FsiteName%3DSirketAdi&ParentPage=Anasayfa&Layout=2kolon_sagmenu
+    Request path: /Sites/Page/Create
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 17
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Services.PageManager.Add(Site site, String parentPageName, Page page) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Services\PageManager.cs:line 128
+   at Kooboo.CMS.Web.Areas.Sites.Controllers.PageController.Create(Page model) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Areas\Sites\Controllers\PageController.cs:line 91
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 9/10/2011 6:23:01 PM
+Event time (UTC): 9/10/2011 3:23:01 PM
+Event ID: c82fa2b37a2e4ecba3203b057ff38065
+Event sequence: 247
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129601409833695664
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 3952
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.Web.HttpUnhandledException
+    Exception message: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+
+Inner exception information (level 1):
+    Exception type: System.ArgumentException
+    Exception message: Value cannot be null or empty.
+Parameter name: linkText
+
+Request information:
+    Request URL: http://localhost:3911/Anasayfa/?ModuleUrl=(9SVNE)%252FArticle%252FDetail~~UserKey%253DLorem-ipsum-dolor-sit-amet-20
+    Request path: /Anasayfa/
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 27
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.Mvc.ViewPage.ProcessRequest(HttpContext context)
+   at System.Web.Mvc.ViewUserControl.ViewUserControlContainerPage.ProcessRequest(HttpContext context)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass1.<ProcessRequest>b__0()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.ProcessRequest(HttpContext context)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 9/10/2011 6:26:05 PM
+Event time (UTC): 9/10/2011 3:26:05 PM
+Event ID: 8712e167129945e69025a230713cb808
+Event sequence: 249
+Event occurrence: 2
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129601409833695664
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 3952
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.Web.HttpUnhandledException
+    Exception message: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+
+Inner exception information (level 1):
+    Exception type: System.ArgumentException
+    Exception message: Value cannot be null or empty.
+Parameter name: linkText
+
+Request information:
+    Request URL: http://localhost:3911/Anasayfa/?ModuleUrl=(9SVNE)%252FArticle%252FDetail~~UserKey%253DLorem-ipsum-dolor-sit-amet-20
+    Request path: /Anasayfa/
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 12
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.Mvc.ViewPage.ProcessRequest(HttpContext context)
+   at System.Web.Mvc.ViewUserControl.ViewUserControlContainerPage.ProcessRequest(HttpContext context)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass1.<ProcessRequest>b__0()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.ProcessRequest(HttpContext context)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+
+--------------------------------------------------------------------------------------------------------

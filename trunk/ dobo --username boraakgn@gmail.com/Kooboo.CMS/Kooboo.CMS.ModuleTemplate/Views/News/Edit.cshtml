@@ -1,0 +1,23 @@
+﻿@model Kooboo.CMS.ModuleTemplate.Models.News
+<h3 class="title">
+    @("Edit news".Localize())
+    @Html.ModuleHtml().ActionLink("Back to list".Localize(), "Index", ViewContext.RequestContext.AllRouteValues())</h3>
+<div class="common-form">
+    @using (Html.ModuleHtml().BeginForm())
+    {	 
+        @Html.ModuleHtml().ValidationSummary(true)
+        <fieldset>
+            <legend></legend>
+            <table>
+                <tbody>
+                    @Html.ModuleHtml().EditorFor(m => m.Title, new { @class = "medium" })
+                    @Html.ModuleHtml().EditorFor(m => m.Body)
+                </tbody>
+            </table>
+        </fieldset>
+        <p class="buttons">
+            <button type="submit">
+                @("Save".Localize())</button>
+        </p>
+    }
+</div>

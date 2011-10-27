@@ -1,0 +1,7 @@
+﻿<div>
+    <h3 class="title">@Html.Raw(ViewBag.References.Name ?? "")</h3>
+    <div class="content">   
+      @if(ViewBag.References.Image != null) {<div style="float:left; width:120px;"><img src="@Url.FrontUrl().ResizeImageUrl(ViewBag.References.Image,100,100)" /></div>}
+        <div style="100%">@Html.Raw(ViewBag.References.Description ?? "")</div>
+    </div>
+</div> 

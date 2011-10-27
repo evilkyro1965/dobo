@@ -1,0 +1,4 @@
+﻿
+1. To debugging a custom site, please copy the Cms_Data folder contains your custom site to module project. 
+
+2. Map "127.0.0.1" and "localhost" to the custom site.

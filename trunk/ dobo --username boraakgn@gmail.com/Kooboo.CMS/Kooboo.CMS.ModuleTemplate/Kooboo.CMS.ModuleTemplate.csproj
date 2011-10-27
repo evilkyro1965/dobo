@@ -1,0 +1,904 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D039327-3B12-4EBD-92D3-8EF2F36B7901}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kooboo.CMS.ModuleTemplate</RootNamespace>
+    <AssemblyName>Kooboo.CMS.ModuleTemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabases>false</PublishDatabases>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+    <DeployIisAppPath />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kooboo, Version=1.0.4211.31295, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Kooboo.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Content, Version=3.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Kooboo.CMS.Content.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Form, Version=3.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Kooboo.CMS.Form.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Sites, Version=3.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Kooboo.CMS.Sites.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InstallerController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\ScaffoldController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModuleInfo_Metadata.cs" />
+    <Compile Include="Models\News.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryPattern\IRepository.cs" />
+    <Compile Include="RepositoryPattern\NewsRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cms_Data\Account\Roles\Content manager.config" />
+    <Content Include="Cms_Data\Account\Roles\Developer.config" />
+    <Content Include="Cms_Data\Account\Users\admin.config" />
+    <Content Include="Cms_Data\Connect\Users\admin.config" />
+    <Content Include="Cms_Data\Contents\SampleSite\Data\Article.xml" />
+    <Content Include="Cms_Data\Contents\SampleSite\Data\Category.xml" />
+    <Content Include="Cms_Data\Contents\SampleSite\Data\_category_.xml" />
+    <Content Include="Cms_Data\Contents\SampleSite\Folders\Article\setting.config" />
+    <Content Include="Cms_Data\Contents\SampleSite\Folders\Category\setting.config" />
+    <Content Include="Cms_Data\Contents\SampleSite\Media\content_images\setting.config" />
+    <Content Include="Cms_Data\Contents\SampleSite\Media\downloads\setting.config" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Article\Create.ascx" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Article\Detail.ascx" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Article\Grid.ascx" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Article\List.ascx" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Article\Selectable.ascx" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Article\setting.config" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Article\Update.ascx" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Category\Create.ascx" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Category\Detail.ascx" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Category\Grid.ascx" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Category\List.ascx" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Category\Selectable.ascx" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Category\setting.config" />
+    <Content Include="Cms_Data\Contents\SampleSite\Schemas\Category\Update.ascx" />
+    <Content Include="Cms_Data\Contents\SampleSite\setting.config" />
+    <Content Include="Cms_Data\Sites\SampleSite\CustomErrors.config" />
+    <Content Include="Cms_Data\Sites\SampleSite\Files\favicon.ico" />
+    <Content Include="Cms_Data\Sites\SampleSite\pages\about\setting.config" />
+    <Content Include="Cms_Data\Sites\SampleSite\pages\Articles\Detail\setting.config" />
+    <Content Include="Cms_Data\Sites\SampleSite\pages\Articles\setting.config" />
+    <Content Include="Cms_Data\Sites\SampleSite\Setting.config" />
+    <Content Include="Cms_Data\Sites\SampleSite\templates\layouts\two_column\setting.config" />
+    <Content Include="Cms_Data\Sites\SampleSite\templates\layouts\two_column\template.cshtml" />
+    <Content Include="Cms_Data\Sites\SampleSite\templates\views\Article.Category\setting.config" />
+    <Content Include="Cms_Data\Sites\SampleSite\templates\views\Article.Category\template.cshtml" />
+    <Content Include="Cms_Data\Sites\SampleSite\templates\views\Article.Detail\setting.config" />
+    <Content Include="Cms_Data\Sites\SampleSite\templates\views\Article.Detail\template.cshtml" />
+    <Content Include="Cms_Data\Sites\SampleSite\templates\views\Article.List\setting.config" />
+    <Content Include="Cms_Data\Sites\SampleSite\templates\views\Article.List\template.cshtml" />
+    <Content Include="Cms_Data\Sites\SampleSite\templates\views\menu\setting.config" />
+    <Content Include="Cms_Data\Sites\SampleSite\templates\views\menu\template.cshtml" />
+    <Content Include="Cms_Data\Sites\SampleSite\Themes\Default\base.css" />
+    <Content Include="Cms_Data\Sites\SampleSite\Themes\Default\form.css" />
+    <Content Include="Cms_Data\Sites\SampleSite\Themes\Default\ie.css" />
+    <Content Include="Cms_Data\Sites\SampleSite\Themes\Default\images\header-bg.png" />
+    <Content Include="Cms_Data\Sites\SampleSite\Themes\Default\layout.css" />
+    <Content Include="Cms_Data\Sites\SampleSite\Themes\Default\reset.css" />
+    <Content Include="Cms_Data\Sites\SampleSite\Themes\Default\typography.css" />
+    <Content Include="Cms_Data\Sites\SampleSite\UrlKeyMaps.config" />
+    <Content Include="lib\Ionic.Zip.Reduced.dll" />
+    <Content Include="lib\Kooboo.CMS.Account.dll" />
+    <Content Include="lib\Kooboo.CMS.Account.pdb" />
+    <Content Include="lib\Kooboo.CMS.Content.dll" />
+    <Content Include="lib\Kooboo.CMS.Content.pdb" />
+    <Content Include="lib\Kooboo.CMS.Form.dll" />
+    <Content Include="lib\Kooboo.CMS.Form.pdb" />
+    <Content Include="lib\Kooboo.CMS.Search.dll" />
+    <Content Include="lib\Kooboo.CMS.Search.pdb" />
+    <Content Include="lib\Kooboo.CMS.Sites.dll" />
+    <Content Include="lib\Kooboo.CMS.Sites.pdb" />
+    <Content Include="lib\Kooboo.CMS.Sites.TemplateEngines.Razor.dll" />
+    <Content Include="lib\Kooboo.Connect.dll" />
+    <Content Include="lib\Kooboo.Connect.pdb" />
+    <Content Include="lib\Kooboo.dll" />
+    <Content Include="lib\Kooboo.pdb" />
+    <Content Include="lib\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="lib\System.Web.Helpers.dll" />
+    <Content Include="lib\System.Web.Mvc.dll" />
+    <Content Include="lib\System.Web.Razor.dll" />
+    <Content Include="lib\System.Web.WebPages.Deployment.dll" />
+    <Content Include="lib\System.Web.WebPages.dll" />
+    <Content Include="lib\System.Web.WebPages.Razor.dll" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Themes\Default\Images\arrow-down-white.png" />
+    <Content Include="Themes\Default\Images\arrow-down.png" />
+    <Content Include="Themes\Default\Images\arrow-up.png" />
+    <Content Include="Themes\Default\Images\button-hover.png" />
+    <Content Include="Themes\Default\Images\button.png" />
+    <Content Include="Views\News\Create.cshtml" />
+    <Content Include="Views\News\Edit.cshtml" />
+    <Content Include="Views\Scaffold\AdminScripts\extension\jquery.alerts.js" />
+    <Content Include="Views\Scaffold\AdminScripts\extension\jquery.extension.js" />
+    <Content Include="Views\Scaffold\AdminScripts\extension\jquery.form.min.js" />
+    <Content Include="Views\Scaffold\AdminScripts\extension\jquery.json-2.2.js" />
+    <Content Include="Views\Scaffold\AdminScripts\extension\jquery.numeric.js" />
+    <Content Include="Views\Scaffold\AdminScripts\extension\jquery.poshytip.min.js" />
+    <Content Include="Views\Scaffold\AdminScripts\extension\jquery.tableflex.js" />
+    <Content Include="Views\Scaffold\AdminScripts\extension\jquery.validator.overrided.js" />
+    <Content Include="Views\Scaffold\AdminScripts\extension\js.extension.js" />
+    <Content Include="Views\Scaffold\AdminScripts\flowmap\flowmap.js" />
+    <Content Include="Views\Scaffold\AdminScripts\flowmap\mapLine.js" />
+    <Content Include="Views\Scaffold\AdminScripts\flowmap\mapNode.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery-ui.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery-ui.min.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.filestyle.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.json-2.2.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.maskedinput-1.2.2.min.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.poshytip.min.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.prettyPhoto.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.treeview.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.validate-vsdoc.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.validate.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.validate.min.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Views\Scaffold\AdminScripts\jquery.watermarkinput.js" />
+    <Content Include="Views\Scaffold\AdminScripts\kooboo.cms.ui.js" />
+    <Content Include="Views\Scaffold\AdminScripts\kooboo.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\langs\en.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\license.txt" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advhr\css\advhr.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advhr\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advhr\js\rule.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advhr\rule.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advimage\css\advimage.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advimage\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advimage\image.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advimage\img\sample.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advimage\js\image.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advlink\css\advlink.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advlink\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advlink\js\advlink.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advlink\link.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advlist\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\advlist\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\autoresize\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\autoresize\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\autosave\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\autosave\langs\en.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\bbcode\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\directionality\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\emotions.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\js\emotions.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\example\dialog.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\example\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\example\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\example\img\example.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\example\js\dialog.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\example\langs\en.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\example\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\fullpage\css\fullpage.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\fullpage\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\fullpage\fullpage.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\fullpage\js\fullpage.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\iespell\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\inlinepopups\template.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\KoobooMediaLibrary\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\KoobooMediaLibrary\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\layer\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\layer\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\legacyoutput\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\legacyoutput\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\css\content.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\css\media.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\img\flash.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\img\flv_player.swf" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\img\quicktime.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\img\realmedia.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\img\shockwave.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\img\trans.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\img\windowsmedia.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\js\embed.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\js\media.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\media\media.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\noneditable\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\pagebreak\css\content.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\pagebreak\img\pagebreak.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\pagebreak\img\trans.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\paste\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\paste\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\paste\js\pastetext.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\paste\js\pasteword.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\paste\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\paste\pastetext.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\paste\pasteword.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\preview\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\preview\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\preview\example.html" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\preview\jscripts\embed.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\preview\preview.html" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\print\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\print\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\save\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\save\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\spellchecker\css\content.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\spellchecker\img\wline.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\style\css\props.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\style\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\style\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\style\js\props.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\style\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\style\props.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\tabfocus\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\cell.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\css\cell.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\css\row.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\css\table.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\js\cell.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\js\merge_cells.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\js\row.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\js\table.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\merge_cells.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\row.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\table\table.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\template\blank.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\template\css\template.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\template\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\template\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\template\js\template.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\template\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\template\template.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\visualchars\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\wordcount\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\wordcount\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\del.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\about.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\anchor.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\charmap.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\color_picker.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\editor_template.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\editor_template_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\image.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\img\icons.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\js\about.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\js\anchor.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\js\charmap.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\js\color_picker.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\js\image.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\js\link.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\js\source_editor.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\langs\en.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\langs\en_dlg.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\link.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\default\content.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\default\dialog.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\default\img\attachment.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\default\ui.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\advanced\source_editor.htm" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\simple\editor_template.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\simple\editor_template_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\simple\img\icons.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\simple\langs\en.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\simple\skins\default\content.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\simple\skins\default\ui.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\simple\skins\o2k7\content.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\tiny_mce.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\tiny_mce_popup.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\tiny_mce_src.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\utils\editable_selects.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\utils\form_utils.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\utils\mctabs.js" />
+    <Content Include="Views\Scaffold\AdminScripts\tiny_mce\utils\validate.js" />
+    <Content Include="Views\Scaffold\AdminScripts\ui.dropdownchecklist-1.1-min.js" />
+    <Content Include="Views\Scaffold\AdminScripts\ui.dropdownchecklist-min.js" />
+    <Content Include="Views\Scaffold\AdminScripts\yardiTip\ellipsis.xml" />
+    <Content Include="Views\Scaffold\AdminScripts\yardiTip\images\arrow_down.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\yardiTip\images\arrow_top.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\yardiTip\images\arrow_top_yellow.gif" />
+    <Content Include="Views\Scaffold\AdminScripts\yardiTip\yardiTip.css" />
+    <Content Include="Views\Scaffold\AdminScripts\yardiTip\yardiTip.js" />
+    <Content Include="Views\Scaffold\AdminStyles\base.css" />
+    <Content Include="Views\Scaffold\AdminStyles\common.css" />
+    <Content Include="Views\Scaffold\AdminStyles\form.css" />
+    <Content Include="Views\Scaffold\AdminStyles\ie.css" />
+    <Content Include="Views\Scaffold\AdminStyles\images\add.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\arrow-down.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\arrow-up.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\arrow-white.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\arrow.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\arrow1.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\arrow2.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\arrow3.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\arrow4.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\arrow5.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\arrow_down.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\big-button.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\button-hover.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\button.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\button2.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\choose-file.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\close.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\command-bg.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\create.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\document.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\dropdown.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\dropdown_active.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\email.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\ascx.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\aspx.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\bmp.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\config.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\cs.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\css.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\CSS.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\db.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\folder.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\Folder.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\gif.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\GIF.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\htm.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\html.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\ico.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\jpg.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\jpg.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\js.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\JS.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\notype.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\pdf.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\png.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\PNG.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\rar.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\rec.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\sitemap.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\txt.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\unknow.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\unknown.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\upwards.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\vb.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\xml.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\xsd.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\xslt.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\zip.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\FileExtensionIcon\zip.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\folder-active.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\folder.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\greybtn.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\header-bg.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\header_background.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\help.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\help.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\help_bl.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\help_br.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\help_light.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\help_light.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\help_pointer.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\help_tl.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\help_top.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\help_tr.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\hl.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\add.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\cancel.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\copy.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\cross.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\csharp.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\database.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\delete.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\design.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\document.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\edit.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\export.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_3gp.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_7z.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_ace.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_ai.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_aif.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_aiff.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_amr.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_asf.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_asx.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_bat.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_bin.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_bmp.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_bup.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_cab.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_cbr.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_cda.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_cdl.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_cdr.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_chm.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_dat.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_divx.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_dll.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_dmg.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_doc.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_dss.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_dvf.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_dwg.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_eml.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_eps.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_exe.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_fla.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_flv.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_gif.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_gz.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_hqx.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_htm.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_html.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_ifo.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_indd.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_iso.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_jar.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_jpeg.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_jpg.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_lnk.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_log.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_m4a.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_m4b.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_m4p.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_m4v.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_mcd.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_mdb.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_mid.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_mov.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_mp3.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_mp4.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_mpeg.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_mpg.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_msi.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_mswmm.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_ogg.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_pdf.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_png.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_pps.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_ps.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_psd.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_pst.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_ptb.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_pub.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_qbb.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_qbw.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_qxd.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_ram.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_rar.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_rm.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_rmvb.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_rtf.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_rule.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_sea.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_ses.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_sit.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_sitx.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_ss.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_swf.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_tgz.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_thm.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_tif.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_tmp.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_torrent.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_ttf.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_txt.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_unknown.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_vcd.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_vob.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_wav.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_wma.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_wmv.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_wps.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_xls.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_xpi.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\file_extension\file_zip.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\folder-add.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\folder-back.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\folder-open.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\folder.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\go.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\import.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\localize.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\move-down.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\move-up.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\page_static.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\preview.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\redo-disabled.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\redo.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\relation.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\remove.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\revert.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\save.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\search.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\sites.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\tick.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\undo-disabled.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\undo.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\upload.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\version.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\icons\view.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\loading.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\loading_bar.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\menu.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\remove.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\sort_asc.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\sort_desc.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\images\switch-active.png" />
+    <Content Include="Views\Scaffold\AdminStyles\images\switch.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jAlert\images\help.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jAlert\images\important.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jAlert\images\info.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jAlert\images\title.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jAlert\jquery.alerts.css" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\css\prettyPhoto.css" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\backgrounds\bodyBackground.jpg" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\backgrounds\checkmark.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\fullscreen\high.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\fullscreen\huge.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\fullscreen\wide.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\thumbnails\flash-logo.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.imageViewer\images\thumbnails\quicktime-logo.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.poshytip\tip-twitter\tip-twitter.css" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.poshytip\tip-twitter\tip-twitter_arrows.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jquery.tip\tip-darkgray.css" />
+    <Content Include="Views\Scaffold\AdminStyles\jquery.tip\tip-darkgray.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jquery.tip\tip-darkgray_arrows.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\ajax-loader.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\file.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\folder-closed.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\folder.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\minus.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\plus.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\treeview-black-line.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\treeview-black.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\treeview-default-line.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\treeview-default.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\treeview-famfamfam-line.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\treeview-famfamfam.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\treeview-gray-line.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\treeview-gray.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\treeview-red-line.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\images\treeview-red.gif" />
+    <Content Include="Views\Scaffold\AdminStyles\jQuery.treeview\jquery.treeview.css" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\smoothness\jquery-ui-1.8.5.custom.css" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Views\Scaffold\AdminStyles\jQueryUI\ui-lightness\jquery-ui-1.8.4.all.css" />
+    <Content Include="Views\Scaffold\AdminStyles\layout.css" />
+    <Content Include="Views\Scaffold\AdminStyles\pager.css" />
+    <Content Include="Views\Scaffold\AdminStyles\reset.css" />
+    <Content Include="Views\Scaffold\AdminStyles\typography.css" />
+    <Content Include="Views\Scaffold\AdminStyles\validation.css" />
+    <Content Include="Views\Scaffold\Images\logo.png" />
+    <Content Include="Views\Scaffold\AjaxForm.Script.ascx" />
+    <Content Include="Views\Scaffold\Header.ascx" />
+    <Content Include="Views\Scaffold\LastReady.Script.ascx" />
+    <Content Include="Views\Scaffold\Master.Script.ascx" />
+    <Content Include="Views\Scaffold\Menu.ascx" />
+    <Content Include="Views\Admin\EditorTemplates\ModuleSettings.cshtml" />
+    <Content Include="Views\Admin\EditorTemplates\Entry.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\Installer\Install.cshtml" />
+    <Content Include="Views\Installer\Uninstall.cshtml" />
+    <Content Include="Cms_Data\Sites\SampleSite\pages\News\setting.config" />
+    <None Include="Cms_Data\Sites\SampleSite\Themes\Default\Theme.rule" />
+    <Content Include="Views\Article\Categories.cshtml" />
+    <Content Include="Views\Article\List.cshtml" />
+    <None Include="Views\Scaffold\AdminStyles\images\menu.psd" />
+    <None Include="Views\Scaffold\MenuItem.cshtml" />
+    <Content Include="Menu.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Views\Scaffold\Sidebar.cshtml" />
+    <Content Include="Views\Scaffold\MessageBox.ascx" />
+    <Content Include="Views\Scaffold\Styles\base.css" />
+    <Content Include="Views\Scaffold\Styles\form.css" />
+    <Content Include="Views\Scaffold\Styles\ie.css" />
+    <Content Include="Views\Scaffold\Styles\images\header-bg.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Themes\Default\1_style.css" />
+    <None Include="Themes\Default\Theme.rule" />
+    <Content Include="tutorials.txt" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Menu.cshtml" />
+    <Content Include="Views\Home\Detail.cshtml" />
+    <None Include="Views\Scaffold\Admin.cshtml" />
+    <None Include="Views\Scaffold\Index.cshtml" />
+    <None Include="Views\Shared\EditorTemplates\Float.cshtml" />
+    <None Include="Views\Shared\EditorTemplates\Int32.cshtml" />
+    <None Include="Views\Shared\EditorTemplates\MultilineText.cshtml" />
+    <None Include="Views\Shared\EditorTemplates\Password.cshtml" />
+    <None Include="Views\Shared\EditorTemplates\RadioButtonList.cshtml" />
+    <None Include="Views\Shared\EditorTemplates\String.cshtml" />
+    <Content Include="Views\Scaffold\Styles\layout.css" />
+    <Content Include="Views\Scaffold\Styles\reset.css" />
+    <Content Include="Views\Scaffold\Styles\typography.css" />
+    <Content Include="Views\Shared\DisplayTemplates\Boolean.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\String.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Shared\EditorTemplates\Boolean.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\DropDownList.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\File.cshtml" />
+    <Content Include="Views\Shared\grid.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Tinymce.cshtml" />
+    <Content Include="WebResources.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Cms_Data\Contents\SampleSite\Folders\Article\~contents\" />
+    <Folder Include="Cms_Data\Contents\SampleSite\Folders\Category\~contents\" />
+    <Folder Include="Cms_Data\Sites\SampleSite\Scripts\" />
+    <Folder Include="Cms_Data\Sites\SampleSite\Users\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="routes.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="module.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\Settings.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\AjaxView.cshtml" />
+    <Content Include="Views\Home\Categories.cshtml" />
+    <Content Include="Views\Home\PartialRender.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349C5851-65DF-11DA-9384-00065B846F21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>6592</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)lib\*.*" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

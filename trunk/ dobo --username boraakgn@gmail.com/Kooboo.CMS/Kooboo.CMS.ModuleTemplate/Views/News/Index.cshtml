@@ -1,0 +1,8 @@
+﻿@model System.Collections.Generic.IEnumerable<Kooboo.CMS.ModuleTemplate.Models.News>
+<h3 class="title">
+    <span>@("News".Localize())</span></h3>
+<div class="command">
+    @Html.ModuleHtml().ActionLink("Create".Localize(), "Create", ViewContext.RequestContext.AllRouteValues(), new RouteValueDictionary(new { @class = "button", title = "Create news".Localize() }))
+    @Html.ModuleHtml().ActionLink("Delete".Localize(), "Delete", ViewContext.RequestContext.AllRouteValues(), new RouteValueDictionary(new { @class = "button deleteCommand" }))
+</div>
+@Html.ModuleHtml().GridForModel()

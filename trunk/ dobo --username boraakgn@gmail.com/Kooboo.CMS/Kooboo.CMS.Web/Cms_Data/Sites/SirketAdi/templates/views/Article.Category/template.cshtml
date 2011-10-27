@@ -1,0 +1,11 @@
+﻿ <div class="block">
+        <h4 class="title">@("Category".Label())</h4>
+   <ul class="list">
+     @foreach (var item in ViewBag.Categories){
+     <li>
+       @Html.FrontHtml().PageLink(item.Title, "Articles", new { UserKey = item.UserKey})
+     </li>
+     }
+   </ul>
+</div>
+

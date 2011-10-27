@@ -1,0 +1,49 @@
+﻿<br />
+<div style="width: 700px; margin: 5px">
+    @foreach (var item in ViewBag.Products)
+    {
+  		var categories = Kooboo.CMS.Sites.View.ContentHelper.GetCategories(item.FolderName, item.UUID);
+        if (categories.Count > 0)
+        {
+            bool inParentCategory = false;
+            bool inCategory = false;
+            var category = categories[0];
+            if (category.Display == @Page_Context.Current.PageRequestContext.AllQueryString["UserKey"])
+            {
+                inCategory = true;
+            }
+            var categoryContent = category.Contents.FirstOrDefault();
+            if (!inCategory && categoryContent != null)
+            {
+                var parentCategories = Kooboo.CMS.Sites.View.ContentHelper.GetCategories(categoryContent.FolderName, categoryContent.UUID);
+                if (parentCategories.Count > 0)
+                {
+                    var parentCategory = parentCategories[0];
+                    if (parentCategory.Display == @Page_Context.Current.PageRequestContext.AllQueryString["UserKey"])
+                    {
+                        inParentCategory = true;
+                    }
+                }
+            }
+
+            if (!inParentCategory && !inCategory)
+            {
+                continue;
+            }
+        }
+  <div style="float: left; border-width:1px; margin-top:3px; border-color:gray; margin-right:3px; border-style:solid; width: 220px; padding-bottom: 20px">
+    <div style="padding-right: 20px; margin-left:10px; margin-top:4px; float: left; height: 120">
+                <a class='title' href='@Url.FrontUrl().PageUrl("Anasayfa/ProductCategories/ProductList/UrunDetay",new { UserKey = item.UserKey})'>
+                    <img title="@item.Name" src="@Url.FrontUrl().ResizeImageUrl(item.Image, 200, 250)"/></a>
+      <br />
+      <b><a href='@Url.FrontUrl().PageUrl("Anasayfa/ProductCategories/ProductList/UrunDetay",new { UserKey = item.UserKey})'>
+        @item.Name</a></b>
+      <br />
+      <b>Fiyat:</b> @item.Price TL
+            </div>
+        </div>
+    }
+</div>
+<div class="pager">
+    @Html.FrontHtml().Pager(ViewBag.Products)
+<div>

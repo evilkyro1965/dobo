@@ -1,0 +1,38 @@
+﻿@model Kooboo.CMS.ModuleTemplate.Models.ModuleInfo_Metadata
+<h3 class="title">
+    Settings</h3>
+<div class="common-form">
+    @{Html.ModuleHtml().BeginForm();}
+    <div id="setting-tab">
+        <ul class="tabs clearfix">
+            <li class="current"><a href="#basicInfo">@("Basic".Localize())</a></li>
+            <li><a href="#settingsInfo">@("Settings".Localize())</a></li>
+            <li><a href="#entryInfo">@("Default entry".Localize())</a></li>
+        </ul>
+        <div class="tab-content" id="basicInfo">
+            <fieldset>
+                <table>
+                    <tbody>
+                        @Html.ModuleHtml().HiddenFor(m => m.ModuleName)
+                        @Html.ModuleHtml().DisplayFor(m => m.ModuleName)
+                        @Html.ModuleHtml().DisplayFor(m => m.Version)
+                        @Html.ModuleHtml().DisplayFor(m => m.KoobooCMSVersion)
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
+        <div class="tab-content" id="settingsInfo">
+            @Html.ModuleHtml().EditorFor(m => m.Settings)
+        </div>
+        <div class="tab-content" id="entryInfo">
+            @Html.ModuleHtml().EditorFor(m => m.Settings.Entry)
+        </div>
+    </div>
+    <p class="buttons">
+        <button type="submit">
+            @("Save".Localize())</button>
+    </p>
+    @{Html.ModuleHtml().EndForm();}
+</div>
+<script type="text/javascript">    $(function () { $('#setting-tab').koobooTab(); });
+</script>

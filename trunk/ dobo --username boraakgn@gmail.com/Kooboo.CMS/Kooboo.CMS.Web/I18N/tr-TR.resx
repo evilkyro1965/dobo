@@ -1,0 +1,2524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Powered by Kooboo CMS" xml:space="preserve">
+    <value>İçerik Yönetim Sistemi</value>
+  </data>
+  <data name="Sign in - Kooboo CMS" xml:space="preserve">
+    <value>Giriş yap</value>
+  </data>
+  <data name="About kooboo CMS" xml:space="preserve">
+    <value>İçerik yönetim sistemi hakkında</value>
+  </data>
+  <data name="This Enterprise CMS system saves time and allows you the freedom that you need to develop high-quality websites with a personal touch. We've streamlined the web development process." xml:space="preserve">
+    <value>Bu içerik yönetim sistemi site yapmak için zaman kazandırır ve yüksek kalıteli web siteleri yapmak için özgürlük sağlar.</value>
+  </data>
+  <data name="For a list of new added features and a quick start guide,&lt;br /&gt;See: &lt;a href=&quot;http://www.kooboo.com/documents&quot; target=&quot;_blank&quot;&gt;http://www.kooboo.com/documents&lt;/a&gt;" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Sign in to the CMS and create your first Kooboo website, default login is: &lt;strong&gt;admin/admin&lt;/strong&gt;" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Sign in" xml:space="preserve">
+    <value>Giriş yap</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Kullanıcı adı</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Zorunlu</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Şifre</value>
+  </data>
+  <data name="The Remember me field is required." xml:space="preserve">
+    <value>Beni hatırla alanı zorunludur.</value>
+  </data>
+  <data name="Remember me" xml:space="preserve">
+    <value>Beni hatırla</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Başla</value>
+  </data>
+  <data name=" - Kooboo CMS" xml:space="preserve">
+    <value> - İçerik yönetim sistemi</value>
+  </data>
+  <data name="CMS &gt; Site Manager" xml:space="preserve">
+    <value>İçerik Yönetim Sistemi &gt; Site Yöneticisi</value>
+  </data>
+  <data name="Site Manager" xml:space="preserve">
+    <value>Site Yöneticisi</value>
+  </data>
+  <data name="Content Manager" xml:space="preserve">
+    <value>İçeri Yönetimi</value>
+  </data>
+  <data name="Change Password" xml:space="preserve">
+    <value>Şifre Değiştir</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Kullanıcılar</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roller</value>
+  </data>
+  <data name="Modules" xml:space="preserve">
+    <value>Modüller</value>
+  </data>
+  <data name="Sign Out" xml:space="preserve">
+    <value>Çıkış Yap</value>
+  </data>
+  <data name="please wait..." xml:space="preserve">
+    <value>lütfen bekleyin...</value>
+  </data>
+  <data name="Create a new site" xml:space="preserve">
+    <value>Yeni site yarat</value>
+  </data>
+  <data name="Create a sub site" xml:space="preserve">
+    <value>Yeni alt site yarat</value>
+  </data>
+  <data name="Import site" xml:space="preserve">
+    <value>Web sitesini içeri aktar</value>
+  </data>
+  <data name="Import sites" xml:space="preserve">
+    <value>Web sitelerini içeri aktar</value>
+  </data>
+  <data name="Are you sure you want to delete this site?" xml:space="preserve">
+    <value>Bu siteyi silmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>Üst öğe</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Karşıya yükle</value>
+  </data>
+  <data name="Go to site cluster" xml:space="preserve">
+    <value>Web sitesi kümesine gidin</value>
+  </data>
+  <data name="The bad netword or some unknow reasons cause timeout, do you want to reload the page." xml:space="preserve">
+    <value>Sayfa zaman aşımına uğradı, sayfayı tekrar yüklemek ister misiniz?</value>
+  </data>
+  <data name="Page selector" xml:space="preserve">
+    <value>Sayfa seçici</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>İçeri aktar</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Kopyala</value>
+  </data>
+  <data name="There is an error occurs" xml:space="preserve">
+    <value>Bir hata oluştu</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Tümü</value>
+  </data>
+  <data name="The site name" xml:space="preserve">
+    <value>Site ismi</value>
+  </data>
+  <data name="A name cannot contain a space or any of the following characters:\/:*?&lt;&gt;|~" xml:space="preserve">
+    <value>Bir isim boşluk karakteri ve şu diğer karakterleri içeremez:\/:*?&lt;&gt;|~</value>
+  </data>
+  <data name="'Name' is invalid." xml:space="preserve">
+    <value>'Ad' alanı geçersiz.</value>
+  </data>
+  <data name="The Name field is required." xml:space="preserve">
+    <value>İsim alanı zorunludur.</value>
+  </data>
+  <data name="Database name" xml:space="preserve">
+    <value>Veritabanı adı</value>
+  </data>
+  <data name="The name of your database to be created" xml:space="preserve">
+    <value>Yaratılacak veri tabanının adı</value>
+  </data>
+  <data name="'Content database' is invalid." xml:space="preserve">
+    <value>'İçerik veritabanı' geçersiz.</value>
+  </data>
+  <data name="Only alphameric and numeric are allowed in the field name" xml:space="preserve">
+    <value>Alan adında sadece alfanümerik karakterler geçerlidir</value>
+  </data>
+  <data name="Display name" xml:space="preserve">
+    <value>Görünüm Adı</value>
+  </data>
+  <data name="The site display name" xml:space="preserve">
+    <value>Site görünüm adı</value>
+  </data>
+  <data name="Culture" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="Your front site culture, this is used to display currency,  &lt;br/&gt;date, number or other culture related content" xml:space="preserve">
+    <value>Sitenin dili, para birimi,  &lt;br/&gt;tarih, sayı veya diğer dile bağlı içerikleri göstermek için kullanılır</value>
+  </data>
+  <data name="Domains" xml:space="preserve">
+    <value>Domainler</value>
+  </data>
+  <data name="Your website domains" xml:space="preserve">
+    <value>Web sitesi domainlerin</value>
+  </data>
+  <data name="SitePath" xml:space="preserve">
+    <value>Site Yolu</value>
+  </data>
+  <data name="The virtual path of your website.  &lt;br/&gt;You may create a subsite eg. www.kooboo.com/china, &lt;b&gt;china&lt;/b&gt; is the SitePath." xml:space="preserve">
+    <value>Web sitenizin sanal yolu.  &lt;br/&gt;ör. www.site.com/altsite gibi bir alt site yaratabilirsiniz, &lt;b&gt;altsite&lt;/b&gt; Site Yoludur.</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Versiyon</value>
+  </data>
+  <data name="Give your wesite a version number, it can be any number as you like" xml:space="preserve">
+    <value>Web sitesinin versiyon numarasını yazın</value>
+  </data>
+  <data name="Mode" xml:space="preserve">
+    <value>Mod</value>
+  </data>
+  <data name="Use &lt;b&gt;debug&lt;/b&gt; on development and  use &lt;b&gt;release&lt;/b&gt; on live site. &lt;br/&gt;&lt;b&gt;Release&lt;/b&gt; mode utilizes CSS/JS compression and other techniques" xml:space="preserve">
+    <value>Geliştirme aşamasında &lt;b&gt;debug&lt;/b&gt; ve canlı sistemde &lt;b&gt;yayın&lt;/b&gt; seçiniz. &lt;br/&gt;&lt;b&gt;Yayın&lt;/b&gt; CSS/JS sıkıştırması ve diğer teknikleri uygular.</value>
+  </data>
+  <data name="Debug" xml:space="preserve">
+    <value>Debug</value>
+  </data>
+  <data name="Release" xml:space="preserve">
+    <value>Yayın</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="Start - Sitemap" xml:space="preserve">
+    <value>Başla - Site haritası</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Görüntüle</value>
+  </data>
+  <data name="Copy Page" xml:space="preserve">
+    <value>Sayfayı Kopyala</value>
+  </data>
+  <data name="Move To" xml:space="preserve">
+    <value>Taşı</value>
+  </data>
+  <data name="Move Page" xml:space="preserve">
+    <value>Sayfayı Taşı</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="Dynamic page" xml:space="preserve">
+    <value>Dinamik sayfa</value>
+  </data>
+  <data name="Static page" xml:space="preserve">
+    <value>Sabit sayfa</value>
+  </data>
+  <data name="Parent page" xml:space="preserve">
+    <value>Bağlı olduğu sayfa</value>
+  </data>
+  <data name="In menu" xml:space="preserve">
+    <value>Menüde gözüksün</value>
+  </data>
+  <data name="Are you sure you want to delete this page?" xml:space="preserve">
+    <value>Bu sayfayı silmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="(Offline)" xml:space="preserve">
+    <value>(Çevirmdışı)</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Sistem</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="Site users" xml:space="preserve">
+    <value>Site Kullanıcıları</value>
+  </data>
+  <data name="Custom errors" xml:space="preserve">
+    <value>Özel hatalar</value>
+  </data>
+  <data name="Url redirects" xml:space="preserve">
+    <value>Url adresi yönlendirmeleri</value>
+  </data>
+  <data name="Robots.txt" xml:space="preserve">
+    <value>Robots.txt</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>Geliştirme</value>
+  </data>
+  <data name="Layouts" xml:space="preserve">
+    <value>Sayfa düzenleri</value>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>Görünümler</value>
+  </data>
+  <data name="Labels" xml:space="preserve">
+    <value>Etiketler</value>
+  </data>
+  <data name="Scripts" xml:space="preserve">
+    <value>Scriptler</value>
+  </data>
+  <data name="Themes" xml:space="preserve">
+    <value>Temalar</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>Dosyalar</value>
+  </data>
+  <data name="Action mapping" xml:space="preserve">
+    <value>Aksiyon adreslemesi</value>
+  </data>
+  <data name="Extension" xml:space="preserve">
+    <value>Genişletme</value>
+  </data>
+  <data name="Plug-ins" xml:space="preserve">
+    <value>Eklentiler</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>Sayfalar</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>Veritabanı</value>
+  </data>
+  <data name="Content type" xml:space="preserve">
+    <value>İçerik tipi</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>İçerikler</value>
+  </data>
+  <data name="Media Library" xml:space="preserve">
+    <value>Medya Kütüphanesi</value>
+  </data>
+  <data name="Kooboo CMS" xml:space="preserve">
+    <value>İçerik Yönetim Sistemi</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Yeni yarat</value>
+  </data>
+  <data name="Create user" xml:space="preserve">
+    <value>Kullanıcı oluştur</value>
+  </data>
+  <data name="Please select schemas!" xml:space="preserve">
+    <value>Lütfen şemaları seçin!</value>
+  </data>
+  <data name="Are you sure you want to delete this items?" xml:space="preserve">
+    <value>Bu öğeleri silmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="Select All" xml:space="preserve">
+    <value>Hepsini Seç</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="Are you sure you want to delete these items? " xml:space="preserve">
+    <value>Bu öğeleri silmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="Please select items" xml:space="preserve">
+    <value>Lütfen öğeleri seçin</value>
+  </data>
+  <data name="Create role" xml:space="preserve">
+    <value>Rol oluştur</value>
+  </data>
+  <data name="Add sub site" xml:space="preserve">
+    <value>Alt site ekle</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Dışa aktar</value>
+  </data>
+  <data name="Take offline" xml:space="preserve">
+    <value>Çevrimdışı yap</value>
+  </data>
+  <data name="Take online" xml:space="preserve">
+    <value>Çevrimiçi yap</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Görünüm</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>Boş</value>
+  </data>
+  <data name="ViewType" xml:space="preserve">
+    <value>Görünüm Tipi</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>Dosya</value>
+  </data>
+  <data name="Include" xml:space="preserve">
+    <value>İçer</value>
+  </data>
+  <data name="Exclude" xml:space="preserve">
+    <value>Yoksay</value>
+  </data>
+  <data name="Create New" xml:space="preserve">
+    <value>Yeni yarat</value>
+  </data>
+  <data name="Override" xml:space="preserve">
+    <value>Ez</value>
+  </data>
+  <data name="The Override field is required." xml:space="preserve">
+    <value>Öncekini ez alanı zorunludur.</value>
+  </data>
+  <data name="Please upload zip file" xml:space="preserve">
+    <value>Lütfen zip dosyası yükleyin</value>
+  </data>
+  <data name="Localize" xml:space="preserve">
+    <value>Lokalize</value>
+  </data>
+  <data name=" - Database - Kooboo CMS" xml:space="preserve">
+    <value> - Veri tabanı - İçerik yönetim sistemi</value>
+  </data>
+  <data name="1. Create database" xml:space="preserve">
+    <value>1. Veri tabanı</value>
+  </data>
+  <data name="Create a library to store your contents" xml:space="preserve">
+    <value>İçeriklerinizi saklamak için bir kütüphane oluşturun</value>
+  </data>
+  <data name="2. Customize setting" xml:space="preserve">
+    <value>2. Ayarları düzenle</value>
+  </data>
+  <data name="Create folders or content types with custom fields" xml:space="preserve">
+    <value>Klasör ve içerik tipini özel alanlarla yarat</value>
+  </data>
+  <data name="3. Add content " xml:space="preserve">
+    <value>3. İçerik ekle</value>
+  </data>
+  <data name="Create text content &lt;br /&gt; or upload media files" xml:space="preserve">
+    <value>Metin içeriği yarat &lt;br /&gt; ya da medya dosyası yükle</value>
+  </data>
+  <data name="Create Database" xml:space="preserve">
+    <value>Veritabanı Yarat</value>
+  </data>
+  <data name="Add content type" xml:space="preserve">
+    <value>İçerik tipi ekle</value>
+  </data>
+  <data name="Add TextFolder" xml:space="preserve">
+    <value>Metin dosyası ekle</value>
+  </data>
+  <data name="Add text folder" xml:space="preserve">
+    <value>Metin dosyası ekle</value>
+  </data>
+  <data name="Add text content" xml:space="preserve">
+    <value>Metin içeriği ekle</value>
+  </data>
+  <data name="Add media files" xml:space="preserve">
+    <value>Medya tipi ekle</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Uygun</value>
+  </data>
+  <data name="Not avaliable" xml:space="preserve">
+    <value>Uygun değil</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Bitti</value>
+  </data>
+  <data name="Custom template" xml:space="preserve">
+    <value>Özel şablon</value>
+  </data>
+  <data name="The Custom template field is required." xml:space="preserve">
+    <value>Özel şablon alanı zorunludur.</value>
+  </data>
+  <data name="Userkey hyphens" xml:space="preserve">
+    <value>Userkey tireleri</value>
+  </data>
+  <data name="Enable versioning" xml:space="preserve">
+    <value>Versiyonlamayı etkinleştir</value>
+  </data>
+  <data name="The Enable versioning field is required." xml:space="preserve">
+    <value>Versiyonlamayı Etkinleştir alanı zorunludur.</value>
+  </data>
+  <data name="Are you sure you want to delete this repository?" xml:space="preserve">
+    <value>Bu depoyu silmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="Please select content types!" xml:space="preserve">
+    <value>Lütfen içerik tipi seçin!</value>
+  </data>
+  <data name="Reset templates" xml:space="preserve">
+    <value>Şablonları resetle</value>
+  </data>
+  <data name="Please content types!" xml:space="preserve">
+    <value>Lütfen içerik tipi!</value>
+  </data>
+  <data name="Are you sure you want to reset the templates of this item?" xml:space="preserve">
+    <value>Bu öğenin şablonunu resetlemek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="Relations" xml:space="preserve">
+    <value>İlişkiler</value>
+  </data>
+  <data name="New Name" xml:space="preserve">
+    <value>Yeni Ad</value>
+  </data>
+  <data name="'New Name' is invalid." xml:space="preserve">
+    <value>'Yeni Ad' alanı geçersiz.</value>
+  </data>
+  <data name="Edit content type" xml:space="preserve">
+    <value>İçerik tipini düzenle</value>
+  </data>
+  <data name="The TemplateBuildByMachine field is required." xml:space="preserve">
+    <value>TemplateBuildByMachine alanı zorunludur.</value>
+  </data>
+  <data name="Some Templates have been manually Edited !&lt;p&gt;Are you sure you want to continue to reset all template?&lt;/p&gt;" xml:space="preserve">
+    <value>Bazı şablonlar elle değiştirildi!&lt;p&gt;Devam edip bütün şablonları reselemek istediğinizden emin misiniz?&lt;/p&gt;</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Bitir</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>Temel</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Gelişmiş</value>
+  </data>
+  <data name="Validation" xml:space="preserve">
+    <value>Validasyon</value>
+  </data>
+  <data name="Selection value" xml:space="preserve">
+    <value>Seçilen değer</value>
+  </data>
+  <data name="Label" xml:space="preserve">
+    <value>Etiket</value>
+  </data>
+  <data name="ControlType" xml:space="preserve">
+    <value>Kontrol tipi</value>
+  </data>
+  <data name="DataType" xml:space="preserve">
+    <value>Data tipi</value>
+  </data>
+  <data name="Default value" xml:space="preserve">
+    <value>Varsayılan değer</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Sırala</value>
+  </data>
+  <data name="Primary field" xml:space="preserve">
+    <value>Birincil alan</value>
+  </data>
+  <data name="Content list page" xml:space="preserve">
+    <value>İçerik liste sayfası</value>
+  </data>
+  <data name="Tooltip" xml:space="preserve">
+    <value>Etiket</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Uzunluk</value>
+  </data>
+  <data name="AllowNull" xml:space="preserve">
+    <value>Boş Olabilir</value>
+  </data>
+  <data name="Modifiable" xml:space="preserve">
+    <value>Güncellenebilir</value>
+  </data>
+  <data name="Indexable" xml:space="preserve">
+    <value>İndexlenebilir</value>
+  </data>
+  <data name="Selection values" xml:space="preserve">
+    <value>Seçilen değerler</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Yazı</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Değer</value>
+  </data>
+  <data name="Validation rules" xml:space="preserve">
+    <value>Validasyon kuralları</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Tip</value>
+  </data>
+  <data name="Star" xml:space="preserve">
+    <value>Yıldız</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>Biter</value>
+  </data>
+  <data name="Pattern" xml:space="preserve">
+    <value>Patern</value>
+  </data>
+  <data name="Min" xml:space="preserve">
+    <value>Minimum</value>
+  </data>
+  <data name="Max" xml:space="preserve">
+    <value>Maksimim</value>
+  </data>
+  <data name="Error message" xml:space="preserve">
+    <value>Hata mesajı</value>
+  </data>
+  <data name="This name is being used by other column." xml:space="preserve">
+    <value>Bu isim başka kolon tarafından kullanılıyor.</value>
+  </data>
+  <data name="Are you sure you want to leave current page" xml:space="preserve">
+    <value>Bu sayfadan ayrılmak istediğinizden emin misiniz?</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Yükle</value>
+  </data>
+  <data name="Module installation" xml:space="preserve">
+    <value>Modül yüklemesi</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Kaldır</value>
+  </data>
+  <data name="Install module" xml:space="preserve">
+    <value>Modül yükle</value>
+  </data>
+  <data name="Run module installation" xml:space="preserve">
+    <value>Modül yüklemesini çalıştır</value>
+  </data>
+  <data name="Module name" xml:space="preserve">
+    <value>Modül ismi</value>
+  </data>
+  <data name="'Module name' is invalid." xml:space="preserve">
+    <value>'Modül ismi' geçersiz.</value>
+  </data>
+  <data name="The Module name field is required." xml:space="preserve">
+    <value>Modül adı alanı zorunludur.</value>
+  </data>
+  <data name="Module file" xml:space="preserve">
+    <value>Modül dosyası</value>
+  </data>
+  <data name="The Module file field is required." xml:space="preserve">
+    <value>Modül dosyası alanı zorunludur.</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>İleri</value>
+  </data>
+  <data name="Edit page" xml:space="preserve">
+    <value>Sayfayı düzenle</value>
+  </data>
+  <data name="Back to list" xml:space="preserve">
+    <value>Listeye geri dön</value>
+  </data>
+  <data name="Designer" xml:space="preserve">
+    <value>Tasarım</value>
+  </data>
+  <data name="Navigation" xml:space="preserve">
+    <value>Navigasyon</value>
+  </data>
+  <data name="HTML meta" xml:space="preserve">
+    <value>HTML metası</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>İzin</value>
+  </data>
+  <data name="URL route" xml:space="preserve">
+    <value>URL adresi rotası</value>
+  </data>
+  <data name="DataRules" xml:space="preserve">
+    <value>Data kuralları</value>
+  </data>
+  <data name="Loading..." xml:space="preserve">
+    <value>Yükleniyor...</value>
+  </data>
+  <data name="Are you sure you want to leave page? All your changes might be lost." xml:space="preserve">
+    <value>Bu sayfadan ayrılmak istediğinizden emin misiniz? Tüm değişiklikleriniz kaybolabilir.</value>
+  </data>
+  <data name="Undo" xml:space="preserve">
+    <value>Geri al</value>
+  </data>
+  <data name="Redo" xml:space="preserve">
+    <value>İleri al</value>
+  </data>
+  <data name="Show title" xml:space="preserve">
+    <value>Başlığı göster</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Başlık</value>
+  </data>
+  <data name="Layout" xml:space="preserve">
+    <value>Düzen</value>
+  </data>
+  <data name="Are you sure you want to change layout" xml:space="preserve">
+    <value>Sayfa düzenini değiştirmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="Set as homepage" xml:space="preserve">
+    <value>Anasayfa olarak ayarla</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="Script" xml:space="preserve">
+    <value>Script</value>
+  </data>
+  <data name="JQuery" xml:space="preserve">
+    <value>JQuery</value>
+  </data>
+  <data name="Type of page" xml:space="preserve">
+    <value>Sayfa tipi</value>
+  </data>
+  <data name="The Type of page field is required." xml:space="preserve">
+    <value>Sayfa tipi alanı zorunludur.</value>
+  </data>
+  <data name="OutputCache" xml:space="preserve">
+    <value>Önbellek (OutputCache)</value>
+  </data>
+  <data name="Duration (seconds)" xml:space="preserve">
+    <value>Saniye</value>
+  </data>
+  <data name="Expiration Policy" xml:space="preserve">
+    <value>Zaman aşımı kuralı</value>
+  </data>
+  <data name="&lt;b&gt;AbsouluteExpiration:&lt;/b&gt; a cache entry should be evicted after a specified duration. &lt;br /&gt;&lt;b&gt;SlidingExpiration:&lt;/b&gt; a cache entry should be evicted if it has not been accessed in a given span of time." xml:space="preserve">
+    <value>&lt;b&gt;AbsouluteExpiration:&lt;/b&gt; önbellek objesi verilen süre içerisinde güncellenir. &lt;br /&gt;&lt;b&gt;SlidingExpiration:&lt;/b&gt;önbellek objesi en son ulaşıldığı süreden sonra verilen süre içerisinde güncellenir.</value>
+  </data>
+  <data name="Show in menu" xml:space="preserve">
+    <value>Menüde göster</value>
+  </data>
+  <data name="Link text" xml:space="preserve">
+    <value>Link yazısı</value>
+  </data>
+  <data name="The Order field is required." xml:space="preserve">
+    <value>Sıralama alanı zorunludur.</value>
+  </data>
+  <data name="Show crumb" xml:space="preserve">
+    <value>Sayfa navigasyonunda göster</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Yazar</value>
+  </data>
+  <data name="Keywords" xml:space="preserve">
+    <value>Anahtar kelimeler</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="Customs" xml:space="preserve">
+    <value>Özeller</value>
+  </data>
+  <data name="Allowed" xml:space="preserve">
+    <value>İzinli</value>
+  </data>
+  <data name="Denied" xml:space="preserve">
+    <value>Engellendi</value>
+  </data>
+  <data name="Alternative name" xml:space="preserve">
+    <value>Alternatif isim</value>
+  </data>
+  <data name="'Alternative name' is invalid." xml:space="preserve">
+    <value>'Alternatif isim' alanı zorunludur.</value>
+  </data>
+  <data name="URL path" xml:space="preserve">
+    <value>URL adresi yolu</value>
+  </data>
+  <data name="Default values" xml:space="preserve">
+    <value>Varsayılan değerler</value>
+  </data>
+  <data name="Add DataRule" xml:space="preserve">
+    <value>Data kuralı ekle</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="Select Plugin" xml:space="preserve">
+    <value>Eklenti Seç</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Kaldır</value>
+  </data>
+  <data name="Item already existed" xml:space="preserve">
+    <value>Öğe zaten mevcut</value>
+  </data>
+  <data name="Select a category" xml:space="preserve">
+    <value>Kategori seç</value>
+  </data>
+  <data name="Current folder is null." xml:space="preserve">
+    <value>Mevcut klasör boş.</value>
+  </data>
+  <data name="Choose Folder" xml:space="preserve">
+    <value>Klasör seç</value>
+  </data>
+  <data name="Edit Filters" xml:space="preserve">
+    <value>Filtreleri düzenle</value>
+  </data>
+  <data name="Query type" xml:space="preserve">
+    <value>Sorgu tipi</value>
+  </data>
+  <data name="List of contents in the selected folder" xml:space="preserve">
+    <value>Klasör içindeki içeriklerin listesi</value>
+  </data>
+  <data name="First or default (one content item)" xml:space="preserve">
+    <value>İlki ya da varsayılar (bir tane içerik öğesi)</value>
+  </data>
+  <data name="List of contents in the category folders" xml:space="preserve">
+    <value>Kategori içindeki içeriklerin listesi</value>
+  </data>
+  <data name="DataName" xml:space="preserve">
+    <value>Data adı</value>
+  </data>
+  <data name="Only alphabetical characters allowed" xml:space="preserve">
+    <value>Sadece alfabetik karakterler geçerlidir</value>
+  </data>
+  <data name="This dataname is being used by other datarule." xml:space="preserve">
+    <value>Bu data ismi diğer bir data kuralı tarafından kullanılıyor.</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>Klasör</value>
+  </data>
+  <data name="Content filter" xml:space="preserve">
+    <value>İçerik filtresi</value>
+  </data>
+  <data name="Query condition filter, you may use value from URL string, for example: {querystringkey}" xml:space="preserve">
+    <value>Sorgu filtresi, URL adresinden bir değer kullanabilirsiniz, örneğin: {querystringkey}</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filtre</value>
+  </data>
+  <data name="Equals" xml:space="preserve">
+    <value>Eşittir</value>
+  </data>
+  <data name="NotEquals" xml:space="preserve">
+    <value>Eşit Değil</value>
+  </data>
+  <data name="Greater than" xml:space="preserve">
+    <value>Büyüktür</value>
+  </data>
+  <data name="Less than" xml:space="preserve">
+    <value>Küçüktür</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>İçerir</value>
+  </data>
+  <data name="Start with" xml:space="preserve">
+    <value>İle başlayan</value>
+  </data>
+  <data name="End with" xml:space="preserve">
+    <value>ile biter</value>
+  </data>
+  <data name="AND" xml:space="preserve">
+    <value>VE</value>
+  </data>
+  <data name="OR" xml:space="preserve">
+    <value>VEYA</value>
+  </data>
+  <data name="Than AND" xml:space="preserve">
+    <value>VE</value>
+  </data>
+  <data name="Than OR" xml:space="preserve">
+    <value>VEYA</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="Category Folder" xml:space="preserve">
+    <value>Kategori dosyası</value>
+  </data>
+  <data name="Category filter" xml:space="preserve">
+    <value>Kategori filtresi</value>
+  </data>
+  <data name="Advance" xml:space="preserve">
+    <value>Geliştir</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>Üst</value>
+  </data>
+  <data name="Sort direction" xml:space="preserve">
+    <value>Sıralama yönü</value>
+  </data>
+  <data name="Enable paging" xml:space="preserve">
+    <value>Sayfalamayı etkinleştir</value>
+  </data>
+  <data name="Page size" xml:space="preserve">
+    <value>Sayfa boyutu</value>
+  </data>
+  <data name="Page index" xml:space="preserve">
+    <value>Sayfa indeksi</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Önceki</value>
+  </data>
+  <data name="Add a view" xml:space="preserve">
+    <value>Görünüm ekle</value>
+  </data>
+  <data name="Add a module" xml:space="preserve">
+    <value>Modül ekle</value>
+  </data>
+  <data name="Add a data folder" xml:space="preserve">
+    <value>Data dosyası ekle</value>
+  </data>
+  <data name="Add HTML" xml:space="preserve">
+    <value>HTML ekle</value>
+  </data>
+  <data name="Are you sure you want to remove this item?" xml:space="preserve">
+    <value>Bu öğeyi kaldırmak istediğinize emin misiniz?</value>
+  </data>
+  <data name="Edit view" xml:space="preserve">
+    <value>Görünümü düzenle</value>
+  </data>
+  <data name="Edit HTML" xml:space="preserve">
+    <value>HTMLi düzenle</value>
+  </data>
+  <data name="Edit module" xml:space="preserve">
+    <value>Modülü düzenle</value>
+  </data>
+  <data name="Edit data folder" xml:space="preserve">
+    <value>Data klasörünü düzenle</value>
+  </data>
+  <data name="expand" xml:space="preserve">
+    <value>genişlet</value>
+  </data>
+  <data name="close" xml:space="preserve">
+    <value>kapat</value>
+  </data>
+  <data name="move" xml:space="preserve">
+    <value>taşı</value>
+  </data>
+  <data name="Smtp" xml:space="preserve">
+    <value>Smtp</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Görünüm Adı</value>
+  </data>
+  <data name="Content database" xml:space="preserve">
+    <value>İçerik veritabanı</value>
+  </data>
+  <data name="Enable inline editing" xml:space="preserve">
+    <value>Yerinde düzenlemeyi etkinleştir</value>
+  </data>
+  <data name="Show start sitemap" xml:space="preserve">
+    <value>Başlangıç site haritasını göster</value>
+  </data>
+  <data name="Smtp Server" xml:space="preserve">
+    <value>Smtp Sunucusu</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="EnableSsl" xml:space="preserve">
+    <value>Ssl i etkinleştir</value>
+  </data>
+  <data name="From address" xml:space="preserve">
+    <value>From adresi</value>
+  </data>
+  <data name="TO address" xml:space="preserve">
+    <value>Gönderilen adresi</value>
+  </data>
+  <data name="Delete this site" xml:space="preserve">
+    <value>Bu siteyi sil</value>
+  </data>
+  <data name="Are you sure you want to delete the site?" xml:space="preserve">
+    <value>Web sitesini silmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="network error" xml:space="preserve">
+    <value>network hatası</value>
+  </data>
+  <data name="Please select a view" xml:space="preserve">
+    <value>Lütfen görünüm seçin</value>
+  </data>
+  <data name="Please select a data folder" xml:space="preserve">
+    <value>Lütfen data klasörü girin</value>
+  </data>
+  <data name="Please select a module" xml:space="preserve">
+    <value>Lütfen modül seçin</value>
+  </data>
+  <data name="Views:" xml:space="preserve">
+    <value>Görünümler:</value>
+  </data>
+  <data name="Parameters:" xml:space="preserve">
+    <value>Parametreler:</value>
+  </data>
+  <data name="Cache Settings:" xml:space="preserve">
+    <value>Önbellek Ayarları:</value>
+  </data>
+  <data name="Enable:" xml:space="preserve">
+    <value>Etkinleştir:</value>
+  </data>
+  <data name="Second" xml:space="preserve">
+    <value>Saniye</value>
+  </data>
+  <data name="User name" xml:space="preserve">
+    <value>Kullanıcı adı</value>
+  </data>
+  <data name="'User name' is invalid." xml:space="preserve">
+    <value>'Kullanıcı adı' geçersiz.</value>
+  </data>
+  <data name="Edit layout" xml:space="preserve">
+    <value>Sayfa düzenini düzenle</value>
+  </data>
+  <data name="Positions" xml:space="preserve">
+    <value>Pozisyonlar</value>
+  </data>
+  <data name="Layout helper" xml:space="preserve">
+    <value>Düzen yardımcısı</value>
+  </data>
+  <data name="HTML header" xml:space="preserve">
+    <value>HTML headerı</value>
+  </data>
+  <data name="Register HtmlMeta" xml:space="preserve">
+    <value>HtmlMeta Kaydet</value>
+  </data>
+  <data name="Register Style" xml:space="preserve">
+    <value>Stil Kaydet</value>
+  </data>
+  <data name="Register Script" xml:space="preserve">
+    <value>Script Kaydet</value>
+  </data>
+  <data name="Register Title" xml:space="preserve">
+    <value>Başlık Kaydet</value>
+  </data>
+  <data name="Add views" xml:space="preserve">
+    <value>Görünümler ekle</value>
+  </data>
+  <data name="Code helper" xml:space="preserve">
+    <value>Kod yardımcısı</value>
+  </data>
+  <data name="Position Name" xml:space="preserve">
+    <value>Pozisyon İsmi</value>
+  </data>
+  <data name="Please input a new position name." xml:space="preserve">
+    <value>Lütfen yeni pozisyon adı girin.</value>
+  </data>
+  <data name="The position name already exists." xml:space="preserve">
+    <value>Pozisyon adı zaten mevcut.</value>
+  </data>
+  <data name="Are you sure you want to replace this template?" xml:space="preserve">
+    <value>Bu şablonu değiştirmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="a name cannot contain a space, a single or double quote." xml:space="preserve">
+    <value>bir isim boşluk, tek ve çeif tırnak karakterleri içeremez.</value>
+  </data>
+  <data name="Save and return" xml:space="preserve">
+    <value>Kaydet ve dön</value>
+  </data>
+  <data name="Theme contains both CSS and image files. Folders directly under the Theme root will be considered as one theme. ThemeRules.txt is a speical text file used to write your CSS loading rules." xml:space="preserve">
+    <value>Tema CSS ve  imaj dosyaları içerir. Temanın rootunun altındaki bütün dosyalar tek bir temayı içerir. ThemeRules.txt dosyası CSS yüklenme kurallarını belirlemeye yarar.</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Geri</value>
+  </data>
+  <data name="Create folder" xml:space="preserve">
+    <value>Klasör Yarat</value>
+  </data>
+  <data name="Create File" xml:space="preserve">
+    <value>Dosya Yarat</value>
+  </data>
+  <data name="Large file" xml:space="preserve">
+    <value>Büyük dosya</value>
+  </data>
+  <data name="Import from zip" xml:space="preserve">
+    <value>Zip dosyasından aktar</value>
+  </data>
+  <data name="Overrided" xml:space="preserve">
+    <value>Ezilmiş</value>
+  </data>
+  <data name="All Elements" xml:space="preserve">
+    <value>Tüm Öğeler</value>
+  </data>
+  <data name="Only Documents" xml:space="preserve">
+    <value>Sadece dokümanlar</value>
+  </data>
+  <data name="Only Folders" xml:space="preserve">
+    <value>Sadece Klasörler</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Hiç</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Tarih</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Boyut</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="Are you sure you want to delete these items?" xml:space="preserve">
+    <value>Bu öğeleri silmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="Please select items!" xml:space="preserve">
+    <value>Lütfen öğeleri seçin!</value>
+  </data>
+  <data name="Are you sure you want to close this window." xml:space="preserve">
+    <value>Pencereyi kapatmak istediğinize emin misiniz?</value>
+  </data>
+  <data name="VirtualPath:" xml:space="preserve">
+    <value>SanalYol:</value>
+  </data>
+  <data name="RelativePath:" xml:space="preserve">
+    <value>Göreli dosya yolu:</value>
+  </data>
+  <data name="This folder is existed." xml:space="preserve">
+    <value>Bu dosya yolu mevcut.</value>
+  </data>
+  <data name="FileExtension" xml:space="preserve">
+    <value>Dosya uzantısın</value>
+  </data>
+  <data name="Map a MVC action link to another page" xml:space="preserve">
+    <value>Linki başka sayfaya yönlendir</value>
+  </data>
+  <data name="Key" xml:space="preserve">
+    <value>Anahtar</value>
+  </data>
+  <data name="'Key' is invalid." xml:space="preserve">
+    <value>'Anahtar' geçersiz.</value>
+  </data>
+  <data name="PageFullName" xml:space="preserve">
+    <value>Sayfa tam adı</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Arama</value>
+  </data>
+  <data name="You have not select any items!" xml:space="preserve">
+    <value>Daha hiç eleman seçmediniz!</value>
+  </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Yayınla</value>
+  </data>
+  <data name=" existed!" xml:space="preserve">
+    <value> mevcut!</value>
+  </data>
+  <data name="CMS &gt; Content Manager" xml:space="preserve">
+    <value>İçerik Yönetim Sistemi &gt; İçerik Yönetimi</value>
+  </data>
+  <data name="Create new content repository" xml:space="preserve">
+    <value>Yeni içerik deposu yarat</value>
+  </data>
+  <data name="Choose an existing repository" xml:space="preserve">
+    <value>Varolan bir depo seç</value>
+  </data>
+  <data name="KucukIs" xml:space="preserve">
+    <value>KucukIs</value>
+  </data>
+  <data name="Delete this repository" xml:space="preserve">
+    <value>Bu depoyu sil</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>Ayar</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>İçerir</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Kullanıcı</value>
+  </data>
+  <data name="Custom error" xml:space="preserve">
+    <value>Özel hata</value>
+  </data>
+  <data name="Url redirect" xml:space="preserve">
+    <value>Url  adresi yönlendirmesi</value>
+  </data>
+  <data name="Extensions" xml:space="preserve">
+    <value>Genişletmeler</value>
+  </data>
+  <data name="Plugin" xml:space="preserve">
+    <value>Eklenti</value>
+  </data>
+  <data name="Module" xml:space="preserve">
+    <value>Modül</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Sayfa</value>
+  </data>
+  <data name="Inline Editing" xml:space="preserve">
+    <value>Yerinde düzenleme</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email adresi</value>
+  </data>
+  <data name="Invalid email address" xml:space="preserve">
+    <value>Geçersiz email adresi</value>
+  </data>
+  <data name="The IsAdministrator field is required." xml:space="preserve">
+    <value>Site yöneticisi alanı zorunludur.</value>
+  </data>
+  <data name="IsAdministrator" xml:space="preserve">
+    <value>Site Yöneticisi</value>
+  </data>
+  <data name="A user name cannot contain a space or any of the following characters:\/:*?&lt;&gt;|~" xml:space="preserve">
+    <value>Bir kullanıcı ismi boşluk karakteri ve şu diğer karaklterleri içeremez:\/:*?&lt;&gt;|~</value>
+  </data>
+  <data name="'UserName' is invalid." xml:space="preserve">
+    <value>'Kullanıcı adı' geçersiz.</value>
+  </data>
+  <data name="The field Password must be a string with a minimum length of 5 and a maximum length of 16." xml:space="preserve">
+    <value>Şifre alanı en az 5, en fazla 16 karakter uzunluğunda olmalıdır.</value>
+  </data>
+  <data name="Confirm password" xml:space="preserve">
+    <value>Şifre (tekrar)</value>
+  </data>
+  <data name="'Confirm password' and 'Password' do not match." xml:space="preserve">
+    <value>'Şifre (tekrar)' ve 'Şifre' alanları uyuşmuyor.</value>
+  </data>
+  <data name="No database selected" xml:space="preserve">
+    <value>Hiç veritabanı seçilmemiş</value>
+  </data>
+  <data name="Parameters" xml:space="preserve">
+    <value>Parameterler</value>
+  </data>
+  <data name="Name is required." xml:space="preserve">
+    <value>Ad alanı zorunludur.</value>
+  </data>
+  <data name="This name is being used by other parameters." xml:space="preserve">
+    <value>Bu isim diğer parametreler tarafından kullanılıyor.</value>
+  </data>
+  <data name="Plugins" xml:space="preserve">
+    <value>Eklentiler</value>
+  </data>
+  <data name="Please input another name ." xml:space="preserve">
+    <value>Lütfen başka isim girin.</value>
+  </data>
+  <data name="Please choose another position" xml:space="preserve">
+    <value>Lütfen başka pozisyon seçin</value>
+  </data>
+  <data name="Edit DataRule" xml:space="preserve">
+    <value>Data kuralını düzenle</value>
+  </data>
+  <data name="This item is already existed!" xml:space="preserve">
+    <value>Bu öğe zaten mevcut!</value>
+  </data>
+  <data name="Are you sure you want to remove this?" xml:space="preserve">
+    <value>Bu öğeyi kaldırmak istediğinize emin misiniz?</value>
+  </data>
+  <data name="Html code" xml:space="preserve">
+    <value>Html kodu</value>
+  </data>
+  <data name="Html With Inline editing" xml:space="preserve">
+    <value>Yerinde düzenleme ile HTML</value>
+  </data>
+  <data name="YourDatabaseName" xml:space="preserve">
+    <value>VeriTabaniAdi</value>
+  </data>
+  <data name="The Mode field is required." xml:space="preserve">
+    <value>Mod alanı zorunludur.</value>
+  </data>
+  <data name="This item has not been published yet.&lt;br/&gt;Click to publish this item." xml:space="preserve">
+    <value>Bu öğe daha yayınlanmadı.&lt;br/&gt;Yayınlamak için öğeye tıklayın.</value>
+  </data>
+  <data name="font family" xml:space="preserve">
+    <value>font ailesi</value>
+  </data>
+  <data name="font size" xml:space="preserve">
+    <value>font boyutu</value>
+  </data>
+  <data name="font color" xml:space="preserve">
+    <value>font rengi</value>
+  </data>
+  <data name="background color" xml:space="preserve">
+    <value>arkaplan resmi</value>
+  </data>
+  <data name="Color picker" xml:space="preserve">
+    <value>Renk seçici</value>
+  </data>
+  <data name="Select a color or insert a hex code value." xml:space="preserve">
+    <value>Renk seç ya da hex kodu gir</value>
+  </data>
+  <data name="Original:" xml:space="preserve">
+    <value>Orijinal:</value>
+  </data>
+  <data name="New:" xml:space="preserve">
+    <value>Yeni:</value>
+  </data>
+  <data name="Hex value:" xml:space="preserve">
+    <value>Hex değeri:</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>TAMAM</value>
+  </data>
+  <data name="Invalid input width" xml:space="preserve">
+    <value>Geçersiz genişlik</value>
+  </data>
+  <data name="Invalid input height" xml:space="preserve">
+    <value>Geçersiz yükseklik</value>
+  </data>
+  <data name="The image size is too big for this layout.&#xA;Are you sure you want to use this size?" xml:space="preserve">
+    <value>Resim boyutu bu sayfa düzeni için fazla büyük.
+Bu resim boyutunu kullanmak istediğinize emin misiniz?</value>
+  </data>
+  <data name="Are you sure you want to delete this image?" xml:space="preserve">
+    <value>Bu resmi silmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="Are you sure you want to delete the link?" xml:space="preserve">
+    <value>Linki silmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="bold" xml:space="preserve">
+    <value>kalın yazı</value>
+  </data>
+  <data name="italic" xml:space="preserve">
+    <value>italik</value>
+  </data>
+  <data name="underline" xml:space="preserve">
+    <value>altı çizili</value>
+  </data>
+  <data name="align left" xml:space="preserve">
+    <value>sola dayalı</value>
+  </data>
+  <data name="align center" xml:space="preserve">
+    <value>ortala</value>
+  </data>
+  <data name="align right" xml:space="preserve">
+    <value>sağa dayalı</value>
+  </data>
+  <data name="align justify" xml:space="preserve">
+    <value>otomatik konumlandır</value>
+  </data>
+  <data name="number list" xml:space="preserve">
+    <value>sayı listesi</value>
+  </data>
+  <data name="bullet list" xml:space="preserve">
+    <value>madde işaretli liste</value>
+  </data>
+  <data name="increase indent" xml:space="preserve">
+    <value>girintiyi arttır</value>
+  </data>
+  <data name="decrease indent" xml:space="preserve">
+    <value>girintiyi azalt</value>
+  </data>
+  <data name="insert image" xml:space="preserve">
+    <value>resim ekle</value>
+  </data>
+  <data name="insert link" xml:space="preserve">
+    <value>link ekle</value>
+  </data>
+  <data name="edit source" xml:space="preserve">
+    <value>kaynağı düzenle</value>
+  </data>
+  <data name="remove format" xml:space="preserve">
+    <value>formatı kaldır</value>
+  </data>
+  <data name="insert horizontal ruler" xml:space="preserve">
+    <value>yatay cetvel ekle</value>
+  </data>
+  <data name="Are you sure you want to delete this item?" xml:space="preserve">
+    <value>Bu öğeyi silmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="Network error, the action has been cancelled" xml:space="preserve">
+    <value>Network hatası, işlem iptal edildi</value>
+  </data>
+  <data name="copying..." xml:space="preserve">
+    <value>kopyalanıyor...</value>
+  </data>
+  <data name="deleting..." xml:space="preserve">
+    <value>siliniyor...</value>
+  </data>
+  <data name="publishing..." xml:space="preserve">
+    <value>yayınlanıyor...</value>
+  </data>
+  <data name="copy successfully" xml:space="preserve">
+    <value>kopyalama başarılı</value>
+  </data>
+  <data name="delete successfully" xml:space="preserve">
+    <value>silme işlemi başarılı</value>
+  </data>
+  <data name="publish successfully" xml:space="preserve">
+    <value>yayınlama başarılı</value>
+  </data>
+  <data name="The attempt to copy has failed" xml:space="preserve">
+    <value>Kopyalama işlemi başarısız</value>
+  </data>
+  <data name="The attempt to delete has failed" xml:space="preserve">
+    <value>Silme işlemi başarısız</value>
+  </data>
+  <data name="The attempt to publish has failed" xml:space="preserve">
+    <value>Yayınlama işlemi başarısız</value>
+  </data>
+  <data name="saving..." xml:space="preserve">
+    <value>kaydediyor...</value>
+  </data>
+  <data name="save successfully" xml:space="preserve">
+    <value>kayıt başarılı</value>
+  </data>
+  <data name="The attempt to save has failed" xml:space="preserve">
+    <value>Kaydetme işlemi başarısız</value>
+  </data>
+  <data name="Create " xml:space="preserve">
+    <value>Yeni yarat</value>
+  </data>
+  <data name="Are you sure you want to remove these items?" xml:space="preserve">
+    <value>Bu öğeleri kaldırmak istediğinize emin misiniz?</value>
+  </data>
+  <data name="Please select items?" xml:space="preserve">
+    <value>Lütfen öğeleri seçin?</value>
+  </data>
+  <data name="Versions" xml:space="preserve">
+    <value>Versiyonlar</value>
+  </data>
+  <data name="Edit " xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="Are you sure you want to delect these items?" xml:space="preserve">
+    <value>Bu öğeleri seçmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="Revert" xml:space="preserve">
+    <value>Geri dön</value>
+  </data>
+  <data name="please select two versions!" xml:space="preserve">
+    <value>lütfen iki versiyon seçin!</value>
+  </data>
+  <data name="Selected Files" xml:space="preserve">
+    <value>Seçili Dosyalar</value>
+  </data>
+  <data name="The site is offline, please remove this file to take it online." xml:space="preserve">
+    <value>Web sitesi çevirimdışı, siteyi çevirimiçi yapmak için lütfen bu dosyayı kaldırın.</value>
+  </data>
+  <data name="The repository is offline, please remove this file to take it online." xml:space="preserve">
+    <value>Web sitesi çevirimdışı, siteyi çevirimiçi yapmak için lütfen bu dosyayı kaldırın.</value>
+  </data>
+  <data name="Flash uploader" xml:space="preserve">
+    <value>Flash yükleyici</value>
+  </data>
+  <data name="Site cluster" xml:space="preserve">
+    <value>Site kümesi</value>
+  </data>
+  <data name="Create a subsite" xml:space="preserve">
+    <value>Alt site yarat</value>
+  </data>
+  <data name="Upload new files" xml:space="preserve">
+    <value>Karşıya yeni dosya yükle</value>
+  </data>
+  <data name="Import from uploaded new template files or existing site templates." xml:space="preserve">
+    <value>Yüklenen yeni şablon dosyaları veya mevcut site şablonlarını getir</value>
+  </data>
+  <data name="Create content type" xml:space="preserve">
+    <value>İçerik tipi yarat</value>
+  </data>
+  <data name="No site selected" xml:space="preserve">
+    <value>Site seçilmemiş</value>
+  </data>
+  <data name="Click to Expand" xml:space="preserve">
+    <value>Genişletmek için tıklayın</value>
+  </data>
+  <data name="Goto" xml:space="preserve">
+    <value>Git</value>
+  </data>
+  <data name="IstKoy" xml:space="preserve">
+    <value>IstKoy</value>
+  </data>
+  <data name="Create URL redirect" xml:space="preserve">
+    <value>URL yönlendirme yarat</value>
+  </data>
+  <data name="Define your error redirect pages" xml:space="preserve">
+    <value>Hata sayfaları yönlendirme tanımlayın</value>
+  </data>
+  <data name="Create custom error" xml:space="preserve">
+    <value>Özel hata yarat</value>
+  </data>
+  <data name="StatusCode" xml:space="preserve">
+    <value>Statü Kodu</value>
+  </data>
+  <data name="'StatusCode' is invalid." xml:space="preserve">
+    <value>'Statü Kodu' geçersiz.</value>
+  </data>
+  <data name="The StatusCode field is required." xml:space="preserve">
+    <value>Statü kodu alanı zorunludur.</value>
+  </data>
+  <data name="RedirectUrl" xml:space="preserve">
+    <value>Yönlendirme Adresi</value>
+  </data>
+  <data name="Load the theme css files from the system selected theme folder" xml:space="preserve">
+    <value>Css dosyalarını seçili sistem tema klasöründen yükle</value>
+  </data>
+  <data name="Load JavaScript files from the site script folder" xml:space="preserve">
+    <value>Javascript dosyasını script klasöründen yükle</value>
+  </data>
+  <data name="The type of your page, used to mark them differently in the sitemap&lt;br /&gt;&lt;b&gt;Default: &lt;/b&gt; select this option if you do not know your page type&lt;br /&gt;&lt;b&gt;Static: &lt;/b&gt; contains only manually input static content &lt;br /&gt;&lt;b&gt;Dynamic:&lt;/b&gt; contains dynamic content from database either via the datarule or your own API query" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Load JQuery and JQuery validation files" xml:space="preserve">
+    <value>Load JQuery and JQuery validation files</value>
+  </data>
+  <data name="Başlığı göster" xml:space="preserve">
+    <value>Başlığı göster</value>
+  </data>
+  <data name="Tema" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="Sayfa tipi" xml:space="preserve">
+    <value>Sayfa tipi</value>
+  </data>
+  <data name="The Sayfa tipi field is required." xml:space="preserve">
+    <value>The Sayfa tipi alanı zorunludur.</value>
+  </data>
+  <data name="Make this page accessiable from the menu API" xml:space="preserve">
+    <value>Menüden erişilebilir yap</value>
+  </data>
+  <data name="Link yazısı" xml:space="preserve">
+    <value>Link yazısı</value>
+  </data>
+  <data name="Sayfa navigasyonunda göster" xml:space="preserve">
+    <value>Sayfa navigasyonunda göster</value>
+  </data>
+  <data name="Give your page an alternative name. This new name will be used when generating page links" xml:space="preserve">
+    <value>Sayfanıza alternatif bir isim verin. Sayfa linkleri oluşturulurken bu yeni adı kullanılır</value>
+  </data>
+  <data name="Alternatif isim" xml:space="preserve">
+    <value>Alternatif isim</value>
+  </data>
+  <data name="'Alternatif isim' is invalid." xml:space="preserve">
+    <value>'Alternatif isim' geçersiz.</value>
+  </data>
+  <data name="Customize the page URL to anyway you like.&lt;br /&gt; Use {key} to match the URL query string. &lt;br /&gt;For example: {userkey}_othertext to replace parameter &quot;?userkey=&quot; into static URL" xml:space="preserve">
+    <value>İstediğiniz sayfa adresini özelleştirin.&lt;br /&gt; Use {key} to match the URL query string. &lt;br /&gt;For example: {userkey}_othertext to replace parameter "?userkey=" into static URL</value>
+  </data>
+  <data name="URL adresi yolu" xml:space="preserve">
+    <value>URL adresi yolu</value>
+  </data>
+  <data name="Default values appended to the page URL query string" xml:space="preserve">
+    <value>Varsayılan değerler sayfa URL sorgu dizesi eklenmiş</value>
+  </data>
+  <data name="Varsayılan değerler" xml:space="preserve">
+    <value>Varsayılan değerler</value>
+  </data>
+  <data name="Category folders" xml:space="preserve">
+    <value>Kategori klasörleri</value>
+  </data>
+  <data name="Embedded folders" xml:space="preserve">
+    <value>Gömülü klasörler</value>
+  </data>
+  <data name="Embed content from another content folder. For example an &lt;b&gt;article&lt;/b&gt; embeds &lt;b&gt;comments&lt;/b&gt;" xml:space="preserve">
+    <value>Başka bir içerik klasöründen içerik ekler. Örneğin bir &lt;b&gt;makale&lt;/b&gt;ye &lt;b&gt;yorum&lt;/b&gt; ekler</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>Klasörü düzenle</value>
+  </data>
+  <data name="Create view" xml:space="preserve">
+    <value>Görünüm yarat</value>
+  </data>
+  <data name="Create page" xml:space="preserve">
+    <value>Sayfa yarat</value>
+  </data>
+  <data name="The item has been saved." xml:space="preserve">
+    <value>Eleman kaydedildi.</value>
+  </data>
+  <data name="Select a data folder:" xml:space="preserve">
+    <value>Bir veri klasörü seç:</value>
+  </data>
+  <data name="Result Type" xml:space="preserve">
+    <value>Sonuç tipi</value>
+  </data>
+  <data name="Contents to display &lt;br /&gt; &lt;b&gt;List&lt;/b&gt;: A list of content from the folders. &lt;br/&gt;&lt;b&gt;TOP&lt;/b&gt;: Max number of return content items&lt;br/&gt;&lt;b&gt;Detail&lt;/b&gt;: One content item based on UserKey condition. &lt;br/&gt;Use {UserKey} to match &quot;UserKey&quot; value in the URL query string" xml:space="preserve">
+    <value>Gösterilecek içerik &lt;br /&gt; &lt;b&gt;Liste&lt;/b&gt;: Klasörlerdeki içeriklerin listesi. &lt;br/&gt;&lt;b&gt;Sayı&lt;/b&gt;: İçerik sayısı&lt;br/&gt;&lt;b&gt;</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="Top:" xml:space="preserve">
+    <value>Top:</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="UserKey=" xml:space="preserve">
+    <value>UserKey=</value>
+  </data>
+  <data name="The parent website which this new website will base on" xml:space="preserve">
+    <value>Yeni websitesinin bağlı olacağı web sitesi</value>
+  </data>
+  <data name="Your front site culture, this is used to display currency,&lt;br/&gt;  date, number or other culture related content" xml:space="preserve">
+    <value>Sitenizin önyüzündeki görünün tarih ve para gibi birimleri formatlar.</value>
+  </data>
+  <data name="Load theme CSS files from the theme folder" xml:space="preserve">
+    <value>Css dosyalarını tema klasöründen yükle</value>
+  </data>
+  <data name="The virtual path of your website. &lt;br/&gt; You may create a subsite eg. www.kooboo.com/china, &lt;b&gt;china&lt;/b&gt; is the SitePath." xml:space="preserve">
+    <value>Sitenizin sanal yolu.</value>
+  </data>
+  <data name="Give your wesite a version number, &lt;br/&gt; it can be any number as you like" xml:space="preserve">
+    <value>Sitenize versiyon numarası verin, &lt;br/&gt; bu istediğiniz sayı olabilir</value>
+  </data>
+  <data name="Add sub page" xml:space="preserve">
+    <value>Alt sayfa ekle</value>
+  </data>
+  <data name="Unpublish" xml:space="preserve">
+    <value>Yayından kaldır</value>
+  </data>
+  <data name="Unpublished" xml:space="preserve">
+    <value>Yayından kaldırıldı</value>
+  </data>
+  <data name="Publishing queue" xml:space="preserve">
+    <value>Yayınlanmak için bekleyenler</value>
+  </data>
+  <data name="ParentPage" xml:space="preserve">
+    <value>Üst öğe sayfası</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Şablon</value>
+  </data>
+  <data name="Deneme" xml:space="preserve">
+    <value>Deneme</value>
+  </data>
+  <data name="Disallowed userkey chars. Replace chars that match this regular expression into hyphens" xml:space="preserve">
+    <value>İzin verilmeyen userkey karakter. Tire içine bu düzenli ifade eşleşmesine uyan karakteri değiştirir</value>
+  </data>
+  <data name="Kullanıcı adı" xml:space="preserve">
+    <value>Kullanıcı adı</value>
+  </data>
+  <data name="The Beni hatırla field is required." xml:space="preserve">
+    <value>Beni hatırla alanı zorunludur.</value>
+  </data>
+  <data name="Beni hatırla" xml:space="preserve">
+    <value>Beni hatırla</value>
+  </data>
+  <data name="Site ismi" xml:space="preserve">
+    <value>Site ismi</value>
+  </data>
+  <data name="Select the database where &lt;br/&gt; your content is stored or create a new database" xml:space="preserve">
+    <value>Veritabanı seç veya yeni yarat</value>
+  </data>
+  <data name="'İçerik veritabanı' is invalid." xml:space="preserve">
+    <value>'İçerik veritabanı' alanı geçersiz.</value>
+  </data>
+  <data name="İçerik veritabanı" xml:space="preserve">
+    <value>İçerik veritabanı</value>
+  </data>
+  <data name="Site görünüm adı" xml:space="preserve">
+    <value>Site görünüm adı</value>
+  </data>
+  <data name="Domainler" xml:space="preserve">
+    <value>Domainler</value>
+  </data>
+  <data name="Web sitesi domainlerin" xml:space="preserve">
+    <value>Web sitesi domainlerin</value>
+  </data>
+  <data name="Developmen aşamasında &lt;b&gt;debug&lt;/b&gt; ve canlı sistemde &lt;b&gt;release&lt;/b&gt; seçiniz. &lt;br/&gt;&lt;b&gt;Release&lt;/b&gt; CSS/JS sıkıştırması ve diğer teknikleri uygular." xml:space="preserve">
+    <value>Development aşamasında &lt;b&gt;debug&lt;/b&gt; ve canlı sistemde &lt;b&gt;release&lt;/b&gt; seçiniz. &lt;br/&gt;&lt;b&gt;Release&lt;/b&gt; CSS/JS sıkıştırması ve diğer teknikleri uygular.</value>
+  </data>
+  <data name="Yaratılacak veri tabanının adı" xml:space="preserve">
+    <value>Yaratılacak veri tabanının adı</value>
+  </data>
+  <data name="Cache your rendered pages for quicker response time in the next page request" xml:space="preserve">
+    <value>Daha hızlı açılması için sayfalarınızı cacheleyin</value>
+  </data>
+  <data name="CustomFields" xml:space="preserve">
+    <value>Özel alanlar</value>
+  </data>
+  <data name="Anasayfa olarak ayarla" xml:space="preserve">
+    <value>Anasayfa olarak ayarla</value>
+  </data>
+  <data name="Menüde göster" xml:space="preserve">
+    <value>Menüde göster</value>
+  </data>
+  <data name="Display text" xml:space="preserve">
+    <value>Görünüm metni</value>
+  </data>
+  <data name="Save as draft" xml:space="preserve">
+    <value>Taslak olarak kaydet</value>
+  </data>
+  <data name="Save &amp; publish" xml:space="preserve">
+    <value>Kaydet &amp; Yayınla</value>
+  </data>
+  <data name="Save &amp; preview" xml:space="preserve">
+    <value>Kaydet &amp; Görüntüle</value>
+  </data>
+  <data name="The name of your website" xml:space="preserve">
+    <value>Web sitenizin ismi</value>
+  </data>
+  <data name="The name of your website how it would be displayed on this CMS" xml:space="preserve">
+    <value>Sitenizin internete görüntülenecek ismi</value>
+  </data>
+  <data name="The culture shown on your website. &lt;br /&gt; This is used to display currency, date, number and other culture related content" xml:space="preserve">
+    <value>Sitenizde görünün yerel ayarlar. &lt;br /&gt; Bu ayarlar rakam, tarih gibi içeriklerin formatını belirler.</value>
+  </data>
+  <data name="The culture represents the current culture used by the Resource Manager to look up culture-specific resources at run time." xml:space="preserve">
+    <value />
+  </data>
+  <data name="UICulture" xml:space="preserve">
+    <value>Arayüz Yerel Ayarlar</value>
+  </data>
+  <data name="The virtual path of your website. You may create a subsite eg. www.kooboo.com/china, &lt;b&gt;china&lt;/b&gt; is the SitePath." xml:space="preserve">
+    <value />
+  </data>
+  <data name="Web sitesinin versiyon numarasını yazın" xml:space="preserve">
+    <value>Web sitesinin versiyon numarasını yazın</value>
+  </data>
+  <data name="Use &lt;b&gt;debug&lt;/b&gt; on development and use &lt;b&gt;release&lt;/b&gt; on live site. &lt;b&gt;Release&lt;/b&gt; mode utilizes CSS/JS compression and other techniques" xml:space="preserve">
+    <value>Geliştirme aşamasında &lt;b&gt;debug&lt;/b&gt; ve canlı sistemde &lt;b&gt;yayın&lt;/b&gt; seçiniz. &lt;br/&gt;&lt;b&gt;Yayın&lt;/b&gt; CSS/JS sıkıştırması ve diğer teknikleri uygular.</value>
+  </data>
+  <data name="Enables you to edit content on the front end of your website" xml:space="preserve">
+    <value>Web sitenizin içeriğini düzenlemek için olanak sağlar</value>
+  </data>
+  <data name="Yerinde düzenlemeyi etkinleştir" xml:space="preserve">
+    <value>Yerinde düzenlemeyi etkinleştir</value>
+  </data>
+  <data name="Shows the sitemap as the start page in the menu" xml:space="preserve">
+    <value>Site haritasını menüde göster</value>
+  </data>
+  <data name="Başlangıç site haritasını göster" xml:space="preserve">
+    <value>Başlangıç site haritasını göster</value>
+  </data>
+  <data name="Smtp Serverı" xml:space="preserve">
+    <value>Smtp Sunucusu</value>
+  </data>
+  <data name="The FROM email address of emails sent out by system, for example user registration confirmation email" xml:space="preserve">
+    <value>Sisteminizden gidecek maillerin gelen adresidir.</value>
+  </data>
+  <data name="From adresi" xml:space="preserve">
+    <value>From adresi</value>
+  </data>
+  <data name="The receiver's Email addresses of your contact form" xml:space="preserve">
+    <value>İletişim formundan gidecek mesajın alıcı adresi</value>
+  </data>
+  <data name="TO adresi" xml:space="preserve">
+    <value>Gönderilen adresi</value>
+  </data>
+  <data name="Clear cache" xml:space="preserve">
+    <value>Önbelleği temizle</value>
+  </data>
+  <data name="Add an user to your website &lt;br /&gt;The user must exist in the system" xml:space="preserve">
+    <value>Sitenize kullanıcı ekleyin &lt;br /&gt;Kullanıcı sistemde mevcut olmalıdır</value>
+  </data>
+  <data name="'Kullanıcı adı' is invalid." xml:space="preserve">
+    <value>'Kullanıcı adı' geçersiz.</value>
+  </data>
+  <data name="Replace the existing files when they have the same name" xml:space="preserve">
+    <value>Aynı isimli olan dosyaları değiştir</value>
+  </data>
+  <data name="Input URL" xml:space="preserve">
+    <value>Giriş adresi</value>
+  </data>
+  <data name="Regular expression to match your URL, for example: oldpage_(\w+)" xml:space="preserve">
+    <value>Regular expression to match your URL, for example: oldpage_(\w+)</value>
+  </data>
+  <data name="Output URL" xml:space="preserve">
+    <value>Çıktı adresi</value>
+  </data>
+  <data name="Redirect URL based on regular expression and match values from input URL pattern, for example: newpage_$1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Match type" xml:space="preserve">
+    <value>Eşleme türü</value>
+  </data>
+  <data name="Use either normal text matching or regular expression" xml:space="preserve">
+    <value>Yazıyı düzenli ifade kullanarak formatla.</value>
+  </data>
+  <data name="Redirect type" xml:space="preserve">
+    <value>Yönlendirme tipi</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="Ragular Expression" xml:space="preserve">
+    <value>Düzenli ifade</value>
+  </data>
+  <data name="'Input URL' is invalid." xml:space="preserve">
+    <value>'Giriş adresi' geçersiz.</value>
+  </data>
+  <data name="The Redirect type field is required." xml:space="preserve">
+    <value>Yönlendirme tipi alanı zorunludur.</value>
+  </data>
+  <data name="Sample robots.txt" xml:space="preserve">
+    <value>Örnek robots.txt</value>
+  </data>
+  <data name="The collection of pages to be published" xml:space="preserve">
+    <value>Yayınlanacak sayfalar</value>
+  </data>
+  <data name="Yeni Ad" xml:space="preserve">
+    <value>Yeni Ad</value>
+  </data>
+  <data name="'Yeni Ad' is invalid." xml:space="preserve">
+    <value>'Yeni Ad' geçersiz.</value>
+  </data>
+  <data name="Create layout" xml:space="preserve">
+    <value>Sayfa düzeni yarat</value>
+  </data>
+  <data name="Save &amp; return" xml:space="preserve">
+    <value>Kaydet &amp; Geri Dön</value>
+  </data>
+  <data name="MovePage" xml:space="preserve">
+    <value>Sayfayı Taşı</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>Taslak</value>
+  </data>
+  <data name="Click to unpublish" xml:space="preserve">
+    <value>Yayından kaldırmak için tıklayın</value>
+  </data>
+  <data name="Home page" xml:space="preserve">
+    <value>Anasayfa</value>
+  </data>
+  <data name="Görünüm Adı" xml:space="preserve">
+    <value>Görünüm Adı</value>
+  </data>
+  <data name="Customize the CMS content editing page and the default front site content display" xml:space="preserve">
+    <value>İçerik düzenleme sayfası ve varsayılan ön site içeriği görüntüsünü özelleştirin</value>
+  </data>
+  <data name="Özel şablon" xml:space="preserve">
+    <value>Özel şablon</value>
+  </data>
+  <data name="The Özel şablon field is required." xml:space="preserve">
+    <value>The Özel şablon field is required.</value>
+  </data>
+  <data name="Userkey escape karakterleri" xml:space="preserve">
+    <value>Userkey escape karakterleri</value>
+  </data>
+  <data name="Userkey tireleri" xml:space="preserve">
+    <value>Userkey tireleri</value>
+  </data>
+  <data name="Enable content versioning" xml:space="preserve">
+    <value>İçerik versiyonlamayı etkinleştir</value>
+  </data>
+  <data name="Versiyonlamayı etkinleştir" xml:space="preserve">
+    <value>Versiyonlamayı etkinleştir</value>
+  </data>
+  <data name="The Versiyonlamayı etkinleştir field is required." xml:space="preserve">
+    <value>Versiyonlamayı etkinleştir alanı zorunludur.</value>
+  </data>
+  <data name="Name of your field, excludes the following characters:\/:*?&lt;&gt;|" xml:space="preserve">
+    <value>Alan adı, yandaki karakterler hariç: \ /:*?&lt;&gt;|</value>
+  </data>
+  <data name="Descriptive label of your field on the content editing page" xml:space="preserve">
+    <value>İçerik düzenleme sayfasındaki alanın açıklayıcı etiketi</value>
+  </data>
+  <data name="The way that you would like to input your content" xml:space="preserve">
+    <value>İçerik</value>
+  </data>
+  <data name="Allows null value in this field" xml:space="preserve">
+    <value>Bu alan boş değer alabilir</value>
+  </data>
+  <data name="Order of your field in the content editing page" xml:space="preserve">
+    <value>Düzenleme sayfasındaki alanı sırala</value>
+  </data>
+  <data name="Enable the modification of this field in the content editing page." xml:space="preserve">
+    <value>İçerik düzenleme sayfasındaki bu alandaki değişikliği etkinleştirin.</value>
+  </data>
+  <data name="Include this field in the Lucene.NET full text search index" xml:space="preserve">
+    <value>Bu alanı tam metin arama indeksine ekle</value>
+  </data>
+  <data name="Show this field in the CMS content list page" xml:space="preserve">
+    <value>Bu alanı liste sayfasında görüntüle</value>
+  </data>
+  <data name="Input tip while users entering content" xml:space="preserve">
+    <value>Kullanıcılar içerik girerken verilen 'Giriş Tavsiyesi'</value>
+  </data>
+  <data name="Primary fields will be used as a title or summary to describe your content item" xml:space="preserve">
+    <value>Birincil alan içeriğinizi açıklayıcı bir başlık veya özet olarak kullanılacak</value>
+  </data>
+  <data name="Varsayılan değer" xml:space="preserve">
+    <value>Varsayılan değer</value>
+  </data>
+  <data name="Birincil alan" xml:space="preserve">
+    <value>Birincil alan</value>
+  </data>
+  <data name="İçerik liste sayfası" xml:space="preserve">
+    <value>İçerik liste sayfası</value>
+  </data>
+  <data name="Broadcasting" xml:space="preserve">
+    <value>Yayınlama</value>
+  </data>
+  <data name="Old password" xml:space="preserve">
+    <value>Eski şifre</value>
+  </data>
+  <data name="New password" xml:space="preserve">
+    <value>Yeni şifre</value>
+  </data>
+  <data name="Confirm new password" xml:space="preserve">
+    <value>Yeni Şifre (Tekrar)</value>
+  </data>
+  <data name="'Confirm new password' and 'NewPassword' do not match." xml:space="preserve">
+    <value>'Yeni Şifre (Tekrar)' ve 'Yeni Şifre' uyuşmuyor.</value>
+  </data>
+  <data name="Modül ismi" xml:space="preserve">
+    <value>Modül ismi</value>
+  </data>
+  <data name="The Modül ismi field is required." xml:space="preserve">
+    <value>The Modül ismi alanı zorunludur.</value>
+  </data>
+  <data name="'Modül ismi' is invalid." xml:space="preserve">
+    <value>'Modül ismi' geçersiz.</value>
+  </data>
+  <data name="Modül dosyası" xml:space="preserve">
+    <value>Modül dosyası</value>
+  </data>
+  <data name="The Modül dosyası field is required." xml:space="preserve">
+    <value>The Modül dosyası alanı zorunludurç</value>
+  </data>
+  <data name="Web sitenizin içeriğini düzenlemek için olanak sağlar" xml:space="preserve">
+    <value>Web sitenizin içeriğini düzenlemek için olanak sağlar</value>
+  </data>
+  <data name="UUID" xml:space="preserve">
+    <value>UUID</value>
+  </data>
+  <data name="User Key" xml:space="preserve">
+    <value>Kullanıcı Anahtarı</value>
+  </data>
+  <data name="Published" xml:space="preserve">
+    <value>Yayınlandı</value>
+  </data>
+  <data name="OriginalUUID" xml:space="preserve">
+    <value>OriginalUUID</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="UserId" xml:space="preserve">
+    <value>Kullanıcı Birincil Anahtarı</value>
+  </data>
+  <data name="Görünüm metni" xml:space="preserve">
+    <value>Görünüm metni</value>
+  </data>
+  <data name="Sayfanıza alternatif bir isim verin. Sayfa linkleri oluşturulurken bu yeni adı kullanılır" xml:space="preserve">
+    <value>Sayfanıza alternatif bir isim verin. Sayfa linkleri oluşturulurken bu yeni adı kullanılır</value>
+  </data>
+  <data name="İstediğiniz sayfa adresini özelleştirin.&lt;br /&gt; Use {key} to match the URL query string. &lt;br /&gt;For example: {userkey}_othertext to replace parameter &quot;?userkey=&quot; into static URL" xml:space="preserve">
+    <value>İstediğiniz sayfa adresini özelleştirin.</value>
+  </data>
+  <data name="Şifre (tekrar)" xml:space="preserve">
+    <value>Şifre (tekrar)</value>
+  </data>
+  <data name="'Şifre (tekrar)' and 'Password' do not match." xml:space="preserve">
+    <value>'Şifre (tekrar)' ve 'Şifre' uyuşmuyor.</value>
+  </data>
+  <data name="Sitenize kullanıcı ekleyin &lt;br /&gt;Kullanıcı sistemde mevcut olmalıdır" xml:space="preserve">
+    <value>Sitenize kullanıcı ekleyin &lt;br /&gt;Kullanıcı sistemde mevcut olmalıdır</value>
+  </data>
+  <data name="İçerik tipi" xml:space="preserve">
+    <value>İçerik tipi</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>Özet</value>
+  </data>
+  <data name="Eşleme türü" xml:space="preserve">
+    <value>Eşleme türü</value>
+  </data>
+  <data name="Giriş adresi" xml:space="preserve">
+    <value>Giriş adresi</value>
+  </data>
+  <data name="'Giriş adresi' is invalid." xml:space="preserve">
+    <value>'Giriş adresi' geçersiz.</value>
+  </data>
+  <data name="Çıktı adresi" xml:space="preserve">
+    <value>Çıktı adresi</value>
+  </data>
+  <data name="Alan adı, yandaki karakterler hariç: \ /:*?&lt;&gt;|" xml:space="preserve">
+    <value>Alan adı, yandaki karakterler hariç: \ /:*?&lt;&gt;|</value>
+  </data>
+  <data name="İçerik düzenleme sayfasındaki alanın açıklayıcı etiketi" xml:space="preserve">
+    <value>İçerik düzenleme sayfasındaki alanın açıklayıcı etiketi</value>
+  </data>
+  <data name="Kullanıcılar içerik girerken verilen 'Giriş Tavsiyesi'" xml:space="preserve">
+    <value>Kullanıcılar içerik girerken verilen 'Giriş Tavsiyesi'</value>
+  </data>
+  <data name="Bu alan boş değer alabilir" xml:space="preserve">
+    <value>Bu alan boş değer alabilir</value>
+  </data>
+  <data name="İçerik düzenleme sayfasındaki bu alandaki değişikliği etkinleştirin." xml:space="preserve">
+    <value>İçerik düzenleme sayfasındaki bu alandaki değişikliği etkinleştirin.</value>
+  </data>
+  <data name="Başlık" xml:space="preserve">
+    <value>Başlık</value>
+  </data>
+  <data name="Açıklama" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="Is Admin" xml:space="preserve">
+    <value>Yönetici mi?</value>
+  </data>
+  <data name="Master" xml:space="preserve">
+    <value>Ana</value>
+  </data>
+  <data name="'{0}' is being used by some folders!" xml:space="preserve">
+    <value>'{0}' diğer bir klasör tarafından kullanılıyor!</value>
+  </data>
+  <data name="İçerik" xml:space="preserve">
+    <value>İçerik</value>
+  </data>
+  <data name="Görüntülenme" xml:space="preserve">
+    <value>Görüntülenme</value>
+  </data>
+  <data name="Aktif mi?" xml:space="preserve">
+    <value>Aktif mi?</value>
+  </data>
+  <data name="Onaylandı mı?" xml:space="preserve">
+    <value>Onaylandı mı?</value>
+  </data>
+  <data name="The value can not convert to bool." xml:space="preserve">
+    <value>Değer çevrilemedi.</value>
+  </data>
+  <data name="İzin verilmeyen userkey karakter. Tire içine bu düzenli ifade eşleşmesine uyan karakteri değiştirir" xml:space="preserve">
+    <value>İzin verilmeyen userkey karakter. Tire içine bu düzenli ifade eşleşmesine uyan karakteri değiştirir</value>
+  </data>
+  <data name="The field {0} cannot be null or empty." xml:space="preserve">
+    <value>Alan boş olamaz.</value>
+  </data>
+  <data name="You haven't created any page yet, please click the button below to create a home page!" xml:space="preserve">
+    <value>Henüz bir sayfa oluşturmadınız. Lütfen anasayfaya dönmek için tıklayın.</value>
+  </data>
+  <data name="Create home page" xml:space="preserve">
+    <value>Anasayfa yarat</value>
+  </data>
+  <data name="Click to publish" xml:space="preserve">
+    <value>Yayınlamak için tıklayın</value>
+  </data>
+  <data name="Installation has been completed. Click on the &lt;b&gt;Finish&lt;/b&gt; button to return to the Module page." xml:space="preserve">
+    <value>Yükleme gerçekleşti. Modül sayfasına geri dönmek için &lt;b&gt;Bitir&lt;/b&gt; butonuna tıklayın.</value>
+  </data>
+  <data name="Dobo" xml:space="preserve">
+    <value>Dobo</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Haberler</value>
+  </data>
+  <data name="Default entry" xml:space="preserve">
+    <value>Varsayılan girdi</value>
+  </data>
+  <data name="ThemeName" xml:space="preserve">
+    <value>Tema Adı</value>
+  </data>
+  <data name="Controller" xml:space="preserve">
+    <value>Sayfa Yöneticisi</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Aksiyon</value>
+  </data>
+  <data name="Create news" xml:space="preserve">
+    <value>Haber yarat</value>
+  </data>
+  <data name="Add news" xml:space="preserve">
+    <value>Haber ekle</value>
+  </data>
+  <data name="The Title field is required." xml:space="preserve">
+    <value>Başlık alanı zorunludur.</value>
+  </data>
+  <data name="Body" xml:space="preserve">
+    <value>Gövde</value>
+  </data>
+  <data name="Exclusive" xml:space="preserve">
+    <value>Ayrıcalıklı</value>
+  </data>
+  <data name="If checked, links within this module will not contains &lt;br /&gt;URL parameters of other modules in the same page" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Entry Options" xml:space="preserve">
+    <value>Girdi Seçenekleri</value>
+  </data>
+  <data name="Entry Controller" xml:space="preserve">
+    <value>Girdi Sayfa Yöneticisi</value>
+  </data>
+  <data name="Initial MVC controller when this module first loaded on a page" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Entry Action" xml:space="preserve">
+    <value>Girdi Aksiyonu</value>
+  </data>
+  <data name="Initial MVC action when this module first loaded on a page" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Module uninstallation" xml:space="preserve">
+    <value>Modül kaldırma</value>
+  </data>
+  <data name="Remove files" xml:space="preserve">
+    <value>Dosyaları sil</value>
+  </data>
+  <data name="Click &lt;b&gt;Next&lt;/b&gt; to remove module files." xml:space="preserve">
+    <value>Click &lt;b&gt;Next&lt;/b&gt; to remove module files.</value>
+  </data>
+  <data name="Uninstallation has been completed. Click on the &lt;b&gt;Finish&lt;/b&gt; button to return to the Module page." xml:space="preserve">
+    <value>Kaldırma tamamlandı. Modül sayfasına dönmek için&lt;b&gt;bitti&lt;/b&gt; düğmesina tıklayın.</value>
+  </data>
+  <data name="The module name already exists." xml:space="preserve">
+    <value>Modül ismi kullanılıyor.</value>
+  </data>
+  <data name="Giriş" xml:space="preserve">
+    <value>Giriş</value>
+  </data>
+  <data name="Kaydet" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="İçerik yönetim sistemi" xml:space="preserve">
+    <value>İçerik yönetim sistemi</value>
+  </data>
+  <data name="Yeni websitesinin bağlı olacağı web sitesi" xml:space="preserve">
+    <value>Yeni websitesinin bağlı olacağı web sitesi</value>
+  </data>
+  <data name="Hiçbir site seçili değil" xml:space="preserve">
+    <value>Hiçbir site seçili değil</value>
+  </data>
+  <data name="Site kümesi" xml:space="preserve">
+    <value>Site kümesi</value>
+  </data>
+  <data name="Aynı isimli olan dosyaları değiştir" xml:space="preserve">
+    <value>Aynı isimli olan dosyaları değiştir</value>
+  </data>
+  <data name="Sitenizin internete görüntülenecek ismi" xml:space="preserve">
+    <value>Sitenizin internete görüntülenecek ismi</value>
+  </data>
+  <data name="Sitenizde görünün yerel ayarlar. &lt;br /&gt; Bu ayarlar rakam, tarih gibi içeriklerin formatını belirler." xml:space="preserve">
+    <value>Sitenizde görünün yerel ayarlar. &lt;br /&gt; Bu ayarlar rakam, tarih gibi içeriklerin formatını belirler.</value>
+  </data>
+  <data name="Css dosyalarını tema klasöründen yükle" xml:space="preserve">
+    <value>Css dosyalarını tema klasöründen yükle</value>
+  </data>
+  <data name="Geliştirme aşamasında &lt;b&gt;debug&lt;/b&gt; ve canlı sistemde &lt;b&gt;yayın&lt;/b&gt; seçiniz. &lt;br/&gt;&lt;b&gt;Yayın&lt;/b&gt; CSS/JS sıkıştırması ve diğer teknikleri uygular." xml:space="preserve">
+    <value>Geliştirme aşamasında &lt;b&gt;debug&lt;/b&gt; ve canlı sistemde &lt;b&gt;yayın&lt;/b&gt; seçiniz. &lt;br/&gt;&lt;b&gt;Yayın&lt;/b&gt; CSS/JS sıkıştırması ve diğer teknikleri uygular.</value>
+  </data>
+  <data name="Site haritasını menüde göster" xml:space="preserve">
+    <value>Site haritasını menüde göster</value>
+  </data>
+  <data name="Smtp Sunucusu" xml:space="preserve">
+    <value>Smtp Sunucusu</value>
+  </data>
+  <data name="Sisteminizden gidecek maillerin gelen adresidir." xml:space="preserve">
+    <value>Sisteminizden gidecek maillerin gelen adresidir.</value>
+  </data>
+  <data name="Gönderilen adresi" xml:space="preserve">
+    <value>Gönderilen adresi</value>
+  </data>
+  <data name="İletişim formundan gidecek mesajın alıcı adresi" xml:space="preserve">
+    <value>İletişim formundan gidecek mesajın alıcı adresi</value>
+  </data>
+  <data name="Sitenizin önyüzündeki görünün tarih ve para gibi birimleri formatlar." xml:space="preserve">
+    <value>Sitenizin önyüzündeki görünün tarih ve para gibi birimleri formatlar.</value>
+  </data>
+  <data name="Sitenizin sanal yolu." xml:space="preserve">
+    <value>Sitenizin sanal yolu.</value>
+  </data>
+  <data name="Sitenize versiyon numarası verin, &lt;br/&gt; bu istediğiniz sayı olabilir" xml:space="preserve">
+    <value>Sitenize versiyon numarası verin, &lt;br/&gt; bu istediğiniz sayı olabilir</value>
+  </data>
+  <data name="Giriş yap" xml:space="preserve">
+    <value>Giriş yap</value>
+  </data>
+  <data name="İçerik yönetim sistemi hakkında" xml:space="preserve">
+    <value>İçerik yönetim sistemi hakkında</value>
+  </data>
+  <data name=" - İçerik Yönetim Sistemi" xml:space="preserve">
+    <value> - İçerik Yönetim Sistemi</value>
+  </data>
+  <data name=" - Veri Tabanı - İçerik Yönetim Sistemi" xml:space="preserve">
+    <value> - Veri Tabanı - İçerik Yönetim Sistemi</value>
+  </data>
+  <data name="Userkey escape chars" xml:space="preserve">
+    <value>Userkey escape chars</value>
+  </data>
+  <data name="Düzenleme sayfasındaki alanı sırala" xml:space="preserve">
+    <value>Düzenleme sayfasındaki alanı sırala</value>
+  </data>
+  <data name="Birincil alan içeriğinizi açıklayıcı bir başlık veya özet olarak kullanılacak" xml:space="preserve">
+    <value>Birincil alan içeriğinizi açıklayıcı bir başlık veya özet olarak kullanılacak</value>
+  </data>
+  <data name="Bu alanı liste sayfasında görüntüle" xml:space="preserve">
+    <value>Bu alanı liste sayfasında görüntüle</value>
+  </data>
+  <data name="Özet" xml:space="preserve">
+    <value>Özet</value>
+  </data>
+  <data name="Css dosyalarını seçili sistem tema klasöründen yükle" xml:space="preserve">
+    <value>Css dosyalarını seçili sistem tema klasöründen yükle</value>
+  </data>
+  <data name="Javascript dosyasını script klasöründen yükle" xml:space="preserve">
+    <value>Javascript dosyasını script klasöründen yükle</value>
+  </data>
+  <data name="Menüden erişilebilir yap" xml:space="preserve">
+    <value>Menüden erişilebilir yap</value>
+  </data>
+  <data name="The folder does not exists.&quot;{0}&quot;" xml:space="preserve">
+    <value>The folder does not exists."{0}"</value>
+  </data>
+  <data name="Yönlendirme tipi" xml:space="preserve">
+    <value>Yönlendirme tipi</value>
+  </data>
+  <data name="The Yönlendirme tipi field is required." xml:space="preserve">
+    <value>The Yönlendirme tipi field is required.</value>
+  </data>
+  <data name="Page name" xml:space="preserve">
+    <value>Page name</value>
+  </data>
+  <data name="Publish draft" xml:space="preserve">
+    <value>Publish draft</value>
+  </data>
+  <data name="Creation date" xml:space="preserve">
+    <value>Creation date</value>
+  </data>
+  <data name="Date to publish" xml:space="preserve">
+    <value>Date to publish</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="Date to offline" xml:space="preserve">
+    <value>Date to offline</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="jpg" xml:space="preserve">
+    <value>jpg</value>
+  </data>
+  <data name="Are you sure you want to publish this item." xml:space="preserve">
+    <value>Are you sure you want to publish this item.</value>
+  </data>
+  <data name="Are you sure you want to unpublish this item." xml:space="preserve">
+    <value>Are you sure you want to unpublish this item.</value>
+  </data>
+  <data name="png" xml:space="preserve">
+    <value>png</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>FileName</value>
+  </data>
+  <data name="Anahtar Kelime" xml:space="preserve">
+    <value>Anahtar Kelime</value>
+  </data>
+  <data name="Parametre değeri" xml:space="preserve">
+    <value>Parametre değeri</value>
+  </data>
+  <data name="js" xml:space="preserve">
+    <value>js</value>
+  </data>
+  <data name="Site setting has been changed." xml:space="preserve">
+    <value>Site setting has been changed.</value>
+  </data>
+  <data name="Publish schedule" xml:space="preserve">
+    <value>Publish schedule</value>
+  </data>
+  <data name="Publish now" xml:space="preserve">
+    <value>Publish now</value>
+  </data>
+  <data name="Publish later" xml:space="preserve">
+    <value>Publish later</value>
+  </data>
+  <data name="Publish date" xml:space="preserve">
+    <value>Publish date</value>
+  </data>
+  <data name="The Publish date field is required." xml:space="preserve">
+    <value>The Publish date field is required.</value>
+  </data>
+  <data name="Publish time" xml:space="preserve">
+    <value>Publish time</value>
+  </data>
+  <data name="The Period field is required." xml:space="preserve">
+    <value>The Period field is required.</value>
+  </data>
+  <data name="Offline date" xml:space="preserve">
+    <value>Offline date</value>
+  </data>
+  <data name="The Offline date field is required." xml:space="preserve">
+    <value>The Offline date field is required.</value>
+  </data>
+  <data name="Offline time" xml:space="preserve">
+    <value>Offline time</value>
+  </data>
+  <data name="Use draft version" xml:space="preserve">
+    <value>Use draft version</value>
+  </data>
+  <data name="Edit news" xml:space="preserve">
+    <value>Edit news</value>
+  </data>
+  <data name="OrnekSite" xml:space="preserve">
+    <value>OrnekSite</value>
+  </data>
+  <data name="SirketAdi" xml:space="preserve">
+    <value>SirketAdi</value>
+  </data>
+  <data name="Zara" xml:space="preserve">
+    <value>Zara</value>
+  </data>
+  <data name="Dobo.v1.0" xml:space="preserve">
+    <value>Dobo.v1.0</value>
+  </data>
+  <data name="Article" xml:space="preserve">
+    <value>Article</value>
+  </data>
+  <data name="Articles" xml:space="preserve">
+    <value>Articles</value>
+  </data>
+  <data name="Create Article" xml:space="preserve">
+    <value>Create Article</value>
+  </data>
+  <data name="Add article" xml:space="preserve">
+    <value>Add article</value>
+  </data>
+  <data name="Dobo.v1.01" xml:space="preserve">
+    <value>Dobo.v1.01</value>
+  </data>
+  <data name="View Count" xml:space="preserve">
+    <value>View Count</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>Confirmed</value>
+  </data>
+  <data name="Confirmed User" xml:space="preserve">
+    <value>Confirmed User</value>
+  </data>
+  <data name="Update article" xml:space="preserve">
+    <value>Update article</value>
+  </data>
+  <data name="Select Category" xml:space="preserve">
+    <value>Select Category</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="Dobo.v.1.02" xml:space="preserve">
+    <value>Dobo.v.1.02</value>
+  </data>
+  <data name="Dobo.v.1.03" xml:space="preserve">
+    <value>Dobo.v.1.03</value>
+  </data>
+  <data name="Next »" xml:space="preserve">
+    <value>Next »</value>
+  </data>
+  <data name="« Previous" xml:space="preserve">
+    <value>« Previous</value>
+  </data>
+  <data name="Continue Reading »" xml:space="preserve">
+    <value>Continue Reading »</value>
+  </data>
+  <data name="More..." xml:space="preserve">
+    <value>More...</value>
+  </data>
+  <data name="Ad" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="E-Posta" xml:space="preserve">
+    <value>E-Posta</value>
+  </data>
+  <data name="Adres" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Telefon" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="Mesaj" xml:space="preserve">
+    <value>Mesaj</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="Adı" xml:space="preserve">
+    <value>Adı</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>Longitude</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="Referans Adı" xml:space="preserve">
+    <value>Referans Adı</value>
+  </data>
+  <data name="Resim" xml:space="preserve">
+    <value>Resim</value>
+  </data>
+  <data name="Kısa Açıklama" xml:space="preserve">
+    <value>Kısa Açıklama</value>
+  </data>
+  <data name="Albüm" xml:space="preserve">
+    <value>Albüm</value>
+  </data>
+  <data name="Resim Adı" xml:space="preserve">
+    <value>Resim Adı</value>
+  </data>
+  <data name="Albüm Adı" xml:space="preserve">
+    <value>Albüm Adı</value>
+  </data>
+  <data name="Albüm Kapağı" xml:space="preserve">
+    <value>Albüm Kapağı</value>
+  </data>
+  <data name="YeniSite" xml:space="preserve">
+    <value>YeniSite</value>
+  </data>
+  <data name="Deneme1" xml:space="preserve">
+    <value>Deneme1</value>
+  </data>
+  <data name="Şirket Logosu" xml:space="preserve">
+    <value>Şirket Logosu</value>
+  </data>
+  <data name="Select Files" xml:space="preserve">
+    <value>Select Files</value>
+  </data>
+  <data name="Crop image" xml:space="preserve">
+    <value>Crop image</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="System diagnosis" xml:space="preserve">
+    <value>System diagnosis</value>
+  </data>
+  <data name="Enable version control on Layout, View and Page" xml:space="preserve">
+    <value>Enable version control on Layout, View and Page</value>
+  </data>
+  <data name="Custom fields" xml:space="preserve">
+    <value>Custom fields</value>
+  </data>
+  <data name="Enable SSL" xml:space="preserve">
+    <value>Enable SSL</value>
+  </data>
+  <data name="System info" xml:space="preserve">
+    <value>System info</value>
+  </data>
+  <data name="Machine name" xml:space="preserve">
+    <value>Machine name</value>
+  </data>
+  <data name="Application virtual path" xml:space="preserve">
+    <value>Application virtual path</value>
+  </data>
+  <data name="Trust level" xml:space="preserve">
+    <value>Trust level</value>
+  </data>
+  <data name="Content provider" xml:space="preserve">
+    <value>Content provider</value>
+  </data>
+  <data name="Preivew" xml:space="preserve">
+    <value>Preivew</value>
+  </data>
+  <data name="Content title" xml:space="preserve">
+    <value>Content title</value>
+  </data>
+  <data name="The title that can be used by page content, this value can be accessed via API: @Page_Context.Current.ContentTitle" xml:space="preserve">
+    <value>The title that can be used by page content, this value can be accessed via API: @Page_Context.Current.ContentTitle</value>
+  </data>
+  <data name="Search index" xml:space="preserve">
+    <value>Search index</value>
+  </data>
+  <data name="Include this page content in the search index" xml:space="preserve">
+    <value>Include this page content in the search index</value>
+  </data>
+  <data name="The Search index field is required." xml:space="preserve">
+    <value>The Search index field is required.</value>
+  </data>
+  <data name="Make this page accesiable from the Crumb path API." xml:space="preserve">
+    <value>Make this page accesiable from the Crumb path API.</value>
+  </data>
+  <data name="Html title" xml:space="preserve">
+    <value>Html title</value>
+  </data>
+  <data name="The title tag and value that appear in the page HTML header and also used by browsers as the page title. &lt;br /&gt;This value can be accessed via API: @Html.FrontHtml().HtmlTitle()" xml:space="preserve">
+    <value>The title tag and value that appear in the page HTML header and also used by browsers as the page title. &lt;br /&gt;This value can be accessed via API: @Html.FrontHtml().HtmlTitle()</value>
+  </data>
+  <data name="Custom meta fields" xml:space="preserve">
+    <value>Custom meta fields</value>
+  </data>
+  <data name="Add a HTML block" xml:space="preserve">
+    <value>Add a HTML block</value>
+  </data>
+  <data name="Edit HTML block" xml:space="preserve">
+    <value>Edit HTML block</value>
+  </data>
+  <data name="Enable workflow" xml:space="preserve">
+    <value>Enable workflow</value>
+  </data>
+  <data name="The Enable workflow field is required." xml:space="preserve">
+    <value>The Enable workflow field is required.</value>
+  </data>
+  <data name="Enable broadcasting" xml:space="preserve">
+    <value>Enable broadcasting</value>
+  </data>
+  <data name="The Enable broadcasting field is required." xml:space="preserve">
+    <value>The Enable broadcasting field is required.</value>
+  </data>
+  <data name="Unlocalized item" xml:space="preserve">
+    <value>Unlocalized item</value>
+  </data>
+  <data name="Workflow item" xml:space="preserve">
+    <value>Workflow item</value>
+  </data>
+  <data name="Advanced search" xml:space="preserve">
+    <value>Advanced search</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="Are you sure you want to revert to this version?" xml:space="preserve">
+    <value>Are you sure you want to revert to this version?</value>
+  </data>
+</root>

@@ -1,0 +1,29 @@
+﻿@model Kooboo.Dynamic.DynamicDictionary
+<fieldset>
+    <table>
+        <tbody>
+            <tr>
+                <th>
+                    <label for="CustomFields_Field1" class="label-checkbox">
+                        Field1</label>
+                </th>
+                <td>                
+                    <input type="checkbox" value="true" name="CustomFields.Field1" id="CustomFields_Field1"
+                        data-val-required="Required" data-val="true" class="medium" @( (Model != null && Model["Field1"].ToString() == "true") ? "checked=\"checked\"" : "")>
+                    <input type="hidden" value="false" name="CustomFields.Field1">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="CustomFields_Field2">
+                        Field2</label>
+                </th>
+                <td>
+                    <input type="text" value="@(Model == null ? "" : Model["Field2"])" name="CustomFields.Field2" id="CustomFields_Field2" class="medium" />
+                    <span name="" data-valmsg-replace="true" data-valmsg-for="CustomFields.Field2" class="field-validation-valid">
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>

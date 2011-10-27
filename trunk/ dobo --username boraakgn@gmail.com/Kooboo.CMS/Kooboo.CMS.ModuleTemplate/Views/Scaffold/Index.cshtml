@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Sample</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="@Url.Content("~/Views/Scaffold/Styles/reset.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Views/Scaffold/Styles/base.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Views/Scaffold/Styles/layout.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Views/Scaffold/Styles/typography.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Views/Scaffold/Styles/form.css")" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 7]><link href="@Url.Content("~/Views/Scaffold/Styles/ie.css")" rel="stylesheet" type="text/css" /><![endif]-->
+    <script type="text/javascript" src="@Url.Content("~/Views/Scaffold/AdminScripts/jquery-1.4.4.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Views/Scaffold/AdminScripts/jquery.unobtrusive-ajax.min.js")"></script>
+    @Html.FrontHtml().RegisterStyles()
+</head>
+<body>
+    <div id="body-container">
+        <div id="header">
+            <div class="global-width">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="@Url.Content("~/Views/Scaffold/Images/logo.png")" alt="Kooboo" /></a></h1>
+                <ul class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="active"><a href="#">Module</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="headline">
+            <div class="global-width clearfix">
+                <h2>
+                    Module</h2>
+            </div>
+        </div>
+        <div id="main-container" class="global-width clearfix">
+            <div id="main">
+                @Html.FrontHtml().Position("main")
+            </div>
+            <div id="sidebar">
+                @Html.FrontHtml().Position("sidebar")
+            </div>
+        </div>
+        <div id="footer">
+            <p class="copyright">
+                @("İçerik Yönetim Sistemi".Localize())
+                @Kooboo.CMS.Sites.KoobooCMSVersion.Version | &copy; 2011</p>
+        </div>
+    </div>
+    @Html.FrontHtml().RegisterScripts()
+</body>
+</html>

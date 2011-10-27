@@ -1,0 +1,61 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{ var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];}
+@using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()
+    , FormMethod.Post
+    , new RouteValueDictionary(new { enctype = "application/x-www-form-urlencoded" })))
+{
+    <div class="common-form">
+    <fieldset>
+    <table><tr>
+            <td>
+            <label for="Name">Referans Adı</label>
+            </td>
+            <td>
+            <input id="Name" name="Name" type="text" value="@(Model.Name ?? "")"  data-val-required="The Name field is required." data-val="true"/>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Name"], null)
+            </td>          
+            </tr><tr>
+            <td>
+            <label for="Description">A&#231;ıklama</label><a href="javascript:;" class="tooltip-link" title='Referansın Detayı'></a>
+            </td>
+            <td>
+            <input id="Description" name="Description" type="text" value="@(Model.Description ?? "")"  data-val-required="The Description field is required." data-val="true"/>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Description"], null)
+            </td>          
+            </tr><tr>
+            <td>
+            <label for="Image">Resim</label><a href="javascript:;" class="tooltip-link" title='Referans Resmi'></a>
+            </td>
+            <td>
+            <input id="Image" name="Image" type="text" value="@(Model.Image ?? "")"  readonly="readonly"/>
+<a href="javascript:;" class="o-icon add image-croper" inputid = "Image"></a>
+
+<input id="Image-hidden" name="Image-hidden" type="hidden" value="@(Model.Image ?? "")"/>
+<input type="hidden" name="Kooboo-Image-Crop-Field" value="Image"/>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Image"], null)
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <td>
+            <label for="Published">Published</label>
+            </td>
+            <td>
+            <input name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    </table>
+    </fieldset>
+    <p class="buttons"><button type="submit">@("Save".Localize())</button> <a href="javascript:;" class="dialog-close button">@("Close".Localize())</a> </p>
+    </div>
+}

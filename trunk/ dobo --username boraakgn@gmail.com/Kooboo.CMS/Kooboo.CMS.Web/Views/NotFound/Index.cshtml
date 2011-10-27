@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Sayfa Bulunamadı</title>
+    @Html.ExternalResources("Account", "skinStyles", null)
+    @Html.ExternalResources("Account", "siteStyles", null)
+    @Html.ExternalResources("Account", "commonStyles", null)
+    @Html.ExternalResources("Account", "logonScripts", null)
+</head>
+<body>
+    <div id="body-container">
+        <div id="header" class="clearfix">
+            <h1 class="logo"><a href="#"><img src="@Url.Content("~/images/logo.png")" alt="logo" /></a></h1>
+        </div>
+        <div id="main-container" class="clearfix">
+            <div id="main" class="errorpage">
+                <h2>Sayfa Bulunamadı</h2>
+                <p>Lütfen <a href="@Url.Content("~/Admin")">giriş</a> yapın.</p>
+            </div>
+        </div>
+        <div id="footer">
+            <p>@("İçerik yönetim sistemi".Localize()) | &copy; 2011</p>
+        </div>
+    </div>
+</body>
+</html>

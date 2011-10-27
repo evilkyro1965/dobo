@@ -1,0 +1,20 @@
+﻿<br />
+<div style="width:800px; margin-left:50px">
+    @foreach (var item in ViewBag.References){
+  <a class='title' title='@Html.Raw(item.Name)' href='@Url.FrontUrl().PageUrl("Anasayfa/Referanslarimiz/detail",new { UserKey = item.UserKey})'>
+  <div style="width:200px; float:left;">
+    <div style=" margin-right:20px; height:120px; background-color:white; border-width:1px; border-style:solid; text-align:center; border-color:silver">
+      @if(item.Image != null) {<img src="@Url.FrontUrl().ResizeImageUrl(item.Image,100,100)" />}
+</div>
+  
+  <div style=" margin-top:5px; text-align:center">
+    @Html.Raw(item.Name)
+  </div>
+</div>
+</a>
+    }
+  </div>
+
+<div class="pager">
+@Html.FrontHtml().Pager(ViewBag.References)
+<div> 

@@ -1,0 +1,104 @@
+﻿@{ var guid = Guid.NewGuid(); }
+<script language="javascript" type="text/javascript">
+    $(function(){
+        var form = $('#form-@guid').ajaxForm({
+            dataType: 'json',
+            type:'post',
+            beforeSerialize: function ($form, options) {
+
+                //inform the server you need JsonResult return
+                var jsonResultHidden = form.find('input:hidden[name=JsonResult]').val(true);
+                if (!jsonResultHidden.length) {
+                    jsonResultHidden = $('<input type="hidden" name="JsonResult" value="true"/>').appendTo(form);
+                }
+            },
+            success: function (response, textStatus) {
+                if (response.Success) {
+                    $.ajax({
+                      url: "@SubmissionHelper.EmailUrl()",
+                      context: document.body,
+                      success: function(){
+                      }
+                    });
+                    if (response.RedirectUrl) {
+                        window.location.href = response.RedirectUrl;
+                    } else {
+                        document.getElementById('form-@guid').reset();
+                        $('#successMessage').html("İletişim Formu Başarıyla Kaydedildi");
+                        //window.location.reload(true);
+                    }
+                } else {
+                    var msgStr = '';
+                    for (var i = 0; i < response.Messages.length; i++) {
+                        msgStr += response.Messages[i] + '\r\n';
+                    }
+
+                    var validator = form.validate();
+                    //var errors = [];
+                    for (var i = 0; i < response.FieldErrors.length; i++) {
+                        var obj = {};
+                        obj[response.FieldErrors[i].FieldName] = response.FieldErrors[i].ErrorMessage;
+                        validator.showErrors(obj);
+                    }
+                  if(msgStr) {
+                    alert(msgStr);
+                  }
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) { }
+        });
+    });
+</script>
+<div class="common-form">
+    <h5 class="title">İletişim Formu</h5>
+  <div id="successMessage" class="message success close"></div>
+    <form id="form-@guid"  method="post" action="@SubmissionHelper.CreateContentUrl()">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="FolderName" value="Contact" />
+        <input type="hidden" name="Published" value="true" />
+        <input type="hidden" name="JsonResult" value="true"/>
+      <table style="height:300px; width:300px">
+            <tbody>
+                <tr>
+                  <td style="width:80px"><label for="Name">Adınız:</label></td>
+                    <td>
+                      <input type="text" style="float:left" id="Name" name="Name" data-val="true" />
+                        @Html.ValidationMessageForInput("Name")
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="EMail">E-Mailiniz:</label></td>
+                    <td>
+                        <input id="EMail" name="EMail" data-val="true"/>
+                      	@Html.ValidationMessageForInput("EMail")
+                    </td>
+                </tr>
+          	 <tr>
+                    <td><label for="Address">Adresiniz:</label></td>
+                    <td>
+                        <input id="Address" name="Address" data-val="true"/>
+                      	@Html.ValidationMessageForInput("Address")
+                    </td>
+                </tr>
+      		 <tr>
+                    <td><label for="Phone">Telefonunuz:</label></td>
+                    <td>
+                        <input id="Phone" name="Phone" data-val="true"/>
+                        @Html.ValidationMessageForInput("Phone")
+                    </td>
+                </tr>
+  		 <tr>
+                    <td><label for="Message">Mesajınız:</label></td>
+                    <td>
+                      <textarea style="border-width:1px; border-color:silver; border-style:solid" id="Message" name="Message" cols="25" rows="10" data-val="true"></textarea>
+                      	@Html.ValidationMessageForInput("Message")
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="submit" value="Gönder" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>

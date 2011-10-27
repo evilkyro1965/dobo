@@ -1,0 +1,820 @@
+Event code: 3006
+Event message: A parser error has occurred.
+Event time: 9/25/2011 4:49:49 PM
+Event time (UTC): 9/25/2011 1:49:49 PM
+Event ID: 30511aa1a9614a4e9198dd011c639fba
+Event sequence: 54
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129614320058259630
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 5900
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.Web.HttpParseException
+    Exception message: The foreach block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+
+Request information:
+    Request URL: http://localhost:3911/dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    Request path: /dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 43
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderViewInternal(HtmlHelper htmlHelper, String viewPath, ViewDataDictionary viewData, Object model) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 237
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(String viewName, ViewDataDictionary viewData, Boolean executeDataRule) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 202
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(ViewPosition viewPosition) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 111
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.<RenderPositionContents>d__7.MoveNext() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 69
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at Kooboo.CMS.Sites.Web.AggregateHtmlString..ctor(IEnumerable`1 htmlStrings) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Web\AggregateHtmlString.cs:line 20
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.Position(String positionID) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 56
+   at ASP._Page_Cms_Data_Sites_SirketAdi_Templates_Layouts_2kolon_sagmenu_template_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\layouts\2kolon_sagmenu\template.cshtml:line 38
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.View.FrontViewResult.ExecuteResult(ControllerContext context) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontViewResult.cs:line 30
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3006
+Event message: A parser error has occurred.
+Event time: 9/25/2011 4:50:52 PM
+Event time (UTC): 9/25/2011 1:50:52 PM
+Event ID: f21a581839904678b706aa0460c502e7
+Event sequence: 57
+Event occurrence: 2
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129614320058259630
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 5900
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.Web.HttpParseException
+    Exception message: The foreach block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+
+Request information:
+    Request URL: http://localhost:3911/dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    Request path: /dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 45
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderViewInternal(HtmlHelper htmlHelper, String viewPath, ViewDataDictionary viewData, Object model) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 237
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(String viewName, ViewDataDictionary viewData, Boolean executeDataRule) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 202
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(ViewPosition viewPosition) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 111
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.<RenderPositionContents>d__7.MoveNext() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 69
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at Kooboo.CMS.Sites.Web.AggregateHtmlString..ctor(IEnumerable`1 htmlStrings) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Web\AggregateHtmlString.cs:line 20
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.Position(String positionID) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 56
+   at ASP._Page_Cms_Data_Sites_SirketAdi_Templates_Layouts_2kolon_sagmenu_template_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\layouts\2kolon_sagmenu\template.cshtml:line 38
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.View.FrontViewResult.ExecuteResult(ControllerContext context) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontViewResult.cs:line 30
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3007
+Event message: A compilation error has occurred.
+Event time: 9/25/2011 4:51:25 PM
+Event time (UTC): 9/25/2011 1:51:25 PM
+Event ID: 9ec9ff7d9fb14185b321ccbc181ecc56
+Event sequence: 64
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129614320058259630
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 5900
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.Web.HttpCompileException
+    Exception message: d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\views\Photos.Detail\template.cshtml(17): error CS1501: No overload for method 'ResizeImageUrl' takes 1 arguments
+
+Request information:
+    Request URL: http://localhost:3911/dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    Request path: /dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 16
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderViewInternal(HtmlHelper htmlHelper, String viewPath, ViewDataDictionary viewData, Object model) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 237
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(String viewName, ViewDataDictionary viewData, Boolean executeDataRule) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 202
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(ViewPosition viewPosition) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 111
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.<RenderPositionContents>d__7.MoveNext() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 69
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at Kooboo.CMS.Sites.Web.AggregateHtmlString..ctor(IEnumerable`1 htmlStrings) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Web\AggregateHtmlString.cs:line 20
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.Position(String positionID) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 56
+   at ASP._Page_Cms_Data_Sites_SirketAdi_Templates_Layouts_2kolon_sagmenu_template_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\layouts\2kolon_sagmenu\template.cshtml:line 38
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.View.FrontViewResult.ExecuteResult(ControllerContext context) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontViewResult.cs:line 30
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3007
+Event message: A compilation error has occurred.
+Event time: 9/25/2011 4:53:06 PM
+Event time (UTC): 9/25/2011 1:53:06 PM
+Event ID: 70cc233d86d6436a9739ba3a2f7357f7
+Event sequence: 122
+Event occurrence: 3
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129614320058259630
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 5900
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.Web.HttpCompileException
+    Exception message: d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\views\Photos.Detail\template.cshtml(13): error CS1061: 'Kooboo.CMS.Sites.View.FrontUrlHelper' does not contain a definition for 'ImageUrl' and no extension method 'ImageUrl' accepting a first argument of type 'Kooboo.CMS.Sites.View.FrontUrlHelper' could be found (are you missing a using directive or an assembly reference?)
+
+Request information:
+    Request URL: http://localhost:3911/dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    Request path: /dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 42
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderViewInternal(HtmlHelper htmlHelper, String viewPath, ViewDataDictionary viewData, Object model) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 237
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(String viewName, ViewDataDictionary viewData, Boolean executeDataRule) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 202
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(ViewPosition viewPosition) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 111
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.<RenderPositionContents>d__7.MoveNext() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 69
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at Kooboo.CMS.Sites.Web.AggregateHtmlString..ctor(IEnumerable`1 htmlStrings) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Web\AggregateHtmlString.cs:line 20
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.Position(String positionID) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 56
+   at ASP._Page_Cms_Data_Sites_SirketAdi_Templates_Layouts_2kolon_sagmenu_template_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\layouts\2kolon_sagmenu\template.cshtml:line 38
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.View.FrontViewResult.ExecuteResult(ControllerContext context) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontViewResult.cs:line 30
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3007
+Event message: A compilation error has occurred.
+Event time: 9/25/2011 4:54:08 PM
+Event time (UTC): 9/25/2011 1:54:08 PM
+Event ID: 329f91883a0e43c7b4d68b4ffbac94f3
+Event sequence: 129
+Event occurrence: 4
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129614320058259630
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 5900
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.Web.HttpCompileException
+    Exception message: d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\views\Photos.Detail\template.cshtml(13): error CS1061: 'Kooboo.CMS.Sites.View.FrontUrlHelper' does not contain a definition for 'ImageUrl' and no extension method 'ImageUrl' accepting a first argument of type 'Kooboo.CMS.Sites.View.FrontUrlHelper' could be found (are you missing a using directive or an assembly reference?)
+
+Request information:
+    Request URL: http://localhost:3911/dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    Request path: /dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 20
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderViewInternal(HtmlHelper htmlHelper, String viewPath, ViewDataDictionary viewData, Object model) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 237
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(String viewName, ViewDataDictionary viewData, Boolean executeDataRule) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 202
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(ViewPosition viewPosition) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 111
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.<RenderPositionContents>d__7.MoveNext() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 69
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at Kooboo.CMS.Sites.Web.AggregateHtmlString..ctor(IEnumerable`1 htmlStrings) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Web\AggregateHtmlString.cs:line 20
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.Position(String positionID) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 56
+   at ASP._Page_Cms_Data_Sites_SirketAdi_Templates_Layouts_2kolon_sagmenu_template_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\layouts\2kolon_sagmenu\template.cshtml:line 38
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.View.FrontViewResult.ExecuteResult(ControllerContext context) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontViewResult.cs:line 30
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3007
+Event message: A compilation error has occurred.
+Event time: 9/25/2011 4:55:15 PM
+Event time (UTC): 9/25/2011 1:55:15 PM
+Event ID: 69dd0d16e8064bc98423b37c80cb3279
+Event sequence: 143
+Event occurrence: 6
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129614320058259630
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 5900
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.Web.HttpCompileException
+    Exception message: d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\views\Photos.Detail\template.cshtml(13): error CS1973: 'System.Web.Mvc.UrlHelper' has no applicable method named 'ResolveUrl' but appears to have an extension method by that name. Extension methods cannot be dynamically dispatched. Consider casting the dynamic arguments or calling the extension method without the extension method syntax.
+
+Request information:
+    Request URL: http://localhost:3911/dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    Request path: /dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 22
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderViewInternal(HtmlHelper htmlHelper, String viewPath, ViewDataDictionary viewData, Object model) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 237
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(String viewName, ViewDataDictionary viewData, Boolean executeDataRule) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 202
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(ViewPosition viewPosition) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 111
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.<RenderPositionContents>d__7.MoveNext() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 69
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at Kooboo.CMS.Sites.Web.AggregateHtmlString..ctor(IEnumerable`1 htmlStrings) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Web\AggregateHtmlString.cs:line 20
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.Position(String positionID) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 56
+   at ASP._Page_Cms_Data_Sites_SirketAdi_Templates_Layouts_2kolon_sagmenu_template_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\layouts\2kolon_sagmenu\template.cshtml:line 38
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.View.FrontViewResult.ExecuteResult(ControllerContext context) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontViewResult.cs:line 30
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3007
+Event message: A compilation error has occurred.
+Event time: 9/25/2011 4:55:54 PM
+Event time (UTC): 9/25/2011 1:55:54 PM
+Event ID: 64a8109ab63342b9862924219bc3c52b
+Event sequence: 150
+Event occurrence: 7
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129614320058259630
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 5900
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.Web.HttpCompileException
+    Exception message: d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\views\Photos.Detail\template.cshtml(13): error CS0119: 'Kooboo.CMS.Sites.View.UrlExtensions.FrontUrl(System.Web.Mvc.UrlHelper)' is a 'method', which is not valid in the given context
+
+Request information:
+    Request URL: http://localhost:3911/dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    Request path: /dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 39
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderViewInternal(HtmlHelper htmlHelper, String viewPath, ViewDataDictionary viewData, Object model) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 237
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(String viewName, ViewDataDictionary viewData, Boolean executeDataRule) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 202
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(ViewPosition viewPosition) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 111
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.<RenderPositionContents>d__7.MoveNext() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 69
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at Kooboo.CMS.Sites.Web.AggregateHtmlString..ctor(IEnumerable`1 htmlStrings) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Web\AggregateHtmlString.cs:line 20
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.Position(String positionID) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 56
+   at ASP._Page_Cms_Data_Sites_SirketAdi_Templates_Layouts_2kolon_sagmenu_template_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\layouts\2kolon_sagmenu\template.cshtml:line 38
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.View.FrontViewResult.ExecuteResult(ControllerContext context) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontViewResult.cs:line 30
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3007
+Event message: A compilation error has occurred.
+Event time: 9/25/2011 4:56:49 PM
+Event time (UTC): 9/25/2011 1:56:49 PM
+Event ID: 50b73d9dbe864b2ba84fdf21b24c1edc
+Event sequence: 164
+Event occurrence: 9
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129614320058259630
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 5900
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.Web.HttpCompileException
+    Exception message: d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\views\Photos.Detail\template.cshtml(13): error CS1061: 'System.Web.Mvc.UrlHelper' does not contain a definition for 'GetResourceFileUrl' and no extension method 'GetResourceFileUrl' accepting a first argument of type 'System.Web.Mvc.UrlHelper' could be found (are you missing a using directive or an assembly reference?)
+
+Request information:
+    Request URL: http://localhost:3911/dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    Request path: /dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 33
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderViewInternal(HtmlHelper htmlHelper, String viewPath, ViewDataDictionary viewData, Object model) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 237
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(String viewName, ViewDataDictionary viewData, Boolean executeDataRule) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 202
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(ViewPosition viewPosition) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 111
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.<RenderPositionContents>d__7.MoveNext() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 69
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at Kooboo.CMS.Sites.Web.AggregateHtmlString..ctor(IEnumerable`1 htmlStrings) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Web\AggregateHtmlString.cs:line 20
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.Position(String positionID) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 56
+   at ASP._Page_Cms_Data_Sites_SirketAdi_Templates_Layouts_2kolon_sagmenu_template_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\layouts\2kolon_sagmenu\template.cshtml:line 38
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.View.FrontViewResult.ExecuteResult(ControllerContext context) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontViewResult.cs:line 30
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3007
+Event message: A compilation error has occurred.
+Event time: 9/25/2011 4:59:15 PM
+Event time (UTC): 9/25/2011 1:59:15 PM
+Event ID: 62e1720b90324412af4938c43028c7f9
+Event sequence: 213
+Event occurrence: 10
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129614320058259630
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 5900
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.Web.HttpCompileException
+    Exception message: d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\views\Photos.Detail\template.cshtml(11): error CS0103: The name 'item' does not exist in the current context
+
+Request information:
+    Request URL: http://localhost:3911/dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    Request path: /dev~SirketAdi/Anasayfa/Galeri/Detail/Galeri/Detail/Çalışanlar
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 46
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderViewInternal(HtmlHelper htmlHelper, String viewPath, ViewDataDictionary viewData, Object model) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 237
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(String viewName, ViewDataDictionary viewData, Boolean executeDataRule) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 202
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.RenderView(ViewPosition viewPosition) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 111
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.<RenderPositionContents>d__7.MoveNext() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 69
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at Kooboo.CMS.Sites.Web.AggregateHtmlString..ctor(IEnumerable`1 htmlStrings) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Web\AggregateHtmlString.cs:line 20
+   at Kooboo.CMS.Sites.View.FrontHtmlHelper.Position(String positionID) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontHtmlHelper.cs:line 56
+   at ASP._Page_Cms_Data_Sites_SirketAdi_Templates_Layouts_2kolon_sagmenu_template_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Sites\SirketAdi\templates\layouts\2kolon_sagmenu\template.cshtml:line 38
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.View.FrontViewResult.ExecuteResult(ControllerContext context) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\FrontViewResult.cs:line 30
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------

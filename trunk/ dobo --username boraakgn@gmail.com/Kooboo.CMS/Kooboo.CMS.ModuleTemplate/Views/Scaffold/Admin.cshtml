@@ -1,0 +1,68 @@
+﻿@model ModuleResultExecutedContext
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>İçerik Yönetim Sistemi Modül Geliştirme</title>
+    <link rel="Stylesheet" href="@Url.Content("~/Views/Scaffold/AdminStyles/reset.css")" type="text/css" />
+    <link rel="Stylesheet" href="@Url.Content("~/Views/Scaffold/AdminStyles/base.css")" type="text/css" />
+    <link rel="Stylesheet" href="@Url.Content("~/Views/Scaffold/AdminStyles/layout.css")" type="text/css" />
+    <link rel="Stylesheet" href="@Url.Content("~/Views/Scaffold/AdminStyles/pager.css")" type="text/css" />
+    <link rel="Stylesheet" href="@Url.Content("~/Views/Scaffold/AdminStyles/jQueryUI/smoothness/jquery-ui-1.8.5.custom.css")" type="text/css" />
+    @*<link rel="Stylesheet" href="@Url.Content("~/Views/Scaffold/AdminStyles/yardiTip/yardiTip.css")" type="text/css" />*@
+    <link rel="Stylesheet" href="@Url.Content("~/Views/Scaffold/AdminStyles/jAlert/jquery.alerts.css")" type="text/css" />
+    <link rel="Stylesheet" href="@Url.Content("~/Views/Scaffold/AdminStyles/jquery.imageViewer/css/prettyPhoto.css")" type="text/css" />
+    <link rel="Stylesheet" href="@Url.Content("~/Views/Scaffold/AdminStyles/jquery.treeview/jquery.treeview.css")" type="text/css" />
+    <link rel="Stylesheet" href="@Url.Content("~/Views/Scaffold/AdminStyles/typography.css")" type="text/css" />
+    <link rel="Stylesheet" href="@Url.Content("~/Views/Scaffold/AdminStyles/form.css")" type="text/css" />
+    <link rel="Stylesheet" href="@Url.Content("~/Views/Scaffold/AdminStyles/validation.css")" type="text/css" />
+    @*<link rel="Stylesheet" href="/Areas/Sites/Styles/Sites.css" type="text/css" />*@
+    <!--[if IE 7]>
+<link rel="Stylesheet" href="@Url.Content("~/Views/Scaffold/AdminStyles/ie.css")" type="text/css" />
+<![endif]-->
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/jquery.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/jquery.json-2.2.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/jquery.unobtrusive-ajax.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/jquery.validate.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/jquery.validate.unobtrusive.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/jquery-ui.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/extension/jquery.form.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/extension/jquery.numeric.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/jquery.maskedinput-1.2.2.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/jquery.watermarkinput.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/ui.dropdownchecklist-min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/jquery.treeview.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/jquery.prettyPhoto.js")" type="text/javascript"></script>
+    @*<script src="/Areas/Sites/Scripts/codeMirror/codemirror.js" type="text/javascript"></script>
+<script src="/Areas/Sites/Scripts/extension/jquery.innerLineEditor.js" type="text/javascript"></script>
+<script src="/Areas/Sites/Scripts/extension/jquery.codeMirrorBridge.js" type="text/javascript"></script>*@
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/Kooboo.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/Kooboo.cms.ui.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/yardiTip/yardiTip.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/extension/js.extension.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/extension/jquery.extension.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Views/Scaffold/AdminScripts/tiny_Mce/tiny_mce.js")" type="text/javascript"></script>
+    @*<script src="/Areas/Sites/Scripts/Kooboo_CMS.js" type="text/javascript"></script>*@
+</head>
+<body>
+    <div id="body-container">
+        @Html.Partial("Header")
+        @Html.Partial("MessageBox")
+        <div id="main-container" class="clearfix">
+            <div id="main">
+                <div class="inner-main">
+                    @Html.Raw(Model.ResultHtml)
+                </div>
+            </div>
+            <div id="sidebar">
+                @Html.Partial("Sidebar")
+            </div>
+        </div>
+        <div id="footer">
+            <p>@("İçerik Yönetim Sistemi".Localize()) @Kooboo.CMS.Sites.KoobooCMSVersion.Version | &copy; 2011</p>
+        </div>
+    </div>
+    @Html.Partial("Master.Script")
+    @Html.Partial("AjaxForm.Script")
+    @Html.Partial("LastReady.Script")
+</body>
+</html>

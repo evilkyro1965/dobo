@@ -1,0 +1,91 @@
+/*
+[Contents]
+
+	0- Global
+	1- Links
+	2- Headings
+*/
+
+/* =0 Global
+---------------------------------------------------------------------------------------------------------------------*/
+body {
+	color:#555;
+	font:12px/1.2 Verdana, Geneva, sans-serif;
+}
+.hide {
+	display:none;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.clear {
+	clear:both;
+}
+.clearfix {
+	display:block;
+}
+.clearfix:after {
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	height:0;
+}
+/* For Safari */
+html[xmlns] .clearfix {
+	display:block;
+}
+/* For IE6 */
+*html .clearfix {
+	height:1%;
+}
+/* For IE7 */
+*+html .clearfix {
+	height:1%;
+}
+/* =1 Links
+---------------------------------------------------------------------------------------------------------------------*/
+a{
+	color:#21759B;
+}
+a:hover{
+	color:#D54E21;
+	text-decoration:underline;
+}
+
+/* Button link */
+a.button{
+	border:1px solid #BBB;
+	font-size:11px;
+	padding:0 8px;
+	text-decoration:none;
+	
+	/* Do rounding */
+	border-radius:11px;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+}
+a.button:hover{
+	border-color:#666;
+}
+/* =2 Headings
+---------------------------------------------------------------------------------------------------------------------*/
+h2 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:36px;
+}
+h3 {
+	font-size:18px;
+}
+h4 {
+	font-size:16px;
+}
+h5 {
+	font-size:14px;
+}
+h6 {
+	font-size:12px;
+}
