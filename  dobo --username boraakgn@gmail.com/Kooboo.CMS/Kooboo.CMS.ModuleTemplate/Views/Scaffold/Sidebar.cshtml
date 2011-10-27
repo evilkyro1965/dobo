@@ -1,0 +1,6 @@
+﻿@model ModuleResultExecutedContext
+<div class="block">
+    <div class="menu">
+        @Html.Partial("Menu", Kooboo.CMS.Sites.Extension.Module.ModuleMenu.GetModuleMenu("dev", ViewContext.Controller.ControllerContext, Model.Controller.ControllerContext, ViewContext.RequestContext.AllRouteValues(),Site.Current.FullName ))
+    </div>
+</div>

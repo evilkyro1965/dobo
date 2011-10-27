@@ -1,0 +1,24 @@
+﻿<br />
+<div style="width: 900px; margin: 5px; padding-left:30px">
+    @foreach (var item in ViewBag.Categories)
+    {
+        var textFolder = Kooboo.CMS.Sites.View.ContentHelper.GetCategories(item.FolderName, item.UUID);
+        if (textFolder.Count > 0)
+        {
+            if (!string.IsNullOrEmpty(textFolder[0].Value))
+            {
+                continue;
+            }
+        }
+
+        <div style="float: left; width: 220px; padding-bottom: 20px">
+            <div style="padding-right: 20px; float: left; height: 120">
+                <a class='title' href='@Url.FrontUrl().PageUrl("Anasayfa/ProductCategories/ProductList", new { UserKey = item.UserKey })'>
+                    <img title="@item.Name" src="@Url.FrontUrl().ResizeImageUrl(item.Image, 200, 250)"/></a>
+            </div>
+        </div>
+    }
+</div>
+<div class="pager">
+    @Html.FrontHtml().Pager(ViewBag.Categories)
+<div>

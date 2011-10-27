@@ -1,0 +1,61 @@
+/*
+[Contents]
+
+	0- Global
+	1- Common Form
+*/
+
+/* =0 Global
+---------------------------------------------------------------------------------------------------------------------*/
+input[type="text"],
+input[type="password"]{
+	border:1px solid #CCC;
+	color:#666;
+	height:14px;
+	padding:3px;
+	
+	/* Do rounding */
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"]{
+	background:#FFF;
+	border:1px solid #BBB;
+	color:#464646;
+	cursor:pointer;
+	font-size:11px;
+	line-height:16px;
+	padding:2px 8px;
+	
+	/* Do rounding */
+	border-radius:11px;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+	border-color:#666;
+	color:#000;
+}
+/* =1 Common Form
+---------------------------------------------------------------------------------------------------------------------*/
+.common-form tbody th{
+	padding:3px 3px 3px 0;
+}
+.common-form tbody td{
+	padding:3px 0 3px 3px;
+}
+.common-form input[type="text"],
+.common-form input[type="password"]{
+	width:200px;
+}
+.common-form input[type="text"].short,
+.common-form input[type="password"].short{
+	width:120px;
+}

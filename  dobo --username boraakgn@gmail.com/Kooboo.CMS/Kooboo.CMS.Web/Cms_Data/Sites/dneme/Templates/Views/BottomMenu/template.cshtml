@@ -1,0 +1,10 @@
+﻿  @{
+var currentPage = MenuHelper.Current();
+var currentPageName = currentPage.FullName;
+}
+<ul class="list-2">
+    <li><a href="@Url.FrontUrl().PageUrl("Anasayfa/Galeri")" class="@(currentPageName == "Anasayfa~Galeri" ? "active " : string.Empty )item">Resim Galerisi</a></li>
+    <li><a href="@Url.FrontUrl().PageUrl("Anasayfa/Hakkimizda")" @(currentPageName == "Anasayfa~Hakkimizda" ? "class=active" : string.Empty )>Hakkımızda</a></li>
+    <li><a href="@Url.FrontUrl().PageUrl("Anasayfa/Hizmetlerimiz")" @(currentPageName == "Anasayfa~Hizmetlerimiz" ? "class=active" : string.Empty )>Hizmetlerimiz</a></li>
+    <li><a href="@Url.FrontUrl().PageUrl("Anasayfa/Referanslarimiz")" @(currentPageName == "Anasayfa~Referanslarimiz" ? "class=active" : string.Empty )>Referanslar</a></li>
+</ul>

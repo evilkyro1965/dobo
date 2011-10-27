@@ -1,0 +1,32 @@
+﻿@model Kooboo.Web.Mvc.Menu.MenuItem
+@if (Model.Visible)
+{
+    var menuItem = Model as Kooboo.Web.Mvc.Menu.MenuItem;
+    if (menuItem != null)
+    {     
+    <li class="@((menuItem.Items != null && menuItem.Items.Count() > 0) ? "has-sub" : "") @(menuItem.IsActive ? "active" : "")">
+        @if (menuItem.Items != null && menuItem.Items.Count() > 0)
+        {
+            <span class="arrow"></span>
+        }
+        @if (!string.IsNullOrEmpty(menuItem.Action) || !string.IsNullOrEmpty(menuItem.Controller))
+        { 
+            @Html.ActionLink(menuItem.Localizable ? menuItem.Text.Localize() : menuItem.Text, menuItem.Action, menuItem.Controller, menuItem.RouteValues, menuItem.HtmlAttributes)
+        }
+        else
+        {
+            <a href="javascript:;">
+                @menuItem.Text</a>
+        }
+        @if (Model.Items != null & Model.Items.Count() > 0)
+        {
+            <ul>
+                @foreach (var item in Model.Items)
+                {        
+                    @Html.Partial("MenuItem", item)
+                }
+            </ul>
+        }
+    </li>
+    }
+}

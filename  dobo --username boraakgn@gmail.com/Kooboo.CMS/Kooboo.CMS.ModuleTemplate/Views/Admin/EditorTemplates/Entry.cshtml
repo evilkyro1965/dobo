@@ -1,0 +1,9 @@
+﻿@model Entry
+<fieldset>
+    <table>
+        <tbody>
+            @Html.ModuleHtml().EditorFor(m => m.Controller)
+            @Html.ModuleHtml().EditorFor(m => m.Action)
+        </tbody>
+    </table>
+</fieldset>

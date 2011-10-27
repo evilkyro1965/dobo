@@ -1,0 +1,17 @@
+﻿<h5 style="font-size:15pt">Haberler</h5>
+<div class="newsScroller" id="newsScroll">
+<ul>
+@foreach (var item in ViewBag.Articles){
+        <li @ViewHelper.Edit(item)>
+            <a class="title" href="#" @ViewHelper.Edit(item,"Title")>@item.Title</a>
+      	   <span class="article-date">@ViewHelper.DateTimeToString(item.UtcCreationDate,"yyyy-MM-dd")</span>
+            <span class="desc" @ViewHelper.Edit(item,"Summary")>@Html.Raw(item.Summary)</span>
+            <a class="link" href="@Url.FrontUrl().PageUrl("Articles/detail", new { UserKey = item.UserKey})">@("More...".Localize())</a>
+        </li>
+<div class="line-hor p2 unreset"/>
+}
+    </ul>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {$('#newsScroll').newsScroll({'interval':50, 'direction':-1});});
+</script>

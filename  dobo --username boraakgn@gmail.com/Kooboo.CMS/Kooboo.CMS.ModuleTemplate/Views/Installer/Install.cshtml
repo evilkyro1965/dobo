@@ -1,0 +1,17 @@
+﻿@{Html.ModuleHtml().BeginForm();}
+<div class="block">
+    <p>
+        This is the screen where you can customize your module settings.
+    </p>
+    <p>
+        If the screen is empty, it means that there is not any settings required.
+    </p>
+    <p>
+        You may click <b>Next</b> to continue the installation.
+    </p>
+</div>
+<p class="buttons">
+    <button type="submit" class="button step-link">
+        @("Next".Localize()) »</button>
+</p>
+@{Html.ModuleHtml().EndForm();}

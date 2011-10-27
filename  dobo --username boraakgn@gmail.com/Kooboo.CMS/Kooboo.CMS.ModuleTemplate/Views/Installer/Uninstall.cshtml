@@ -1,0 +1,16 @@
+﻿@{Html.ModuleHtml().BeginForm();}
+<div class="block">
+    <p>
+        This is the screen where you can uninstall your module.
+    </p>
+    <p>
+        If the screen is empty, it means that there are no actions required.
+    </p>
+    <p>
+        You may click <b>Next</b> to continue the uninstallation.
+    </p>
+</div>
+<p class="buttons">
+    <button type="submit" class="button step-link">
+        @("Next".Localize()) »</button></p>
+@{Html.ModuleHtml().EndForm();}

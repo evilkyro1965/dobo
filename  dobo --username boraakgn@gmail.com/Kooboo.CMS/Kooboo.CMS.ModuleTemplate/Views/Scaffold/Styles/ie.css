@@ -1,0 +1,19 @@
+/*
+
+	This is for IE7- Only
+
+*/
+
+/* Global
+-----------------------------------*/
+a:focus{
+	outline:0;
+}
+/* Form
+-----------------------------------*/
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"]{
+	padding:1px 4px 0;
+}

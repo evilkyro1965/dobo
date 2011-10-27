@@ -1,0 +1,123 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{ var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];}
+@using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()
+    , FormMethod.Post
+    , new RouteValueDictionary(new { enctype = "application/x-www-form-urlencoded" })))
+{
+    <div class="common-form">
+    <fieldset>
+    <table><tr>
+            <td>
+            <label for="Name">Şirket Adı</label>
+            </td>
+            <td>
+            <input id="Name" name="Name" type="text" value="@(Model.Name ?? "")"  data-val-required="The Name field is required." data-val="true"/>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Name"], null)
+            </td>          
+            </tr><tr>
+            <td>
+            <label for="PhoneNo">Telefon Numarası</label><a href="javascript:;" class="tooltip-link" title='Şirketin Telefon Numarası'></a>
+            </td>
+            <td>
+            <input id="PhoneNo" name="PhoneNo" type="text" value="@(Model.PhoneNo ?? "")" />
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["PhoneNo"], null)
+            </td>          
+            </tr><tr>
+            <td>
+            <label for="Fax">Fax Numarası</label><a href="javascript:;" class="tooltip-link" title='Şirketin Fax Numarası'></a>
+            </td>
+            <td>
+            <input id="Fax" name="Fax" type="text" value="@(Model.Fax ?? "")" />
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Fax"], null)
+            </td>          
+            </tr><tr>
+            <td>
+            <label for="EMail">E-Posta Adresi</label><a href="javascript:;" class="tooltip-link" title='Şirketin E-Posta Adresi'></a>
+            </td>
+            <td>
+            <input id="EMail" name="EMail" type="text" value="@(Model.EMail ?? "")"  data-val-regex="E-Posta Adresi D&amp;#252;zg&amp;#252;n Formatta Girilmelidir" data-val-regex-pattern="\w+([-+.&#39;]\w+)*@@\w+([-.]\w+)*\.\w+([-.]\w+)*" data-val="true"/>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["EMail"], null)
+            </td>          
+            </tr><tr>
+            <td>
+            <label for="Address">Şirket Adresi</label><a href="javascript:;" class="tooltip-link" title='Şirketin Ulaşım Adresi'></a>
+            </td>
+            <td>
+            
+<textarea name="Address" id="Address" class="Address tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))"  media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.Address ?? "")</textarea>
+
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Address"], null)
+            </td>          
+            </tr><tr>
+            <td>
+            <label for="SmallImage">Şirket Fotosu (K&#252;&#231;&#252;k)</label><a href="javascript:;" class="tooltip-link" title='Şirketin K&#252;&#231;&#252;k Fotoğrafı'></a>
+            </td>
+            <td>
+            <input id="SmallImage" name="SmallImage" type="text" value="@(Model.SmallImage ?? "")"  readonly="readonly"/>
+<a href="javascript:;" class="o-icon add image-croper" inputid = "SmallImage"></a>
+
+<input id="SmallImage-hidden" name="SmallImage-hidden" type="hidden" value="@(Model.SmallImage ?? "")"/>
+<input type="hidden" name="Kooboo-Image-Crop-Field" value="SmallImage"/>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["SmallImage"], null)
+            </td>          
+            </tr><tr>
+            <td>
+            <label for="Logo">Şirket Logosu</label><a href="javascript:;" class="tooltip-link" title='Şirketin Logosu'></a>
+            </td>
+            <td>
+            <input id="Logo" name="Logo" type="text" value="@(Model.Logo ?? "")"  readonly="readonly"/>
+<a href="javascript:;" class="o-icon add image-croper" inputid = "Logo"></a>
+
+<input id="Logo-hidden" name="Logo-hidden" type="hidden" value="@(Model.Logo ?? "")"/>
+<input type="hidden" name="Kooboo-Image-Crop-Field" value="Logo"/>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Logo"], null)
+            </td>          
+            </tr><tr>
+            <td>
+            <label for="Latitude">Enlem Koordinatı</label><a href="javascript:;" class="tooltip-link" title='Şirketin Google Maps Enlem Koordinatı'></a>
+            </td>
+            <td>
+            <input id="Latitude" name="Latitude" type="text" value="@(Model.Latitude ?? "")"  data-val-number="The field Latitude must be a number." data-val-required="" data-val="true"/>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Latitude"], null)
+            </td>          
+            </tr><tr>
+            <td>
+            <label for="Longitude">Boylam Koordinatı</label><a href="javascript:;" class="tooltip-link" title='Şirketin Google Maps Boylam Koordinatı'></a>
+            </td>
+            <td>
+            <input id="Longitude" name="Longitude" type="text" value="@(Model.Longitude ?? "")"  data-val-number="The field Longitude must be a number." data-val-required="" data-val="true"/>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Longitude"], null)
+            </td>          
+            </tr><tr>
+            <td>
+            <label for="Video">Video Embed</label>
+            </td>
+            <td>
+            <input id="Video" name="Video" type="text" value="@(Model.Video ?? "")" />
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Video"], null)
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <td>
+            <label for="Published">Published</label>
+            </td>
+            <td>
+            <input name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    </table>
+    </fieldset>
+    <p class="buttons"><button type="submit">@("Save".Localize())</button> <a href="javascript:;" class="dialog-close button">@("Close".Localize())</a> </p>
+    </div>
+}

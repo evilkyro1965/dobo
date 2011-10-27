@@ -1,0 +1,1318 @@
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 3:09:20 AM
+Event time (UTC): 8/30/2011 12:09:20 AM
+Event ID: 63a1657a95c244bba58f4e83a1ed51d0
+Event sequence: 72
+Event occurrence: 2
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-5-129591353329957919
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 7720
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.InvalidOperationException
+    Exception message: No route in the route table matches the supplied values.
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article%2FCreate%3FSiteName%3DSirketAdi%26ModuleName%3DDobo.v1.0&ModuleName=Dobo.v1.0&siteName=SirketAdi
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 44
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.Mvc.Html.ChildActionExtensions.ActionHelper(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues, TextWriter textWriter)
+   at System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues)
+   at System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, RouteValueDictionary routeValues)
+   at ASP._Page_Cms_Data_Modules_Dobo_v1_0_Views_Article_Create_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Modules\Dobo.v1.0\Views\Article\Create.cshtml:line 16
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Extension.Module.ModuleActionResultExecutor.ExecuteResult(ControllerContext controllerContext, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleActionResultExecutor.cs:line 148
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<CustomInvokeActionResultWithFilters>b__1() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 200
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 185
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<>c__DisplayClass6.<CustomInvokeActionResultWithFilters>b__3() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 206
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.CustomInvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 207
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 154
+   at Kooboo.CMS.Sites.Extension.Module.ModuleExecutor.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleExecutor.cs:line 128
+   at Kooboo.CMS.Web.Areas.Sites.Controllers.ModuleController.Scaffold(String moduleName, String moduleUrl) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Areas\Sites\Controllers\ModuleController.cs:line 94
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 3:18:25 AM
+Event time (UTC): 8/30/2011 12:18:25 AM
+Event ID: a970352f6ddd4e9eab8ebb68c480d697
+Event sequence: 44
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129591365912610713
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 12912
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.InvalidOperationException
+    Exception message: No route in the route table matches the supplied values.
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article%2FCreate%3FSiteName%3DSirketAdi%26ModuleName%3DDobo.v1.0&ModuleName=Dobo.v1.0&siteName=SirketAdi
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 11
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.Mvc.Html.ChildActionExtensions.ActionHelper(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues, TextWriter textWriter)
+   at System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues)
+   at System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, RouteValueDictionary routeValues)
+   at ASP._Page_Cms_Data_Modules_Dobo_v1_0_Views_Article_Create_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Modules\Dobo.v1.0\Views\Article\Create.cshtml:line 16
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Extension.Module.ModuleActionResultExecutor.ExecuteResult(ControllerContext controllerContext, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleActionResultExecutor.cs:line 148
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<CustomInvokeActionResultWithFilters>b__1() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 200
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 185
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<>c__DisplayClass6.<CustomInvokeActionResultWithFilters>b__3() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 206
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.CustomInvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 207
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 154
+   at Kooboo.CMS.Sites.Extension.Module.ModuleExecutor.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleExecutor.cs:line 128
+   at Kooboo.CMS.Web.Areas.Sites.Controllers.ModuleController.Scaffold(String moduleName, String moduleUrl) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Areas\Sites\Controllers\ModuleController.cs:line 94
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 6:46:43 PM
+Event time (UTC): 8/30/2011 3:46:43 PM
+Event ID: bfe2f860c9d347209ff08aac285d67c6
+Event sequence: 141
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129591925329155011
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 152
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article%2FEdit%3FSiteName%3DSirketAdi%26ModuleName%3DDobo.v1.01%26UUID%3D95a0861e-5019-4000-98b6-8e46efbc5ce1&ModuleName=Dobo.v1.01&siteName=SirketAdi
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 17
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String viewName, String controllerName, String[]& searchedLocations) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 82
+   at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 66
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass8.<FindPartialView>b__6(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindPartialView(ControllerContext controllerContext, String partialViewName)
+   at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 6:47:15 PM
+Event time (UTC): 8/30/2011 3:47:15 PM
+Event ID: 3305a503121f4cd4a5519a79630a30ee
+Event sequence: 149
+Event occurrence: 2
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129591925329155011
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 152
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.InvalidOperationException
+    Exception message: The view 'Edit' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Cms_Data/Modules/Dobo.v1.0/Views/Article/Edit.cshtml
+~/Cms_Data/Modules/Dobo.v1.0/Views/Article/Edit.vbhtml
+~/Cms_Data/Modules/Dobo.v1.0/Views/Shared/Edit.cshtml
+~/Cms_Data/Modules/Dobo.v1.0/Views/Shared/Edit.vbhtml
+~/Cms_Data/Modules/Dobo.v1.0/Views/Article/.cshtml
+~/Cms_Data/Modules/Dobo.v1.0/Views/Shared/.vbhtml
+~/Cms_Data/Modules/Dobo.v1.0/Views/Article/Edit.aspx
+~/Cms_Data/Modules/Dobo.v1.0/Views/Article/Edit.ascx
+~/Cms_Data/Modules/Dobo.v1.0/Views/Shared/Edit.aspx
+~/Cms_Data/Modules/Dobo.v1.0/Views/Shared/Edit.ascx
+~/Cms_Data/Modules/Dobo.v1.0/Views/Article/.master
+~/Cms_Data/Modules/Dobo.v1.0/Views/Shared/.master
+~/Views/Article/Edit.aspx
+~/Views/Article/Edit.ascx
+~/Views/Shared/Edit.aspx
+~/Views/Shared/Edit.ascx
+~/Views/Article/Edit.cshtml
+~/Views/Article/Edit.vbhtml
+~/Views/Shared/Edit.cshtml
+~/Views/Shared/Edit.vbhtml
+~/Views/Article/Edit.vm
+~/Views/Shared/Edit.vm
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article%2FEdit%3FSiteName%3DSirketAdi%26ModuleName%3DDobo.v1.0%26UUID%3D95a0861e-5019-4000-98b6-8e46efbc5ce1&ModuleName=Dobo.v1.0&siteName=SirketAdi
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 20
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Extension.Module.ModuleActionResultExecutor.ExecuteResult(ControllerContext controllerContext, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleActionResultExecutor.cs:line 148
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<CustomInvokeActionResultWithFilters>b__1() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 200
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 185
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<>c__DisplayClass6.<CustomInvokeActionResultWithFilters>b__3() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 206
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.CustomInvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 207
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 154
+   at Kooboo.CMS.Sites.Extension.Module.ModuleExecutor.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleExecutor.cs:line 128
+   at Kooboo.CMS.Web.Areas.Sites.Controllers.ModuleController.Scaffold(String moduleName, String moduleUrl) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Areas\Sites\Controllers\ModuleController.cs:line 94
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 6:48:57 PM
+Event time (UTC): 8/30/2011 3:48:57 PM
+Event ID: d2fa69470d164e978db78ec7f5f9479e
+Event sequence: 186
+Event occurrence: 3
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129591925329155011
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 152
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article%2FCreate%3FSiteName%3DSirketAdi%26ModuleName%3DDobo.v1.01&ModuleName=Dobo.v1.01&siteName=SirketAdi
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 5
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String viewName, String controllerName, String[]& searchedLocations) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 82
+   at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 66
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass8.<FindPartialView>b__6(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindPartialView(ControllerContext controllerContext, String partialViewName)
+   at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 6:50:57 PM
+Event time (UTC): 8/30/2011 3:50:57 PM
+Event ID: 3a1b4efc368d49b6bdde8439927969c2
+Event sequence: 189
+Event occurrence: 4
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129591925329155011
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 152
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.InvalidOperationException
+    Exception message: No route in the route table matches the supplied values.
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article%2FCreate%3FSiteName%3DSirketAdi%26ModuleName%3DDobo.v1.0&ModuleName=Dobo.v1.0&siteName=SirketAdi
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 5
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.Web.Mvc.Html.ChildActionExtensions.ActionHelper(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues, TextWriter textWriter)
+   at System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues)
+   at System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, RouteValueDictionary routeValues)
+   at ASP._Page_Cms_Data_Modules_Dobo_v1_0_Views_Article_Create_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Modules\Dobo.v1.0\Views\Article\Create.cshtml:line 16
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Extension.Module.ModuleActionResultExecutor.ExecuteResult(ControllerContext controllerContext, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleActionResultExecutor.cs:line 148
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<CustomInvokeActionResultWithFilters>b__1() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 200
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 185
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<>c__DisplayClass6.<CustomInvokeActionResultWithFilters>b__3() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 206
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.CustomInvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 207
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 154
+   at Kooboo.CMS.Sites.Extension.Module.ModuleExecutor.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleExecutor.cs:line 128
+   at Kooboo.CMS.Web.Areas.Sites.Controllers.ModuleController.Scaffold(String moduleName, String moduleUrl) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Areas\Sites\Controllers\ModuleController.cs:line 94
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 6:55:53 PM
+Event time (UTC): 8/30/2011 3:55:53 PM
+Event ID: dfda96156418480ca47e1de3fb9686ca
+Event sequence: 192
+Event occurrence: 5
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129591925329155011
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 152
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article%2FCreate%3FSiteName%3DSirketAdi%26ModuleName%3DDobo.v1.01&ModuleName=Dobo.v1.01&siteName=SirketAdi
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 5
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String viewName, String controllerName, String[]& searchedLocations) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 82
+   at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 66
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass8.<FindPartialView>b__6(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindPartialView(ControllerContext controllerContext, String partialViewName)
+   at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 7:04:53 PM
+Event time (UTC): 8/30/2011 4:04:53 PM
+Event ID: 45b93a123f3c40fa8ffb503ff21d40d3
+Event sequence: 195
+Event occurrence: 6
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129591925329155011
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 152
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article%2FCreate%3FSiteName%3DSirketAdi%26ModuleName%3DDobo.v1.01&ModuleName=Dobo.v1.01&siteName=SirketAdi
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 5
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String viewName, String controllerName, String[]& searchedLocations) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 82
+   at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 66
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass8.<FindPartialView>b__6(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindPartialView(ControllerContext controllerContext, String partialViewName)
+   at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 7:08:54 PM
+Event time (UTC): 8/30/2011 4:08:54 PM
+Event ID: 93f6b42f923e4828a469c4226afec8ac
+Event sequence: 196
+Event occurrence: 7
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129591925329155011
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 152
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article%2FCreate%3FSiteName%3DSirketAdi%26ModuleName%3DDobo.v1.01&ModuleName=Dobo.v1.01&siteName=SirketAdi
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 27
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String viewName, String controllerName, String[]& searchedLocations) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 82
+   at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 66
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass8.<FindPartialView>b__6(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindPartialView(ControllerContext controllerContext, String partialViewName)
+   at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 7:51:57 PM
+Event time (UTC): 8/30/2011 4:51:57 PM
+Event ID: 6b2db5f2f5314637a91c08283deadf5c
+Event sequence: 198
+Event occurrence: 8
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129591925329155011
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 152
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article%2FCreate%3FSiteName%3DSirketAdi%26ModuleName%3DDobo.v1.01&ModuleName=Dobo.v1.01&siteName=SirketAdi
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 40
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String viewName, String controllerName, String[]& searchedLocations) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 82
+   at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 66
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass8.<FindPartialView>b__6(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindPartialView(ControllerContext controllerContext, String partialViewName)
+   at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 8:22:23 PM
+Event time (UTC): 8/30/2011 5:22:23 PM
+Event ID: 014e119e6a5e49be803b0d6f3be9aa3c
+Event sequence: 62
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129591974659754202
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 1832
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article%2FCreate%3FSiteName%3DSirketAdi%26ModuleName%3DDobo.v1.01&ModuleName=Dobo.v1.01&siteName=SirketAdi
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 5
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String viewName, String controllerName, String[]& searchedLocations) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 82
+   at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 66
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass8.<FindPartialView>b__6(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindPartialView(ControllerContext controllerContext, String partialViewName)
+   at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerBase.ModuleActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerBase.cs:line 15
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 8:30:04 PM
+Event time (UTC): 8/30/2011 5:30:04 PM
+Event ID: 59ef8db72caa4eeeac46e5eee9cd9fa7
+Event sequence: 80
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-2-129591987604367959
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 1832
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article%2FCreate%3FSiteName%3DSirketAdi%26ModuleName%3DDobo.v1.01&ModuleName=Dobo.v1.01&siteName=SirketAdi
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 5
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String viewName, String controllerName, String[]& searchedLocations) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 82
+   at Kooboo.CMS.Sites.Extension.Module.ModuleBuildManagerViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleViewEngine.cs:line 66
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass8.<FindPartialView>b__6(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindPartialView(ControllerContext controllerContext, String partialViewName)
+   at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerBase.ModuleActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerBase.cs:line 19
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 8:57:53 PM
+Event time (UTC): 8/30/2011 5:57:53 PM
+Event ID: 37e9144ac6e94e668872c25aa2213161
+Event sequence: 85
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129591994926422742
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 7912
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: Kooboo.Web.Mvc.WebResourceLoader.WebResourceException
+    Exception message: Web resource name siteStyles not found
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article/SelectCategories?siteName=SirketAdi&categoryFolder=Category&ModuleName=Dobo.v1.01&siteName=SirketAdi&selected=undefined
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 14
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.GetSettings(String areaName, String name) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 163
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String areaName, String name, RouteValueDictionary htmlAttributes) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 35
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String name, RouteValueDictionary htmlAttributes) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 31
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String name) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 22
+   at ASP._Page_Cms_Data_Modules_Dobo_v1_01_Views_Shared_SelectCategories_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Modules\Dobo.v1.01\Views\Shared\SelectCategories.cshtml:line 6
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Extension.Module.ModuleActionResultExecutor.ExecuteResult(ControllerContext controllerContext, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleActionResultExecutor.cs:line 148
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<CustomInvokeActionResultWithFilters>b__1() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 200
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 185
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<>c__DisplayClass6.<CustomInvokeActionResultWithFilters>b__3() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 206
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.CustomInvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 207
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 154
+   at Kooboo.CMS.Sites.Extension.Module.ModuleExecutor.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleExecutor.cs:line 128
+   at Kooboo.CMS.Web.Areas.Sites.Controllers.ModuleController.Scaffold(String moduleName, String moduleUrl) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Areas\Sites\Controllers\ModuleController.cs:line 94
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 8:59:46 PM
+Event time (UTC): 8/30/2011 5:59:46 PM
+Event ID: 861ba1f63cac4c9b9274b946ab58bae8
+Event sequence: 87
+Event occurrence: 2
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129591994926422742
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 7912
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: Kooboo.Web.Mvc.WebResourceLoader.WebResourceException
+    Exception message: Web resource name siteStyles not found
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article/SelectCategories?siteName=SirketAdi&categoryFolder=Category&ModuleName=Dobo.v1.01&siteName=SirketAdi&selected=
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 13
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.GetSettings(String areaName, String name) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 163
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String areaName, String name, RouteValueDictionary htmlAttributes) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 35
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String name, RouteValueDictionary htmlAttributes) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 31
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String name) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 22
+   at ASP._Page_Cms_Data_Modules_Dobo_v1_01_Views_Shared_SelectCategories_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Modules\Dobo.v1.01\Views\Shared\SelectCategories.cshtml:line 6
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Extension.Module.ModuleActionResultExecutor.ExecuteResult(ControllerContext controllerContext, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleActionResultExecutor.cs:line 148
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<CustomInvokeActionResultWithFilters>b__1() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 200
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 185
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<>c__DisplayClass6.<CustomInvokeActionResultWithFilters>b__3() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 206
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.CustomInvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 207
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 154
+   at Kooboo.CMS.Sites.Extension.Module.ModuleExecutor.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleExecutor.cs:line 128
+   at Kooboo.CMS.Web.Areas.Sites.Controllers.ModuleController.Scaffold(String moduleName, String moduleUrl) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Areas\Sites\Controllers\ModuleController.cs:line 94
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 9:04:54 PM
+Event time (UTC): 8/30/2011 6:04:54 PM
+Event ID: 2b178ad3f9674dd9b41fe8fde3a3fb1a
+Event sequence: 89
+Event occurrence: 3
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129591994926422742
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 7912
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: Kooboo.Web.Mvc.WebResourceLoader.WebResourceException
+    Exception message: Web resource name siteStyles not found
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article/SelectCategories?siteName=SirketAdi&categoryFolder=Category&ModuleName=Dobo.v1.01&siteName=SirketAdi&selected=
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 18
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.GetSettings(String areaName, String name) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 163
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String areaName, String name, RouteValueDictionary htmlAttributes) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 35
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String name, RouteValueDictionary htmlAttributes) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 31
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String name) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 22
+   at ASP._Page_Cms_Data_Modules_Dobo_v1_01_Views_Shared_SelectCategories_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Modules\Dobo.v1.01\Views\Shared\SelectCategories.cshtml:line 6
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Extension.Module.ModuleActionResultExecutor.ExecuteResult(ControllerContext controllerContext, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleActionResultExecutor.cs:line 148
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<CustomInvokeActionResultWithFilters>b__1() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 200
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 185
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<>c__DisplayClass6.<CustomInvokeActionResultWithFilters>b__3() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 206
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.CustomInvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 207
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 154
+   at Kooboo.CMS.Sites.Extension.Module.ModuleExecutor.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleExecutor.cs:line 128
+   at Kooboo.CMS.Web.Areas.Sites.Controllers.ModuleController.Scaffold(String moduleName, String moduleUrl) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Areas\Sites\Controllers\ModuleController.cs:line 94
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 9:13:07 PM
+Event time (UTC): 8/30/2011 6:13:07 PM
+Event ID: 2fa75bf0f5074faa874030d0c5e19bc3
+Event sequence: 91
+Event occurrence: 4
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129591994926422742
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 7912
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: Kooboo.Web.Mvc.WebResourceLoader.WebResourceException
+    Exception message: Web resource name siteStyles not found
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article/SelectCategories?siteName=SirketAdi&categoryFolder=Category&ModuleName=Dobo.v1.01&siteName=SirketAdi&selected=
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 25
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.GetSettings(String areaName, String name) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 163
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String areaName, String name, RouteValueDictionary htmlAttributes) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 35
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String name, RouteValueDictionary htmlAttributes) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 31
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String name) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 22
+   at ASP._Page_Cms_Data_Modules_Dobo_v1_01_Views_Shared_SelectCategories_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Modules\Dobo.v1.01\Views\Shared\SelectCategories.cshtml:line 6
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Extension.Module.ModuleActionResultExecutor.ExecuteResult(ControllerContext controllerContext, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleActionResultExecutor.cs:line 148
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<CustomInvokeActionResultWithFilters>b__1() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 200
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 185
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<>c__DisplayClass6.<CustomInvokeActionResultWithFilters>b__3() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 206
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.CustomInvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 207
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 154
+   at Kooboo.CMS.Sites.Extension.Module.ModuleExecutor.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleExecutor.cs:line 128
+   at Kooboo.CMS.Web.Areas.Sites.Controllers.ModuleController.Scaffold(String moduleName, String moduleUrl) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Areas\Sites\Controllers\ModuleController.cs:line 94
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 8/30/2011 9:15:42 PM
+Event time (UTC): 8/30/2011 6:15:42 PM
+Event ID: 3d8d5147466f4b3188ae75bd9e659890
+Event sequence: 93
+Event occurrence: 5
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129591994926422742
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 7912
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: Kooboo.Web.Mvc.WebResourceLoader.WebResourceException
+    Exception message: Web resource name siteStyles not found
+
+Request information:
+    Request URL: http://localhost:3911/Sites/Module/Scaffold?ModuleUrl=Article/SelectCategories?siteName=SirketAdi&categoryFolder=Category&ModuleName=Dobo.v1.01&siteName=SirketAdi&selected=
+    Request path: /Sites/Module/Scaffold
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 43
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.GetSettings(String areaName, String name) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 163
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String areaName, String name, RouteValueDictionary htmlAttributes) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 35
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String name, RouteValueDictionary htmlAttributes) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 31
+   at Kooboo.Web.Mvc.WebResourceLoader.MvcExtensions.ExternalResources(HtmlHelper htmlHelper, String name) in D:\DoBoKoyu\Kooboo\Web\Mvc\WebResourceLoader\MvcExtensions.cs:line 22
+   at ASP._Page_Cms_Data_Modules_Dobo_v1_01_Views_Shared_SelectCategories_cshtml.Execute() in d:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Cms_Data\Modules\Dobo.v1.01\Views\Shared\SelectCategories.cshtml:line 6
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Extension.Module.ModuleActionResultExecutor.ExecuteResult(ControllerContext controllerContext, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleActionResultExecutor.cs:line 148
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<CustomInvokeActionResultWithFilters>b__1() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 200
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 185
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.<>c__DisplayClass4.<>c__DisplayClass6.<CustomInvokeActionResultWithFilters>b__3() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 206
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.CustomInvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 207
+   at Kooboo.CMS.Sites.Extension.Module.ModuleControllerActionInvoker.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleControllerActionInvoker.cs:line 154
+   at Kooboo.CMS.Sites.Extension.Module.ModuleExecutor.ExecuteActionResult(ModuleActionInvokedContext actionInvokedContext) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Extension\Module\ModuleExecutor.cs:line 128
+   at Kooboo.CMS.Web.Areas.Sites.Controllers.ModuleController.Scaffold(String moduleName, String moduleUrl) in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\Areas\Sites\Controllers\ModuleController.cs:line 94
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------

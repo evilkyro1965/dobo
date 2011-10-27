@@ -1,0 +1,7 @@
+﻿<div class="block">
+    <h3 class="title" @ViewHelper.Edit(ViewBag.Article,"Title")>@(ViewBag.Article.Title ?? "")</h3>
+    <span class="date">@ViewHelper.DateTimeToString(ViewBag.Article.UtcCreationDate,"yyyy-MM-dd")</span>
+    <div class="article" @ViewHelper.Edit(ViewBag.Article,"Description")>
+        @Html.Raw(ViewBag.Article.Description?? "")
+    </div>
+</div>

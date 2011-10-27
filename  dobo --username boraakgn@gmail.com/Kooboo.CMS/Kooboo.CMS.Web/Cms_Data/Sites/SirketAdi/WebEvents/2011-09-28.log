@@ -1,0 +1,66 @@
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 9/28/2011 5:07:09 PM
+Event time (UTC): 9/28/2011 2:07:09 PM
+Event ID: 4bd7aa8c375a49f5b7b82e5b1fdf35cd
+Event sequence: 6
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129616920720795641
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 8636
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: System.ArgumentException
+    Exception message: An item with the same key has already been added.
+
+Request information:
+    Request URL: http://localhost:3911/Resource/ResizeImage?url=~%2FCms_Data%2FContents%2FSirketAdi%2FFolders%2FServices%2F~contents%2FTP72LRNVBW5NZVD5%2Fbox_otto_base_th.png&width=50&height=50
+    Request path: /Resource/ResizeImage
+    User host address: ::1
+    User: 
+    Is authenticated: False
+    Authentication Type: 
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 10
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Kooboo.Emitting.DynamicMethodCompilerCache.CreateInstance(Type type) in D:\DoBoKoyu\Kooboo\Emitting\DynamicMethodCompilerCache.cs:line 25
+   at Kooboo.Extensions.TypeExtensions.GetDefaultValue(Type t) in D:\DoBoKoyu\Kooboo\Extensions\TypeExtensions.cs:line 72
+   at Kooboo.Web.Mvc.KoobooModelMetadata..ctor(DataAnnotationsModelMetadataProvider provider, Type containerType, Func`1 modelAccessor, Type modelType, String propertyName, DisplayColumnAttribute displayColumnAttribute, IEnumerable`1 attributes) in D:\DoBoKoyu\Kooboo\Web\Mvc\KoobooModelMetadata.cs:line 33
+   at Kooboo.Web.Mvc.KoobooDataAnnotationsModelMetadataProvider.CreateMetadata(IEnumerable`1 attributes, Type containerType, Func`1 modelAccessor, Type modelType, String propertyName) in D:\DoBoKoyu\Kooboo\Web\Mvc\KoobooDataAnnotationsModelMetadataProvider.cs:line 16
+   at System.Web.Mvc.AssociatedMetadataProvider.GetMetadataForType(Func`1 modelAccessor, Type modelType)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\DoBoKoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------

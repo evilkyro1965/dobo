@@ -1,0 +1,97 @@
+3.0.3
+
+* Breaking change
+
+1.Add four new system fields: OriginalRepository£¬OriginalFolder£¬IsLocalized£¬Sequence¡£If you are using SQL Server, SQLCe or MySql, please add the following four fields to the content dynamic tables. 
+
+   OriginalRepository nvarchar(256) NULL
+   OriginalFolder nvarchar(256) NULL
+   IsLocalized bit NULL
+   Sequence bit null
+
+2.Due to the stability problem of RavenDb and the conflicts with Lucene.NET, we have removed the support for RavenDb.
+
+* New features
+
+Site management:
+
+Add Html block, static html blocks to be used on multiple pages.
+
+Add an EmptySite site template.
+
+Add enable version control setting in the site setting.
+
+Change page Title into HtmlTitle and add a new field callled ContentTitle to be used as the title field in the page content.
+
+
+
+Content management
+
+Add Content broadcasting, to be used content sharing between content repositories. 
+
+Add workflow, used to control content publishing.
+
+Add full text search engine based on Lucene.NET.(Unsupport on medium trust level)
+
+Add new content editing controltype: RadioList,CheckBoxList.
+
+Add three new content events: PreAdd,PreUpdate and PreDelete.
+
+Add role based control on folders. 
+
+Add WHEREIN in the content query API.
+
+Add support for OrderBy... Then in the content query API. 
+
+The syntax of custom template of Content type has been changed into Razor.
+
+
+
+Bug fixed
+
+1. Ask users to confirm whether they would like to delete related content repository or not when deleting a website.
+
+2. Fixed bug when modifying content type. 
+
+3. Fixed required validation error on Textarea field.
+
+4. Move the IncludeJquery option from page into global settings.
+
+5. Move CMS language setting into user profile. 
+
+6. Fixed bug on WHEREBETWEEN content query API.
+
+
+
+3.0.5
+
+* Added features
+
+1.Content type custom template. You can now define your own custom template using for example grip.cshtml and put them under the folder of \CustomTemplates, this file has the highest priority and will not be overwritten by system
+
+2.Add possibility to change media library folder name and move folders. 
+
+3.Add new control type: password.
+
+4.Add index data, to view and rebuild search index. 
+
+
+Bugs fixed
+
+Fixed single choice category selection problem. It allowed to select multiple values in the single choice category.
+Fixed content attached file name error of special character.
+Fixed bug on ModuleHtml.Action() method in the module development.
+Fixed URL encoded problem of file URL in the media library.
+Fixed Datarule query ThenOrderBy problem.
+Fixed bug on Datetime error in the upgrade of MongoDB driver.
+
+Fixed API ThemeFileUrl. When subsite does not have the file, it will search into parent site to find the right file. 
+Fixed Html Block bug. It was possible to edit in sub site even without the localization. 
+Fixed User right control problem in the inline editing.
+Fixed bug at£ºhttp://forum.kooboo.com/yaf_postst1180_Using-Telnet-to-connect-to-a-Kooboo-website.aspx. It is now possible access kooboo sites without a browser.
+Fixed media library naming problem. When there was a space in the file name, it was not possible to delete the file.
+Fixed bug on order setting on a content folder. There was possible to overwrite other content folder's order setting when one folder change the order setting.
+Fixed bug on SMTP setting, when there was an empty email address line, it was not possible to send out emails.
+
+Updated: Remove the default sorting field in the content query API.
+Update AllowNull property of content type to use client side validation.

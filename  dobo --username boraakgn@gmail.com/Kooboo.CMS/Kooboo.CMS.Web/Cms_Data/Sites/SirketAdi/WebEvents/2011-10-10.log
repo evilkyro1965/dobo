@@ -1,0 +1,626 @@
+Event code: 100000
+Event message: The view does not exists.Name:'Services.MiniList'
+Event time: 10/10/2011 11:16:56 PM
+Event time (UTC): 10/10/2011 8:16:56 PM
+Event ID: c0e5a74ed8054d40b4b0b7deea0312e6
+Event sequence: 5
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The view does not exists.Name:'Services.MiniList'
+
+Request information:
+    Request URL: /
+    Request path: /
+    User host address: ::1
+    User: 
+    Is authenticated: False
+    Authentication Type: 
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 5
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugins() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\Page_Context.cs:line 186
+   at Kooboo.CMS.Sites.Controllers.Front.PageController.Entry() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 235
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 10/10/2011 11:16:58 PM
+Event time (UTC): 10/10/2011 8:16:58 PM
+Event ID: 19477689986241d6bff90ef9c9e2af92
+Event sequence: 6
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Process information:
+    Process ID: 4492
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\guneyd
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The view does not exists.Name:'Services.MiniList'
+
+Request information:
+    Request URL: http://localhost:3910/
+    Request path: /
+    User host address: ::1
+    User: 
+    Is authenticated: False
+    Authentication Type: 
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 5
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugins() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\Page_Context.cs:line 186
+   at Kooboo.CMS.Sites.Controllers.Front.PageController.Entry() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 235
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: The view does not exists.Name:'Services.MiniList'
+Event time: 10/10/2011 11:17:32 PM
+Event time (UTC): 10/10/2011 8:17:32 PM
+Event ID: 44c6849936534550a44df1ae0fdde116
+Event sequence: 8
+Event occurrence: 2
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The view does not exists.Name:'Services.MiniList'
+
+Request information:
+    Request URL: /
+    Request path: /
+    User host address: ::1
+    User: 
+    Is authenticated: False
+    Authentication Type: 
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 5
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugins() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\Page_Context.cs:line 186
+   at Kooboo.CMS.Sites.Controllers.Front.PageController.Entry() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 235
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 10/10/2011 11:17:33 PM
+Event time (UTC): 10/10/2011 8:17:33 PM
+Event ID: c17613639b15431582a5bd2005e259f1
+Event sequence: 9
+Event occurrence: 2
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Process information:
+    Process ID: 4492
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\guneyd
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The view does not exists.Name:'Services.MiniList'
+
+Request information:
+    Request URL: http://localhost:3910/
+    Request path: /
+    User host address: ::1
+    User: 
+    Is authenticated: False
+    Authentication Type: 
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 5
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugins() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\Page_Context.cs:line 186
+   at Kooboo.CMS.Sites.Controllers.Front.PageController.Entry() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 235
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg' was not found.
+Event time: 10/10/2011 11:19:36 PM
+Event time (UTC): 10/10/2011 8:19:36 PM
+Event ID: fa26095e68ae4dd582290e4d8618bfab
+Event sequence: 125
+Event occurrence: 3
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg' was not found.
+
+Request information:
+    Request URL: /Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg
+    Request path: /Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 17
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.Front.PageExecutionFilterAttribute.InitPageRequestContext(ControllerContext controllerContext) in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 60
+   at Kooboo.CMS.Sites.Controllers.Front.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext) in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 31
+   at Kooboo.CMS.Sites.Controllers.Front.OutputCacheFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext) in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 168
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: The view does not exists.Name:'Services.MiniList'
+Event time: 10/10/2011 11:20:41 PM
+Event time (UTC): 10/10/2011 8:20:41 PM
+Event ID: 151d8fee1ce544ec905674f3fdf0599e
+Event sequence: 176
+Event occurrence: 4
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The view does not exists.Name:'Services.MiniList'
+
+Request information:
+    Request URL: /
+    Request path: /
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 5
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugins() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\Page_Context.cs:line 186
+   at Kooboo.CMS.Sites.Controllers.Front.PageController.Entry() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 235
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 10/10/2011 11:20:44 PM
+Event time (UTC): 10/10/2011 8:20:44 PM
+Event ID: e293e0e580f94fb4b386e19bb4506d1f
+Event sequence: 177
+Event occurrence: 3
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Process information:
+    Process ID: 4492
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\guneyd
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The view does not exists.Name:'Services.MiniList'
+
+Request information:
+    Request URL: http://localhost:3910/
+    Request path: /
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 5
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugins() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\Page_Context.cs:line 186
+   at Kooboo.CMS.Sites.Controllers.Front.PageController.Entry() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 235
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 10/10/2011 11:21:20 PM
+Event time (UTC): 10/10/2011 8:21:20 PM
+Event ID: 280facd5228d4396bb8099ba7b269cd1
+Event sequence: 187
+Event occurrence: 4
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Process information:
+    Process ID: 4492
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\guneyd
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The site is offline.
+
+Request information:
+    Request URL: http://localhost:3910/Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg
+    Request path: /Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 13
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 100
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 10/10/2011 11:22:01 PM
+Event time (UTC): 10/10/2011 8:22:01 PM
+Event ID: d8ccafec47194848acb768f2346ca575
+Event sequence: 200
+Event occurrence: 5
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Process information:
+    Process ID: 4492
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\guneyd
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The site is offline.
+
+Request information:
+    Request URL: http://localhost:3910/Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg
+    Request path: /Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 21
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 100
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: The view does not exists.Name:'Services.MiniList'
+Event time: 10/10/2011 11:22:31 PM
+Event time (UTC): 10/10/2011 8:22:31 PM
+Event ID: 2d9b96afed994ca78f1c16730fc3bd05
+Event sequence: 215
+Event occurrence: 5
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The view does not exists.Name:'Services.MiniList'
+
+Request information:
+    Request URL: /dev~SirketAdi
+    Request path: /dev~SirketAdi
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 25
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugins() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\Page_Context.cs:line 186
+   at Kooboo.CMS.Sites.Controllers.Front.PageController.Entry() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 235
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 10/10/2011 11:22:32 PM
+Event time (UTC): 10/10/2011 8:22:32 PM
+Event ID: b0846a2bf51b4039aa5c5837d9c38fb5
+Event sequence: 216
+Event occurrence: 8
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Process information:
+    Process ID: 4492
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\guneyd
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The view does not exists.Name:'Services.MiniList'
+
+Request information:
+    Request URL: http://localhost:3910/dev~SirketAdi
+    Request path: /dev~SirketAdi
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 25
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugins() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\View\Page_Context.cs:line 186
+   at Kooboo.CMS.Sites.Controllers.Front.PageController.Entry() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 235
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------

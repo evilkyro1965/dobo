@@ -1,0 +1,138 @@
+Event code: 100000
+Event message: Path '/Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg' was not found.
+Event time: 10/10/2011 11:25:31 PM
+Event time (UTC): 10/10/2011 8:25:31 PM
+Event ID: cb910b1aa58c401a93ad1a181781b9ec
+Event sequence: 243
+Event occurrence: 6
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg' was not found.
+
+Request information:
+    Request URL: /Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg
+    Request path: /Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 25
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.Front.PageExecutionFilterAttribute.InitPageRequestContext(ControllerContext controllerContext) in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 60
+   at Kooboo.CMS.Sites.Controllers.Front.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext) in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 31
+   at Kooboo.CMS.Sites.Controllers.Front.OutputCacheFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext) in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 168
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg' was not found.
+Event time: 10/10/2011 11:26:02 PM
+Event time (UTC): 10/10/2011 8:26:02 PM
+Event ID: ac2b442d0eb2484aa74fffd226085ec1
+Event sequence: 258
+Event occurrence: 8
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg' was not found.
+
+Request information:
+    Request URL: /Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg
+    Request path: /Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 24
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.Front.PageExecutionFilterAttribute.InitPageRequestContext(ControllerContext controllerContext) in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 60
+   at Kooboo.CMS.Sites.Controllers.Front.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext) in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 31
+   at Kooboo.CMS.Sites.Controllers.Front.OutputCacheFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext) in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 168
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg' was not found.
+Event time: 10/10/2011 11:27:07 PM
+Event time (UTC): 10/10/2011 8:27:07 PM
+Event ID: 5b893eefbebc4da0b3575692e483fb18
+Event sequence: 286
+Event occurrence: 15
+Event detail code: 0
+
+Application information:
+    Application domain: b1e5b918-1-129627513908727215
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: GUNEY-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg' was not found.
+
+Request information:
+    Request URL: /Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg
+    Request path: /Cms_Data/Contents/SirketSitesi/TempFiles/1b3ab9ec-6c1a-4c06-b24d-23b9e40dbf52295px-Pixar_Animation_Studios_logo.jpg
+    User host address: ::1
+    User: 
+    Is authenticated: False
+    Authentication Type: 
+    Thread account name: BTAKADEMI\guneyd
+
+Thread information:
+    Thread ID: 17
+    Thread account name: BTAKADEMI\guneyd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.Front.PageExecutionFilterAttribute.InitPageRequestContext(ControllerContext controllerContext) in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 60
+   at Kooboo.CMS.Sites.Controllers.Front.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext) in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 31
+   at Kooboo.CMS.Sites.Controllers.Front.OutputCacheFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext) in D:\dobokoyu\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 168
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------

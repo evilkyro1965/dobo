@@ -1,0 +1,11 @@
+﻿ <br />
+<h5 class="unreset" style="font-size:15pt">Diğer Referanslarımız</h5>
+<div class="line-hor p2 unreset"/>
+<ul class="list-1 p3 unreset">
+    @foreach (var item in ViewBag.References){
+    <li>
+        <a class='title' href='@Url.FrontUrl().PageUrl("Anasayfa/Referanslarimiz/detail",new { UserKey = item.UserKey})'>@item.Name</a>
+    </li>
+    }
+</ul>
+<div style="height:10px; float:right"></div>
