@@ -1,7 +1,7 @@
 ﻿ <ul class="list-2">
     @foreach (var item in ViewBag.Services){
     <li>
-        <a href='@Url.FrontUrl().PageUrl("Services/detail",new { UserKey = item.UserKey})'>@item.Name</a>
+        <a href='@Url.FrontUrl().PageUrl("Anasayfa/Hizmetlerimiz/Detay",new { UserKey = item.UserKey})'>@item.Name</a>
     </li>
     }
 </ul>

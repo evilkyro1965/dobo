@@ -1898,4 +1898,10 @@ Are you sure you want to use this size?</value>
   <data name="Localization" xml:space="preserve">
     <value>Localization</value>
   </data>
+  <data name="Please select one category!" xml:space="preserve">
+    <value>Please select one category!</value>
+  </data>
+  <data name="Failed to save datarule!" xml:space="preserve">
+    <value>Failed to save datarule!</value>
+  </data>
 </root>
