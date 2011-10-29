@@ -1895,4 +1895,7 @@ Are you sure you want to use this size?</value>
   <data name="Show in Crumb Path" xml:space="preserve">
     <value>Show in Crumb Path</value>
   </data>
+  <data name="Localization" xml:space="preserve">
+    <value>Localization</value>
+  </data>
 </root>
