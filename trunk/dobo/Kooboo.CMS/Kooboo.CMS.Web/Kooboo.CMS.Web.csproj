@@ -4192,10 +4192,6 @@
       <Project>{C7B73E67-D226-41CB-A86D-410276B265A1}</Project>
       <Name>Kooboo.CMS.Search</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Kooboo.CMS.Sites.TemplateEngines.NVelocity\Kooboo.CMS.Sites.TemplateEngines.NVelocity.csproj">
-      <Project>{B874D42D-4532-45CB-BFE8-033680F42F6E}</Project>
-      <Name>Kooboo.CMS.Sites.TemplateEngines.NVelocity</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Kooboo.CMS.Sites.TemplateEngines.Razor\Kooboo.CMS.Sites.TemplateEngines.Razor.csproj">
       <Project>{982CFB5C-93CA-4164-9502-FCEC338524A3}</Project>
       <Name>Kooboo.CMS.Sites.TemplateEngines.Razor</Name>
