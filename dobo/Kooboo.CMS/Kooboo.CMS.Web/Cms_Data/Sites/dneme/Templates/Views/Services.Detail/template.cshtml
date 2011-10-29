@@ -1,7 +1,0 @@
-﻿ <div>
-    <h3 class="title">@Html.Raw(ViewBag.Services.Name ?? "")</h3>
-    <div class="content">   
-      @if(ViewBag.Services.Image != null) {<div style="float:left; width:120px;"><img src="@Url.FrontUrl().ResizeImageUrl(ViewBag.Services.Image,100,100)" /></div>}
-        <div style="100%">@Html.Raw(ViewBag.Services.Description ?? "")</div>
-    </div>
-</div> 

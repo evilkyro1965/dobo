@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Kooboo.CMS.Content.Query;
 using Kooboo.CMS.Content.Models;
+using Kooboo.CMS.Content.Services;
 
 namespace Kooboo.CMS.Sites.View
 {
@@ -46,6 +47,17 @@ namespace Kooboo.CMS.Sites.View
                 return new string[0];
             }
             return files.Split('|').Select(it => Kooboo.Web.Url.UrlUtility.ResolveUrl(it)).ToArray();
+        }
+
+        /*Bora Akgün 27.10.2011*/
+        ///<summary>
+        ///</summary>
+        ///<param name="folderName"></param>
+        ///<param name="uuid"></param>
+        ///<returns></returns>
+        public static List<CategoryContents> GetCategories(string folderName, string uuid)
+        {
+            return ServiceFactory.TextContentManager.QueryCategories(Repository.Current, folderName, uuid).ToList();
         }
     }
 }

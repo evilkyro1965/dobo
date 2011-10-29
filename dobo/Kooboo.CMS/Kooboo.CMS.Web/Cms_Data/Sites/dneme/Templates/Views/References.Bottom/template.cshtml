@@ -1,7 +1,0 @@
-﻿ <ul class="list-2">
-    @foreach (var item in ViewBag.References){
-    <li>
-        <a href='@Url.FrontUrl().PageUrl("References/detail",new { UserKey = item.UserKey})'>@item.Name</a>
-    </li>
-    }
-</ul> 
