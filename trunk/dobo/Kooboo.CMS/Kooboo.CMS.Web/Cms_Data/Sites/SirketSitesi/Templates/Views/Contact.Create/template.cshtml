@@ -1,11 +1,13 @@
 ﻿ @{ var guid = Guid.NewGuid(); }
 <script language="javascript" type="text/javascript">
-    $(function(){
+    $(function () {
+        $(document).ready(function () {
+            $('#form-@guid').validate();
+        });
         var form = $('#form-@guid').ajaxForm({
             dataType: 'json',
-            type:'post',
+            type: 'post',
             beforeSerialize: function ($form, options) {
-
                 //inform the server you need JsonResult return
                 var jsonResultHidden = form.find('input:hidden[name=JsonResult]').val(true);
                 if (!jsonResultHidden.length) {
@@ -15,34 +17,42 @@
             success: function (response, textStatus) {
                 if (response.Success) {
                     $.ajax({
-                      url: "@SubmissionHelper.EmailUrl()",
-                      context: document.body,
-                      success: function(){
-                      }
+                        url: "@SubmissionHelper.EmailUrl()",
+                        context: document.body,
+                        success: function () {
+                        }
                     });
                     if (response.RedirectUrl) {
                         window.location.href = response.RedirectUrl;
                     } else {
                         document.getElementById('form-@guid').reset();
                         $('#successMessage').html("İletişim Formu Başarıyla Kaydedildi");
-                        //window.location.reload(true);
                     }
                 } else {
+                    $('#successMessage').html("");
+
                     var msgStr = '';
                     for (var i = 0; i < response.Messages.length; i++) {
                         msgStr += response.Messages[i] + '\r\n';
                     }
 
                     var validator = form.validate();
-                    //var errors = [];
-                    for (var i = 0; i < response.FieldErrors.length; i++) {
-                        var obj = {};
-                        obj[response.FieldErrors[i].FieldName] = response.FieldErrors[i].ErrorMessage;
+                    var obj = {};
+                    var errLen = response.FieldErrors.length;
+                    var fldMsg, fldErr, currMsg;
+                    for (var i = 0; i < errLen; i++) {
+                        fldErr = response.FieldErrors[i];
+                        fldMsg = fldErr.ErrorMessage;
+
+                        currMsg = obj[fldErr.FieldName];
+                        obj[fldErr.FieldName] = currMsg ? (fldMsg ? currMsg + " " + fldMsg : currMsg) : fldMsg;
+                    }
+                    if (errLen > 0) {
                         validator.showErrors(obj);
                     }
-                  if(msgStr) {
-                    alert(msgStr);
-                  }
+                    if (msgStr) {
+                        alert(msgStr);
+                    }
                 }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) { }
@@ -63,35 +73,35 @@
                 <tr>
                   <td style="width:80px"><label for="Name">Adınız:</label></td>
                     <td>
-                      <input type="text" style="float:left" id="Name" name="Name" data-val="true" />
+                      <input type="text" class="required" style="float:left" id="Name" name="Name" data-val="true" />
                         @Html.ValidationMessageForInput("Name")
                     </td>
                 </tr>
                 <tr>
                     <td><label for="EMail">E-Mailiniz:</label></td>
                     <td>
-                        <input id="EMail" name="EMail" data-val="true"/>
+                        <input id="EMail" class="required email" name="EMail" data-val="true"/>
                       	@Html.ValidationMessageForInput("EMail")
                     </td>
                 </tr>
           	 <tr>
                     <td><label for="Address">Adresiniz:</label></td>
                     <td>
-                        <input id="Address" name="Address" data-val="true"/>
+                        <input id="Address" class="required" name="Address" data-val="true"/>
                       	@Html.ValidationMessageForInput("Address")
                     </td>
                 </tr>
       		 <tr>
-                    <td><label for="Phone">Telefonunuz:</label></td>
+                    <td><label for="PhoneNo">Telefonunuz:</label></td>
                     <td>
-                        <input id="Phone" name="Phone" data-val="true"/>
-                        @Html.ValidationMessageForInput("Phone")
+                        <input id="PhoneNo" name="PhoneNo" data-val="true"/>
+                        @Html.ValidationMessageForInput("PhoneNo")
                     </td>
                 </tr>
   		 <tr>
                     <td><label for="Message">Mesajınız:</label></td>
                     <td>
-                      <textarea style="border-width:1px; border-color:silver; border-style:solid" id="Message" name="Message" cols="25" rows="10" data-val="true"></textarea>
+                      <textarea class="required" style="border-width:1px; border-color:silver; border-style:solid" id="Message" name="Message" cols="25" rows="10" data-val="true"></textarea>
                       	@Html.ValidationMessageForInput("Message")
                     </td>
                 </tr>

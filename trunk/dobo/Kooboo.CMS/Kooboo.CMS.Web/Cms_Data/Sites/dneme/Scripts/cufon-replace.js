@@ -1,2 +1,0 @@
-Cufon.replace('.banner strong, .banner .gray, .sf-menu > li > a, h3, h2, h4, h5, .number', { fontFamily: 'PT Sans Narrow', hover:true });
-Cufon.replace('.banner .yellow', { fontFamily: 'PT Sans Narrow', textShadow: '1px 1px 1px 2px #caaf5b', hover:true });
