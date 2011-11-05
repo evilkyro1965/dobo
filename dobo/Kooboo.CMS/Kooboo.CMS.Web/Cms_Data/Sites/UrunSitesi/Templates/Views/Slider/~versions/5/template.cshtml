@@ -1,0 +1,11 @@
+﻿<div class="module_slider">
+    <div class="boxIndent">
+        <div id="slider">
+          @foreach (var item in ViewBag.Products)
+										{
+            <a href='@Url.FrontUrl().PageUrl("Urunler/UrunDetay",new { UserKey = item.UserKey})'>
+                <img src='@Url.FrontUrl().ResizeImageUrl(item.BannerImage, 694, 350)' alt="" /></a>
+          }
+        </div>
+    </div>
+</div>

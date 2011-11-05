@@ -1,0 +1,20 @@
+﻿<div class="menu-bg">
+    <div id="topmenu">
+        <ul class="menu-nav">
+          <li id="current" class="active item53"><a href='@Url.FrontUrl().PageUrl("Anasayfa")'><span>Ana Sayfa</span></a></li>
+@foreach (var item in ViewBag.Categories)
+    {
+        var textFolder = Kooboo.CMS.Sites.View.ContentHelper.GetCategories(item.FolderName, item.UUID);
+        if (textFolder.Count > 0)
+        {
+            if (!string.IsNullOrEmpty(textFolder[0].Value))
+            {
+                continue;
+            }
+        }
+<li class="item28"><a href='@Url.FrontUrl().PageUrl("Anasayfa/Urunler",new { UserKey = item.UserKey})'>
+            <span>@item.Name</span></a></li>
+}
+          </ul>
+    </div>
+</div>

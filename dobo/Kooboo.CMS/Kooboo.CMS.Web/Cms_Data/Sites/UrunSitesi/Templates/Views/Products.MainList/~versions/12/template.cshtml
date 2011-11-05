@@ -1,0 +1,57 @@
+﻿<div class="module-specials">
+  <div class="boxIndent">
+    @foreach (var item in ViewBag.Products)
+     {
+      <div style="200px; float:left">
+          <div class="featuredIndent">
+            <div class="product_image_container">
+                <a title="@item.Name" href='@Url.FrontUrl().PageUrl("Anasayfa/ProductCategories/ProductList/UrunDetay",new { UserKey = item.UserKey})'>
+                    <img src="@Url.FrontUrl().ResizeImageUrl(item.Image, 226, 202)"
+                        height="204" width="228" alt="@item.Name" border="0" />
+                </a>
+            </div>
+            <div class="product-options">
+                      <!-- The product name DIV. -->
+                      <div class="product_name">
+                          <a class="product_name" title="Quilted Knit Moto Jacket " href="index.php~page=shop.product_details&category_id=1&flypage=flypage.tpl&product_id=1&option=com_virtuemart&Itemid=54.html">
+                              Quilted Knit Moto Jacket </a>
+                      </div>
+                      <!-- END The product name DIV. -->
+                      <!-- The product price DIV. -->
+                      <div class="box_product_price">
+                          <span class="product-Old-Price">$95.00 </span><span class="productPrice">$87.98
+                          </span>
+                      </div>
+                      <!-- END The product price DIV. -->
+                      <div class="clear">
+                          <!-- The add to cart DIV. -->
+                          <div class="product_buttons">
+                              <form action="http://livedemo00.template-help.com/virtuemart_33675/index.php" method="post"
+                              name="addtocart" id="addtocart">
+                              <input type="hidden" name="option" value="com_virtuemart" />
+                              <input type="hidden" name="page" value="shop.cart" />
+                              <input type="hidden" name="Itemid" value="54" />
+                              <input type="hidden" name="func" value="cartAdd" />
+                              <input type="hidden" name="prod_id" value="1" />
+                              <input type="hidden" name="product_id" value="1" />
+                              <input type="hidden" name="quantity" value="1" />
+                              <input type="hidden" name="set_price[]" value="" />
+                              <input type="hidden" name="adjust_price[]" value="" />
+                              <input type="hidden" name="master_product[]" value="" />
+                              <input type="submit" class="addtocart_button" value="Add to Cart" title="Add to Cart" />
+                              </form>
+                          </div>
+                          <!-- END The add to cart DIV. -->
+                          <!-- The product details DIV. -->
+                          <div class="product_details_container">
+                              <a class="details" title="Quilted Knit Moto Jacket " href="index.php~page=shop.product_details&category_id=1&flypage=flypage.tpl&product_id=1&option=com_virtuemart&Itemid=54.html">
+                                  Details</a>
+                          </div>
+                          <!-- END The product details DIV. -->
+                      </div>
+                      <!-- The product Description DIV. -->
+                      <!-- END The product Description DIV. -->
+                  </div>
+            </div>
+    </div>
+    }
