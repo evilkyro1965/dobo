@@ -3429,3 +3429,247 @@ Thread information:
 
 Custom event details: 
 --------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: The folder does not exists."ProductCategory"
+Event time: 11/5/2011 4:17:01 PM
+Event time (UTC): 11/5/2011 2:17:01 PM
+Event ID: e7c3997c99c7408f8519b144c0197fa7
+Event sequence: 76
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: 33055756-1-129649761312167309
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobo\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The folder does not exists."ProductCategory"
+
+Request information:
+    Request URL: /dev~UrunSitesi
+    Request path: /dev~UrunSitesi
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 10
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.DataRule.FolderDataRule.Execute(DataRuleContext dataRuleContext) in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\DataRule\FolderDataRule.cs:line 35
+   at Kooboo.CMS.Sites.DataRule.DataRuleExecutor.Execute(ViewDataDictionary viewData, DataRuleContext dataRuleContext, IEnumerable`1 dataRules) in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\DataRule\DataRuleExecutor.cs:line 25
+   at Kooboo.CMS.Sites.View.Page_Context.ExecuteDataRules() in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\View\Page_Context.cs:line 271
+   at Kooboo.CMS.Sites.Controllers.Front.PageController.Entry() in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 246
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 11/5/2011 4:17:02 PM
+Event time (UTC): 11/5/2011 2:17:02 PM
+Event ID: 9063c7a2a42c493f838487dc56b2c650
+Event sequence: 77
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: 33055756-1-129649761312167309
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobo\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 9644
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The folder does not exists."ProductCategory"
+
+Request information:
+    Request URL: http://localhost:3910/dev~UrunSitesi
+    Request path: /dev~UrunSitesi
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 10
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.DataRule.FolderDataRule.Execute(DataRuleContext dataRuleContext) in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\DataRule\FolderDataRule.cs:line 35
+   at Kooboo.CMS.Sites.DataRule.DataRuleExecutor.Execute(ViewDataDictionary viewData, DataRuleContext dataRuleContext, IEnumerable`1 dataRules) in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\DataRule\DataRuleExecutor.cs:line 25
+   at Kooboo.CMS.Sites.View.Page_Context.ExecuteDataRules() in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\View\Page_Context.cs:line 271
+   at Kooboo.CMS.Sites.Controllers.Front.PageController.Entry() in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 246
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: The folder does not exists."ProductCategory"
+Event time: 11/5/2011 4:20:33 PM
+Event time (UTC): 11/5/2011 2:20:33 PM
+Event ID: 97c21641f3f54f23b4d3201a3b8f059b
+Event sequence: 79
+Event occurrence: 2
+Event detail code: 0
+
+Application information:
+    Application domain: 33055756-1-129649761312167309
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobo\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The folder does not exists."ProductCategory"
+
+Request information:
+    Request URL: /dev~UrunSitesi
+    Request path: /dev~UrunSitesi
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 10
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.DataRule.FolderDataRule.Execute(DataRuleContext dataRuleContext) in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\DataRule\FolderDataRule.cs:line 35
+   at Kooboo.CMS.Sites.DataRule.DataRuleExecutor.Execute(ViewDataDictionary viewData, DataRuleContext dataRuleContext, IEnumerable`1 dataRules) in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\DataRule\DataRuleExecutor.cs:line 25
+   at Kooboo.CMS.Sites.View.Page_Context.ExecuteDataRules() in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\View\Page_Context.cs:line 271
+   at Kooboo.CMS.Sites.Controllers.Front.PageController.Entry() in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 246
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 11/5/2011 4:20:33 PM
+Event time (UTC): 11/5/2011 2:20:33 PM
+Event ID: 3f996d326dff48ada9b6f15785c40a4c
+Event sequence: 80
+Event occurrence: 2
+Event detail code: 0
+
+Application information:
+    Application domain: 33055756-1-129649761312167309
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: D:\dobo\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: BOORAA-PC
+
+Process information:
+    Process ID: 9644
+    Process name: WebDev.WebServer40.exe
+    Account name: BTAKADEMI\akgunb
+
+Exception information:
+    Exception type: Kooboo.KoobooException
+    Exception message: The folder does not exists."ProductCategory"
+
+Request information:
+    Request URL: http://localhost:3910/dev~UrunSitesi
+    Request path: /dev~UrunSitesi
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: BTAKADEMI\akgunb
+
+Thread information:
+    Thread ID: 10
+    Thread account name: BTAKADEMI\akgunb
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.DataRule.FolderDataRule.Execute(DataRuleContext dataRuleContext) in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\DataRule\FolderDataRule.cs:line 35
+   at Kooboo.CMS.Sites.DataRule.DataRuleExecutor.Execute(ViewDataDictionary viewData, DataRuleContext dataRuleContext, IEnumerable`1 dataRules) in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\DataRule\DataRuleExecutor.cs:line 25
+   at Kooboo.CMS.Sites.View.Page_Context.ExecuteDataRules() in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\View\Page_Context.cs:line 271
+   at Kooboo.CMS.Sites.Controllers.Front.PageController.Entry() in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\PageController.cs:line 246
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at Kooboo.CMS.Sites.Controllers.Front.FrontControllerBase.ExecuteCore() in D:\dobo\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\Front\FrontControllerBase.cs:line 111
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
