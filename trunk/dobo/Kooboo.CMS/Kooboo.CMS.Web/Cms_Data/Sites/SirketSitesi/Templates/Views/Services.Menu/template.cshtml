@@ -4,7 +4,7 @@
 <ul class="list-1 p3 unreset">
     @foreach (var item in ViewBag.Services){
     <li>
-        <a class='title' href='@Url.FrontUrl().PageUrl("Anasayfa/Hizmetlerimiz/Detay",new { UserKey = item.UserKey})'>@item.Name</a>
+        <a class='title' href='@Url.FrontUrl().PageUrl("Hizmetlerimiz/Detay",new { UserKey = item.UserKey})'>@item.Name</a>
     </li>
     }
 </ul>

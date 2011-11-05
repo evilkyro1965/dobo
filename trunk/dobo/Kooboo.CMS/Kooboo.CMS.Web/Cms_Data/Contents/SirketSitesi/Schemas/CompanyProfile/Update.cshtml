@@ -92,7 +92,7 @@ else
             <label for="Latitude">Enlem Koordinatı</label><a href="javascript:;" class="tooltip-link" title='Şirketin Google Maps Enlem Koordinatı'></a>
             </td>
             <td>
-            <input id="Latitude" name="Latitude" type="text" value="@(Model.Latitude ?? "")"  data-val-number="The field Latitude must be a number." data-val-required="" data-val="true"/>
+            <input id="Latitude" name="Latitude" type="text" value="@(Model.Latitude ?? "")"  data-val-required="" data-val="true"/>
             @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Latitude"], null)
             </td>          
             </tr><tr>
@@ -100,7 +100,7 @@ else
             <label for="Longitude">Boylam Koordinatı</label><a href="javascript:;" class="tooltip-link" title='Şirketin Google Maps Boylam Koordinatı'></a>
             </td>
             <td>
-            <input id="Longitude" name="Longitude" type="text" value="@(Model.Longitude ?? "")"  data-val-number="The field Longitude must be a number." data-val-required="" data-val="true"/>
+            <input id="Longitude" name="Longitude" type="text" value="@(Model.Longitude ?? "")"  data-val-required="" data-val="true"/>
             @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Longitude"], null)
             </td>          
             </tr><tr>

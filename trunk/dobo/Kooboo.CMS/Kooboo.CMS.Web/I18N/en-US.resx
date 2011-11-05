@@ -1904,4 +1904,16 @@ Are you sure you want to use this size?</value>
   <data name="Failed to save datarule!" xml:space="preserve">
     <value>Failed to save datarule!</value>
   </data>
+  <data name="The collection of pages to be published" xml:space="preserve">
+    <value>The collection of pages to be published</value>
+  </data>
+  <data name="Save Change" xml:space="preserve">
+    <value>Save Change</value>
+  </data>
+  <data name="Summary field" xml:space="preserve">
+    <value>Summary field</value>
+  </data>
+  <data name="Summary fields will be used as a title or summary to describe your content item" xml:space="preserve">
+    <value>Summary fields will be used as a title or summary to describe your content item</value>
+  </data>
 </root>
