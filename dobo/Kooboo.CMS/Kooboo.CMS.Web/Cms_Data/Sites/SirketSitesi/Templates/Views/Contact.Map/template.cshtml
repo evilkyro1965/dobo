@@ -1,9 +1,9 @@
-﻿@if(ViewBag.CompanyProfile.Latitude != 0 && ViewBag.CompanyProfile.Longitude != 0) {
+﻿@if(!string.IsNullOrEmpty(ViewBag.CompanyProfile.Latitude) && !string.IsNullOrEmpty(ViewBag.CompanyProfile.Longitude)) {
 <h5 class="title">Kroki - Harita</h5>
 <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA23KRFGOT_IUjCj8HhJGCIxRh84yCuHrl2kHhpFjnxJ8EhlNi4RR7UahDgeZAbnDTmOKGchI1DdN4Wg" type="text/javascript"></script>
 <script type="text/javascript">
-  var mapLat='@Html.Raw(ViewBag.CompanyProfile != null && ViewBag.CompanyProfile.Latitude != 0?ViewBag.CompanyProfile.Latitude.ToString(): "")';
-	var mapLon='@Html.Raw(ViewBag.CompanyProfile != null && ViewBag.CompanyProfile.Longitude != 0?ViewBag.CompanyProfile.Longitude.ToString(): "")';
+  var mapLat='@Html.Raw(ViewBag.CompanyProfile != null && !string.IsNullOrEmpty(ViewBag.CompanyProfile.Latitude)?ViewBag.CompanyProfile.Latitude: "")';
+	var mapLon='@Html.Raw(ViewBag.CompanyProfile != null && !string.IsNullOrEmpty(ViewBag.CompanyProfile.Longitude)?ViewBag.CompanyProfile.Longitude: "")';
 	var name='@Html.Raw(ViewBag.CompanyProfile != null && ViewBag.CompanyProfile.Name != null?ViewBag.CompanyProfile.Name: "")';
 	var address='@Html.Raw(ViewBag.CompanyProfile != null && ViewBag.CompanyProfile.Address != null?ViewBag.CompanyProfile.Address: "")';
     
