@@ -1,0 +1,70 @@
+﻿<div class="module-specials">
+  <div class="boxIndent">
+    <div style="width:750px"> 
+@foreach (var item in ViewBag.Products)
+    {
+  		var categories = Kooboo.CMS.Sites.View.ContentHelper.GetCategories(item.FolderName, item.UUID);
+        if (categories.Count > 0)
+        {
+            bool inParentCategory = false;
+            bool inCategory = false;
+            var category = categories[0];
+            if (category.Display == @Page_Context.Current.PageRequestContext.AllQueryString["UserKey"])
+            {
+                inCategory = true;
+            }
+            var categoryContent = category.Contents.FirstOrDefault();
+            if (!inCategory && categoryContent != null)
+            {
+                var parentCategories = Kooboo.CMS.Sites.View.ContentHelper.GetCategories(categoryContent.FolderName, categoryContent.UUID);
+                if (parentCategories.Count > 0)
+                {
+                    var parentCategory = parentCategories[0];
+                    if (parentCategory.Display == @Page_Context.Current.PageRequestContext.AllQueryString["UserKey"])
+                    {
+                        inParentCategory = true;
+                    }
+                }
+            }
+
+            if (!inParentCategory && !inCategory)
+            {
+                continue;
+            }
+        }
+<div style="200px; float:left">
+          <div class="featuredIndent">
+            <div class="product_image_container">
+                <a title="@item.Name" href='@Url.FrontUrl().PageUrl("Urunler/UrunDetay",new { UserKey = item.UserKey})'>
+                    <img src="@Url.FrontUrl().ResizeImageUrl(item.Image, 226, 202)"
+                        height="204" width="228" alt="@item.Name" border="0" />
+                </a>
+            </div>
+            <div class="product-options">
+                      <!-- The product name DIV. -->
+                      <div class="product_name">
+                          <a class="product_name" title="@item.Name" href='@Url.FrontUrl().PageUrl("Urunler/UrunDetay",new { UserKey = item.UserKey})'>
+                              @item.Name</a>
+                      </div>
+                      <!-- END The product name DIV. -->
+                      <!-- The product price DIV. -->
+                      <div class="box_product_price">
+                          <span class="productPrice">@item.Price TL
+                          </span>
+                      </div>
+                      <!-- END The product price DIV. -->
+                      <div class="clear">
+                          <!-- The product details DIV. -->
+                          <div class="product_details_container">
+                              <a class="details" title="@item.Name" href='@Url.FrontUrl().PageUrl("Urunler/UrunDetay",new { UserKey = item.UserKey})'>
+                                  İncele</a>
+                          </div>
+                          <!-- END The product details DIV. -->
+                      </div>
+                      <!-- The product Description DIV. -->
+                      <!-- END The product Description DIV. -->
+                  </div>
+            </div>
+    </div>
+}
+    </div></div></div>

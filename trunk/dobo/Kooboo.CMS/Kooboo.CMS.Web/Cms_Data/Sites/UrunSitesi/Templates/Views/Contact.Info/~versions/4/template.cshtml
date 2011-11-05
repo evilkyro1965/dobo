@@ -1,0 +1,192 @@
+﻿  <div class="content-indent">
+  <div class="article-text-indent">
+      <div class="clear">
+          <div id="component-contact">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" class="contentpaneopen">
+                  <tr>
+                      <td width="100%" class="contentheading">
+                          İletişim
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <table border="0" width="100%" style="margin-bottom: 25px;">
+                              <tr>
+                                  <td>
+                                  </td>
+                                  <td rowspan="2" align="center" valign="top">
+                                      <div id="map_canvas">
+                                          @Html.FrontHtml().RenderView("Contact.GoogleMap",ViewData)
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                              <td rowspan="6" valign="top" width="40">
+                                                  <img src="images/M_images/con_address.png" alt="Address: " />
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td valign="top">
+                                                  @ViewBag.CompanyProfile.Address
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td valign="top">
+                                                  Suburb: Par-la-Ville
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td valign="top">
+                                                  State: Maryland
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td valign="top">
+                                                  Zip Code: 50122
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td valign="top">
+                                                  Country: USA
+                                              </td>
+                                          </tr>
+                                      </table>
+                                      <br />
+                                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                              <td width="40">
+                                                  <img src="images/M_images/con_tel.png" alt="Telephone: " />
+                                              </td>
+                                              <td>
+                                                  Telephone: +354 5635600
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td width="40">
+                                                  <img src="images/M_images/con_mobile.png" alt="Mobile Phone Number: " />
+                                              </td>
+                                              <td>
+                                                  Fax: +354 5635610
+                                              </td>
+                                          </tr>
+                                      </table>
+                                      <br />
+                                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                              <td width="40" valign="top">
+                                                  <img src="images/M_images/con_info.png" alt="Information: " />
+                                              </td>
+                                              <td>
+                                                  Miscellaneous info: additional information on site owner's contact details.
+                                              </td>
+                                          </tr>
+                                      </table>
+                                      <br />
+                                  </td>
+                              </tr>
+                          </table>
+                          <div class="department">
+                              <h3>
+                                  Our Departments</h3>
+                              <div class="wrapper">
+                                  <dl class="col-1 col-pad">
+                                      <dt>Customer service:</dt>
+                                      <dd>
+                                          <span>Telephone:</span> +1 959 603 6035</dd>
+                                      <dd>
+                                          <span>FAX:</span> +1 101 889 9898</dd>
+                                      <dd>
+                                          E-mail: <a href="#">customers@demolink.org</a></dd>
+                                  </dl>
+                                  <dl class="col-1 col-pad">
+                                      <dt>Customer service:</dt>
+                                      <dd>
+                                          <span>Telephone:</span> +1 959 603 6035</dd>
+                                      <dd>
+                                          <span>FAX:</span> +1 101 889 9898</dd>
+                                      <dd>
+                                          E-mail: <a href="#">customers@demolink.org</a></dd>
+                                  </dl>
+                                  <dl class="col-1">
+                                      <dt>Customer service:</dt>
+                                      <dd>
+                                          <span>Telephone:</span> +1 959 603 6035</dd>
+                                      <dd>
+                                          <span>FAX:</span> +1 101 889 9898</dd>
+                                      <dd>
+                                          E-mail: <a href="#">customers@demolink.org</a></dd>
+                                  </dl>
+                              </div>
+                          </div>
+                      </td>
+                      <td>
+                          &nbsp;
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td colspan="2">
+                          <br />
+                          <form action="/virtuemart_33675/index.php?option=com_contact&amp;view=contact&amp;id=2&amp;Itemid=58"
+                          method="post" name="emailForm" id="emailForm" class="form-validate">
+                          <div class="contact_email">
+                              <div class="wrapper">
+                                  <div class="col-2">
+                                      <label for="contact_name">
+                                          &nbsp;Enter your Name:
+                                      </label>
+                                      <br />
+                                      <div class="contact_input">
+                                          <input type="text" name="name" id="contact_name" size="40" class="inputbox" value="" /></div>
+                                      <label id="contact_emailmsg" for="contact_email">
+                                          &nbsp;E-mail address:
+                                      </label>
+                                      <br />
+                                      <div class="contact_input">
+                                          <input type="text" id="contact_email" name="email" size="40" value="" class="inputbox required validate-email" /></div>
+                                      <label for="contact_subject">
+                                          &nbsp;Message Subject:
+                                      </label>
+                                      <br />
+                                      <div class="contact_input">
+                                          <input type="text" name="subject" id="contact_subject" size="40" class="inputbox"
+                                              value="" /></div>
+                                  </div>
+                                  <div class="col-3">
+                                      <label id="contact_textmsg" for="contact_text">
+                                          &nbsp;Enter your Message:
+                                      </label>
+                                      <div class="contact_area">
+                                          <textarea cols="50" rows="10" name="text" id="contact_text" class="inputbox required"></textarea></div>
+                                      <div class="wrapper">
+                                          <input type="checkbox" name="email_copy" id="contact_email_copy" value="1" />
+                                          <label for="contact_email_copy" class="line-height">
+                                              E-mail a copy of this message to your own address.
+                                          </label>
+                                      </div>
+                                  </div>
+                                  <br />
+                                  <br />
+                                  <button class="button validate png" type="submit">
+                                      Send</button>
+                              </div>
+                              <input type="hidden" name="option" value="com_contact" />
+                              <input type="hidden" name="view" value="contact" />
+                              <input type="hidden" name="id" value="2" />
+                              <input type="hidden" name="task" value="submit" />
+                              <input type="hidden" name="38217b76d1d4606966ce82ac3d4f863d" value="1" />
+                          </form>
+                          <br />
+                      </td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+  </div>
+</div>

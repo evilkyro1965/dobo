@@ -1,0 +1,17 @@
+﻿ <div class="module-categories">
+<h3>
+<span>Alt Kategoriler</span></h3>
+  <div class="boxIndent">
+<div id="relative_div" style="position: relative; z-index: 0">
+</div>
+<ul class="level1">
+
+@foreach (var item in ViewBag.Categories)
+    {
+<li class="level1 item1">
+<a class="level1 item1" href='@Url.FrontUrl().PageUrl("Urunler", new { UserKey = item.UserKey })' target="_self"><span>@item.Name</span></a>
+</li>
+}
+    </ul>
+  </div>
+</div>

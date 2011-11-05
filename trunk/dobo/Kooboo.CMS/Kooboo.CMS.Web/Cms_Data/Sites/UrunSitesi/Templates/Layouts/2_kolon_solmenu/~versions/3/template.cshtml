@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	@Html.FrontHtml().HtmlTitle()
+	@Html.FrontHtml().Meta()
+	@Html.FrontHtml().RegisterStyles()
+ @Html.FrontHtml().RegisterScripts()
+   <script type="text/javascript">
+        var $j = jQuery.noConflict();
+        $j(document).ready(function () {
+            $j(function () {
+                $j('#select-form').jqTransform({ imgPath: '/virtuemart_33675/templates/theme125/images/' });
+            });
+        });
+
+        $j(document).ready(function () {
+            //accordion begin
+            $j("#accordion dt").eq(0).addClass("active");
+            $j("#accordion dd").eq(0).show();
+
+            $j("#accordion dt").click(function () {
+                $j(this).next("#accordion dd").slideToggle("slow")
+	        .siblings("#accordion dd:visible").slideUp("slow");
+                $j(this).toggleClass("active");
+                $j(this).siblings("#accordion dt").removeClass("active");
+                return false;
+            });
+        });
+        $j(window).load(function () {
+            $j('#slider').nivoSlider({
+                effect: 'random', //Specify sets like: 'fold,fade,sliceDown'
+                slices: 17,
+                animSpeed: 600,
+                pauseTime: 5000,
+                startSlide: 0, //Set starting Slide (0 index)
+                directionNav: false, //Next & Prev
+                directionNavHide: true, //Only show on hover
+                controlNav: true, //1,2,3...
+                controlNavThumbs: false, //Use thumbnails for Control Nav
+                controlNavThumbsFromRel: false, //Use image rel for thumbs
+                controlNavThumbsSearch: '.jpg', //Replace this with...
+                controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+                keyboardNav: true, //Use left & right arrows
+                pauseOnHover: true, //Stop animation while hovering
+                manualAdvance: false, //Force manual transitions
+                captionOpacity: 0.8, //Universal caption opacity
+                beforeChange: function () { },
+                afterChange: function () { },
+                slideshowEnd: function () { } //Triggers after all slides have been shown
+            });
+        });
+        preloadImages([
+          '/images/button1.png',
+          '/images/button1-active.png',
+          '/images/select_right.png',
+          '/images/select_left.png',
+          '/images/sub-minus.gif',
+          '/images/sub-plus.gif',
+          '/images/nivo-controlNav-a-active.png',
+          '/images/Parent-point-active.png'
+			]);
+    </script>
+    <!--[if lt IE 7]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+			<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"  alt="" /></a>
+		</div>
+	<![endif]-->
+    <style>
+        ul.menu-nav li a, .search .inputbox, .search .button, .currency select.inputbox, .currency .button, .menu-bg, .carousel-box, .module-login, #mod_login_username, #mod_login_password, .form-login .button, .module-categories, .featuredIndent, .product_link, .productTop .width, .browseAddToCartContainer .addtocart_button, .module_menu, .module, .module_text, .poll .button, .button02, a.button02, #register_stretcher .button, .validate, .modal-button, .readmore a, div.blank a, .logout, .vmCartContainer .addtocart_button, .product_image_container, a.details, .newslatter .moduleButton, .browseProductImageContainer
+        {
+            behavior: url(templates/theme125/PIE.php);
+        }
+    </style>
+</head>
+<body>
+  <div id="header">
+        <div class="main">
+            <div id="logo">
+                <a href="http://livedemo00.template-help.com/virtuemart_33675">
+                    <img src="templates/theme125/images/logo.png" alt="" /></a>
+            </div>
+            <div class="cart">
+                <div class="moduletable">
+                    <h3>
+                        Shopping cart:</h3>
+                    <div class="vmCartModule">
+                        Your Cart is currently empty. <a href="index.php~page=shop.cart&option=com_virtuemart.html">
+                            Show Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div id="search">
+                <div class="moduletable">
+                    <form action="index.php" method="post">
+                    <div class="search">
+                        <input name="searchword" id="mod_search_searchword" maxlength="40" alt="Go!" class="inputbox"
+                            type="text" size="40" value="search..." onblur="if(this.value=='') this.value='search...';"
+                            onfocus="if(this.value=='search...') this.value='';" /><input type="submit" value="Go!"
+                                class="button" onclick="this.form.searchword.focus();" />
+                    </div>
+                    <input type="hidden" name="task" value="search" />
+                    <input type="hidden" name="option" value="com_search" />
+                    <input type="hidden" name="Itemid" value="53" />
+                    </form>
+                </div>
+            </div>
+            <div class="currency">
+                <div class="moduletable">
+                    <h3>
+                        currencies:</h3>
+                    <!-- Currency Selector Module -->
+                    <form id="select-form" action="/virtuemart_33675/index.php" method="post">
+                    <input type="hidden" name="option" value="com_content" />
+                    <input type="hidden" name="view" value="frontpage" />
+                    <input type="hidden" name="Itemid" value="53" />
+                    <input type="hidden" name="limit" value="9" />
+                    <select class="inputbox" name="product_currency" size="1">
+                        <option value="EUR">Euro</option>
+                        <option value="USD" selected="selected">US Dollar</option>
+                    </select>
+                    <input type="hidden" name="do_coupon" value="yes" />
+                    <input class="button" type="submit" name="submit" value="Change" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu-bg">
+                <div id="topmenu">
+                    <ul class="menu-nav">
+                        <li id="current" class="active item53"><a href="virtuemart_33675.html"><span>Home</span></a></li><li
+                            class="item54"><a href="index.php~option=com_virtuemart&Itemid=54.html"><span>Online
+                                Store</span></a></li><li class="item28"><a href="index.php~option=com_content&view=article&id=25&Itemid=28.html">
+                                    <span>New products</span></a></li><li class="item29"><a href="index.php~option=com_content&view=article&id=46&Itemid=29.html">
+                                        <span>FAQS</span></a></li><li class="item18"><a href="index.php~option=com_content&view=article&id=45&Itemid=18.html">
+                                            <span>News</span></a></li><li class="item30"><a href="index.php~option=com_contact&view=contact&id=2&Itemid=30.html">
+                                                <span>Contacts</span></a></li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="box-slider">
+        <div class="main">
+            <div class="module_banners">
+                <div class="boxIndent">
+                    <div class="bannergroup_banners">
+                        <div class="banneritem_banners">
+                            <a href="index.php~option=com_banners&task=click&bid=1.html">
+                                <img src="images/banners/banner1.png" alt="Banner" /></a><div class="clr">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="module_slider">
+                <div class="boxIndent">
+                    <div id="slider">
+                        <a href="index.php~page=shop.product_details&flypage=flypage.tpl&product_id=29&category_id=9&option=com_virtuemart&Itemid=29.html">
+                            <img src="images/stories/slide1.jpg" alt="" /></a> <a href="index.php~page=shop.product_details&product_id=32&flypage=flypage.tpl&pop=0&option=com_virtuemart&Itemid=29.html">
+                                <img src="images/stories/slide2.jpg" alt="" /></a> <a href="index.php~page=shop.product_details&product_id=31&flypage=flypage.tpl&pop=0&option=com_virtuemart&Itemid=29.html">
+                                    <img src="images/stories/slide3.jpg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="main-1">
+        <div id="wrapper">
+            <div class="clear">
+              <div id="left">
+              @Html.FrontHtml().Position("left")
+              </div>
+              <div class="container">
+                @Html.FrontHtml().Position("main")
+              </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="space">
+                <div class="footerText">
+                    <ul class="menu">
+                        <li class="item59"><a href="index.php~option=com_content&view=frontpage&Itemid=59.html">
+                            <span>Home</span></a></li><li class="item60"><a href="index.php~option=com_virtuemart&Itemid=60">
+                                <span>Online Store</span></a></li><li class="item56"><a href="index.php~option=com_content&view=article&id=25&Itemid=56.html">
+                                    <span>New products</span></a></li><li class="item57"><a href="index.php~option=com_content&view=article&id=46&Itemid=57.html">
+                                        <span>FAQS</span></a></li><li class="item55"><a href="index.php~option=com_content&view=article&id=45&Itemid=55.html">
+                                            <span>News</span></a></li><li class="item58"><a href="index.php~option=com_contact&view=contact&id=2&Itemid=58.html">
+                                                <span>Contacts</span></a></li></ul>
+                    <div>
+                        Copyright &#169; 2011 Tailor. All Rights Reserved.</div>
+                    <div>
+                        <a href="http://www.joomla.org/">Joomla!</a> is Free Software released under the
+                        <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU/GPL License.</a></div>
+                    <!--{%FOOTER_LINK} -->
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

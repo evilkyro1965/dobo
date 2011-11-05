@@ -1,0 +1,15 @@
+﻿@foreach (var item in ViewBag.Products)
+{
+  <div class="module_banners">
+    <div class="boxIndent">
+        <div class="bannergroup_banners">
+            <div class="banneritem_banners">
+                <a href="index.php~option=com_banners&task=click&bid=1.html">
+                    <img src='@Url.FrontUrl().ResizeImageUrl(item.Image, 694, 350)' alt="@item.Name" /></a>
+              <div class="clr">
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+}

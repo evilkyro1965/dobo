@@ -1,0 +1,82 @@
+﻿  <div class="content-indent">
+  <div class="article-text-indent">
+      <div class="clear">
+          <div id="component-contact">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" class="contentpaneopen">
+                  <tr>
+                      <td width="100%" class="contentheading">
+                          İletişim
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <table border="0" width="100%" style="margin-bottom: 25px;">
+                              <tr>
+                                  <td>
+                                  </td>
+                                  <td rowspan="2" align="center" valign="top">
+                                      <div id="map_canvas">
+                                          @Html.FrontHtml().RenderView("Contact.GoogleMap",ViewData)
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                              <td rowspan="6" valign="top" width="40">
+                                                  <img src='@Url.FrontUrl().ThemeFileUrl("images/M_images/con_address.png")' alt="Address: " />
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td valign="top">
+                                                 @Html.Raw(ViewBag.CompanyProfile.Address)
+                                              </td>
+                                          </tr>
+                                      </table>
+                                      <br />
+                                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                              <td width="40">
+                                                  <img src='@Url.FrontUrl().ThemeFileUrl("images/M_images/con_tel.png")' alt="Telephone: " />
+                                              </td>
+                                              <td>
+                                                  Telefon: @ViewBag.CompanyProfile.PhoneNo
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td width="40">
+                                                  <img src='@Url.FrontUrl().ThemeFileUrl("images/M_images/con_mobile.png")' alt="Mobile Phone Number: " />
+                                              </td>
+                                              <td>
+                                                  Fax: @ViewBag.CompanyProfile.Fax
+                                              </td>
+                                          </tr>
+                                      </table>
+                                      <br />
+                                  </td>
+                              </tr>
+                          </table>
+                          
+                          </div>
+                      </td>
+                      <td>
+                          &nbsp;
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td colspan="2">
+                          <br />
+                        
+                          <br />
+                      </td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+  </div>
+</div>
